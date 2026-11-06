@@ -1,6 +1,6 @@
 # GNR605: Beed post-monsoon drought study
 
-Updated 6 November 2026. All three requested research papers are present and reviewed. An Andure-inspired indicator pipeline is implemented; its satellite execution is pending Earth Engine access. No empirical results have yet been produced.
+Updated 6 November 2026. All three requested research papers are present and reviewed. The user ran the first Andure-inspired October 2020 preview: VHI 91.43 over only 26.2% of the provisional district. The console result is archived, its consistency audit passes, and coverage diagnostics are ready to run. This is not yet a validated district-wide drought assessment.
 
 - [Start the Andure reconstruction](pipeline/andure/README.md): first-month Earth Engine script, explicit assumptions and CSV audit.
 

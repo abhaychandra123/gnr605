@@ -94,13 +94,15 @@ function indices(year, month) {
     .updateMask(joint)
     .addBands(current.select(['ndvi_n', 'lst_n']))
     .addBands(count.rename(['ndvi_baseline_n', 'lst_baseline_n']))
+    .addBands(span.rename(['ndvi_baseline_span', 'lst_baseline_span']))
     .setDefaultProjection(grid).copyProperties(current));
 }
 
 function run() {
   var aoi = boundary.geometry();
   Map.centerObject(boundary, 9);
-  Map.addLayer(boundary, {}, 'Provisional Beed boundary');
+  Map.addLayer(ee.Image().byte().paint(boundary, 1, 2),
+    {palette: ['000000']}, 'Provisional Beed boundary outline');
   print('Boundary metadata: verify before scientific interpretation', boundary);
   var areaImage = ee.Image.pixelArea().rename('area');
   function sumArea(mask) {
@@ -161,12 +163,56 @@ function run() {
     });
   }
   var preview = indices(CFG.previewYear, CFG.previewMonth).clip(aoi);
+  var currentPreview = monthly(CFG.previewYear, CFG.previewMonth).clip(aoi);
   var colors = ['8c2d04', 'fec44f', 'ffffcc', '78c679', '006837'];
-  Map.addLayer(preview.select('ndvi'), {min: 0, max: 0.8, palette: colors}, 'NDVI');
-  Map.addLayer(preview.select('vhi'), {min: 0, max: 100, palette: colors}, 'VHI');
+  Map.addLayer(preview.select('ndvi'), {min: 0, max: 0.8, palette: colors}, 'NDVI on VHI-valid pixels', false);
+  Map.addLayer(preview.select('vhi'), {min: 0, max: 100, palette: colors}, 'VHI on valid pixels');
+  Map.addLayer(currentPreview.select('ndvi'), {min: 0, max: 0.8, palette: colors},
+    'NDVI before LST and reference requirements', false);
+  Map.addLayer(currentPreview.select('lst_k'), {min: 290, max: 320,
+    palette: ['2166ac', 'f7f7f7', 'b2182b']}, 'LST before NDVI and reference requirements', false);
   Map.addLayer(preview.select('ndvi_n'), {min: 0, max: 3}, 'Valid NDVI composites', false);
   Map.addLayer(preview.select('lst_n'), {min: 0, max: 4}, 'Valid LST composites', false);
-  Map.addLayer(preview.select('ndvi_baseline_n'), {min: 0, max: 19}, 'NDVI reference years', false);
+  var referenceYears = CFG.baselineEnd - CFG.baselineStart + 1;
+  Map.addLayer(preview.select('ndvi_baseline_n').unmask(0).clip(aoi),
+    {min: 0, max: referenceYears}, 'NDVI reference years', false);
+  Map.addLayer(preview.select('lst_baseline_n').unmask(0).clip(aoi),
+    {min: 0, max: referenceYears}, 'LST reference years', false);
+
+  // Diagnose coverage without altering QA, reference thresholds or index values.
+  // These zero-filled BINARY masks are only for counting area, never index data.
+  var nCurrent = currentPreview.select('ndvi').mask().unmask(0).gt(0);
+  var tCurrent = currentPreview.select('lst_k').mask().unmask(0).gt(0);
+  var nReference = preview.select('ndvi_baseline_n').unmask(0).gte(CFG.minBaselineYears);
+  var tReference = preview.select('lst_baseline_n').unmask(0).gte(CFG.minBaselineYears);
+  var rangesOK = preview.select('ndvi_baseline_span').unmask(0).gt(0)
+    .and(preview.select('lst_baseline_span').unmask(0).gt(0));
+  var bothCurrent = nCurrent.and(tCurrent);
+  var withNReference = bothCurrent.and(nReference);
+  var withBothReferences = withNReference.and(tReference);
+  var gates = [
+    ['01_current_NDVI', nCurrent],
+    ['02_current_LST', tCurrent],
+    ['03_current_both', bothCurrent],
+    ['04_current_both_plus_NDVI_reference', withNReference],
+    ['05_current_both_plus_both_references', withBothReferences],
+    ['06_above_plus_nonzero_ranges', withBothReferences.and(rangesOK)],
+    ['07_actual_VHI', preview.select('vhi').mask()],
+    ['08_NDVI_reference_alone', nReference],
+    ['09_LST_reference_alone', tReference]
+  ];
+  var diagnostics = ee.FeatureCollection(gates.map(function(gate) {
+    var area = sumArea(gate[1]);
+    return ee.Feature(null, {stage: gate[0], area_km2: area.divide(1e6),
+      fraction_of_district: area.divide(districtArea),
+      date: ee.Date.fromYMD(CFG.previewYear, CFG.previewMonth, 1).format('YYYY-MM'),
+      min_baseline_years: CFG.minBaselineYears});
+  }));
+  print('Coverage diagnostics: compare fractions; stages 03-06 are cumulative', diagnostics);
+  print('Coverage fractions by stage', ee.Dictionary.fromLists(
+    diagnostics.aggregate_array('stage'), diagnostics.aggregate_array('fraction_of_district')));
+  Export.table.toDrive({collection: diagnostics, description: 'beed_preview_coverage_diagnostics',
+    folder: CFG.exportFolder, fileFormat: 'CSV'});
   print('Preview summary', row(CFG.previewYear, CFG.previewMonth));
   var rows = CFG.batch ? ee.List.sequence(CFG.startYear, CFG.endYear).map(function(y) {
     return ee.List.sequence(1, 12).map(function(m) { return row(y, m); });

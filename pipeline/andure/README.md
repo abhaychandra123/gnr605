@@ -1,6 +1,6 @@
 # Andure reconstruction: first executable baseline
 
-Started 6 November 2026. Stage 1 implements satellite indicators and a processing audit. The first user-run Earth Engine attempt successfully matched one GAUL feature named Bid, then stopped before displaying the indices because `copyProperties` returned an Element rather than an Image. Explicit Image casts now fix that return type in the three affected functions. The corrected satellite run is pending; no Beed indicator results or model scores have been produced. Local JavaScript syntax and Python audit tests are checked separately.
+Started 6 November 2026. The user successfully ran the corrected October 2020 preview in Earth Engine and supplied its console summary and screenshot. VHI is 91.4275 over only 26.1744% of the provisional district. This is an initial computational result, not a validated district-wide drought assessment. All 26 reported fields are preserved in [the console-transcribed CSV](../../data/andure/beed_preview_2020_10_console.csv), with adjacent provenance metadata. The [audit](../../results/andure/preview_console_audit.json) passes consistency checks and flags low coverage. No original Drive export or ML results have been received. The updated coverage diagnostics still need a browser run.
 
 ## Why start here?
 
@@ -42,6 +42,8 @@ The exported `ndvi`, `lst_k`, `vci`, `tci`, `vhi` are district means over joint 
 
 ## Run the first month
 
+**Current next step:** rerun the updated script with `batch: false` and inspect `Coverage fractions by stage`. Do not expand the time series until the 26.2% coverage is understood. The diagnostics leave all scientific settings unchanged.
+
 1. Open https://code.earthengine.google.com/ with an Earth Engine enabled project. Paste `01_indicators_gee.js` into a new script. Leave `batch: false`.
 2. Click Run. The console must find exactly one boundary. If it does not, inspect the printed Maharashtra district names or set `boundaryAsset` to a verified FeatureCollection containing one district feature. Do not substitute a hand-drawn rectangle.
 3. Inspect the boundary, NDVI, VHI, valid-composite counts and reference-year count layers. The initial geometry must still be checked against an authoritative Beed boundary. Record the chosen asset and boundary code.
@@ -56,6 +58,24 @@ python3 pipeline/andure/audit_export.py data/andure/beed_preview_2020_10.csv --o
 7. After reviewing the map and audit, set `batch: true`, run again, and export `beed_monthly_2020_2024`. Audit that file the same way. Keep the script/configuration used with the export. It should have 60 rows including missing months, not 60 necessarily usable observations.
 
 No local Earth Engine Python package or standard Earth Engine credential file was present during setup. The user's browser run confirms access to the Code Editor and GAUL collection. No credentials are required for the local CSV audit.
+
+## Diagnose the first preview's missing area
+
+`Coverage fractions by stage` reports area fractions of the same full district:
+
+- `01_current_NDVI` and `02_current_LST`: valid October observations for each variable independently.
+- `03_current_both`: their intersection, before reference requirements.
+- `04_current_both_plus_NDVI_reference`: additionally require at least 15 reference years for NDVI.
+- `05_current_both_plus_both_references`: additionally require at least 15 for LST.
+- `06_above_plus_nonzero_ranges`: exclude undefined indices where a reference range is zero.
+- `07_actual_VHI`: directly measure the final mask. This should agree with stage 06 and the preview summary.
+- `08_NDVI_reference_alone` and `09_LST_reference_alone`: independent reference eligibility, without current-observation requirements.
+
+Stages 03–06 are cumulative and should never increase. Their area differences attribute exclusions in this stated order; they are not independent causal effects. Stages 01/02/08/09 overlap and must not be added. A large loss at stage 03 indicates overlap/current-data limitations; a large subsequent loss identifies reference eligibility as an additional bottleneck. To diagnose individual QA flags within a sensor, a further QA-bit breakdown would be needed.
+
+Two additional layers show current NDVI/LST before the shared VHI mask. The original NDVI layer used only VHI-valid pixels, so its gaps did not necessarily mean missing NDVI. The boundary is now an outline to avoid mistaking its solid grey fill for a drought class. Toggle one indicator at a time. Reference-year layers and a separate diagnostic CSV export are available.
+
+The supplied rainfall totals are 148.6294 mm for October and 545.1822 mm for August–October. The daily collection counts match 31/31 and 92/92, respectively. Totals alone do not establish a rainfall anomaly or SPI. Mean LST on joint valid pixels is 305.9567 K (32.8067 °C), a surface temperature. VCI/TCI/VHI values are scaled indices, not percentages of healthy land or historical percentiles. The high means describe only the retained pixels and need coverage/selection-bias checks before broader interpretation.
 
 ## What to do after the first successful export
 
