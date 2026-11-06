@@ -2,6 +2,8 @@
 
 Updated 6 November 2026. All three requested research papers are present and reviewed. The user ran the first Andure-inspired October 2020 preview: VHI 91.43 over only 26.2% of the provisional district. The console result is archived, its consistency audit passes, and coverage diagnostics are ready to run. This is not yet a validated district-wide drought assessment.
 
+The five-year pilot, historical audit and 24-year selected-pixel date audit have now been read. Numerical consistency checks pass. Correct October observation selection recovers substantial NDVI coverage in 2023, but 2021/2024 remain sparse. See [the date-audit findings](results/andure/date_audit_review.md) and earlier [pilot review](results/andure/pilot_review.md). Next run [the quality-filter audit](pipeline/andure/03_october_qa_audit_gee.js), keeping selected pixel dates fixed. Corrected VHI and ML remain pending.
+
 - [Start the Andure reconstruction](pipeline/andure/README.md): first-month Earth Engine script, explicit assumptions and CSV audit.
 
 - [Critical paper review](literature/notes/paper_review.md): methods, findings, limitations and page references.

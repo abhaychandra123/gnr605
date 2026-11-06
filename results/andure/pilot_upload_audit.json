@@ -1,0 +1,23 @@
+{
+  "input": "pilot_input_extract.json:pilot (parsed uploaded CSV contents)",
+  "rows": 10,
+  "formula_rows": 10,
+  "formula_max_abs_error": 3.126388037344441e-13,
+  "coverage_screen": 0.8,
+  "errors": [],
+  "warnings": [
+    "line 2 (2020-10): coverage 58.9% below 80%",
+    "line 3 (2020-10): coverage 26.2% below 80%",
+    "line 4 (2021-10): coverage 10.1% below 80%",
+    "line 5 (2021-10): coverage 5.1% below 80%",
+    "line 6 (2022-10): coverage 71.0% below 80%",
+    "line 7 (2022-10): coverage 32.9% below 80%",
+    "line 8 (2023-10): coverage 3.7% below 80%",
+    "line 9 (2023-10): coverage 1.6% below 80%",
+    "line 10 (2024-10): coverage 1.9% below 80%",
+    "line 10 (2024-10): outside reference range; values deliberately not clipped",
+    "line 11 (2024-10): coverage 1.0% below 80%",
+    "line 11 (2024-10): outside reference range; values deliberately not clipped"
+  ],
+  "interpretation": "Formula agreement checks processing consistency, not independent drought accuracy."
+}

@@ -72,6 +72,9 @@ function monthly(year, month) {
 }
 function indices(year, month, ndviMinYears) {
   ndviMinYears = ndviMinYears === undefined ? CFG.minBaselineYears : ndviMinYears;
+  // ee.List.map supplies a server-side value. Explicitly promote it to an Image;
+  // automatic promotion of a JavaScript numeric literal is not sufficient here.
+  var ndviMinimumImage = ee.Image.constant(ee.Number(ndviMinYears));
   var current = monthly(year, month);
   var reference = ee.ImageCollection.fromImages(
     ee.List.sequence(CFG.baselineStart, CFG.baselineEnd).map(function(y) {
@@ -84,11 +87,11 @@ function indices(year, month, ndviMinYears) {
   var vci = current.select('ndvi').subtract(lo.select('ndvi'))
     .divide(span.select('ndvi')).multiply(100).rename('vci')
     .updateMask(span.select('ndvi').gt(0))
-    .updateMask(count.select('ndvi').gte(ndviMinYears));
+    .updateMask(count.select('ndvi').gte(ndviMinimumImage));
   var tci = hi.select('lst_k').subtract(current.select('lst_k'))
     .divide(span.select('lst_k')).multiply(100).rename('tci')
     .updateMask(span.select('lst_k').gt(0))
-    .updateMask(count.select('lst_k').gte(CFG.minBaselineYears));
+    .updateMask(count.select('lst_k').gte(ee.Image.constant(CFG.minBaselineYears)));
   var vhi = vci.multiply(CFG.alpha).add(tci.multiply(1 - CFG.alpha)).rename('vhi');
   // Identical spatial support preserves the identity in district means.
   var joint = vhi.mask();
@@ -119,7 +122,7 @@ function run() {
     var source = rainRaw.filterDate(start, end);
     var days = end.difference(start, 'day');
     // Missing daily inputs mask the total, rather than creating a dry anomaly.
-    var total = source.sum().updateMask(source.count().eq(days));
+    var total = source.sum().updateMask(source.count().eq(ee.Image.constant(days)));
     var weights = ee.Image.pixelArea().updateMask(total.mask());
     var sums = total.multiply(weights).rename('rain_area')
       .addBands(weights.rename('valid_area')).unmask(0).reduceRegion({
@@ -188,8 +191,9 @@ function run() {
   // These zero-filled BINARY masks are only for counting area, never index data.
   var nCurrent = currentPreview.select('ndvi').mask().unmask(0).gt(0);
   var tCurrent = currentPreview.select('lst_k').mask().unmask(0).gt(0);
-  var nReference = preview.select('ndvi_baseline_n').unmask(0).gte(CFG.minBaselineYears);
-  var tReference = preview.select('lst_baseline_n').unmask(0).gte(CFG.minBaselineYears);
+  var referenceMinimumImage = ee.Image.constant(CFG.minBaselineYears);
+  var nReference = preview.select('ndvi_baseline_n').unmask(0).gte(referenceMinimumImage);
+  var tReference = preview.select('lst_baseline_n').unmask(0).gte(referenceMinimumImage);
   var rangesOK = preview.select('ndvi_baseline_span').unmask(0).gt(0)
     .and(preview.select('lst_baseline_span').unmask(0).gt(0));
   var bothCurrent = nCurrent.and(tCurrent);
@@ -249,7 +253,7 @@ function run() {
       .and(preview.select('lst_baseline_span').unmask(0).gt(0));
     var qaTable = ee.FeatureCollection(qaNames.map(function(name) {
       var currentMask = qaCurrent.select(name).mask().unmask(0).gt(0);
-      var historyMask = qaCount.select(name).unmask(0).gte(CFG.minBaselineYears);
+      var historyMask = qaCount.select(name).unmask(0).gte(referenceMinimumImage);
       var eligible = currentMask.and(historyMask).and(thermalEligible)
         .and(qaSpan.select(name).unmask(0).gt(0));
       return ee.Feature(null, {stage: name,
@@ -264,7 +268,7 @@ function run() {
     // Vary NDVI eligibility only; retain original LST eligibility and all QA.
     var thresholdTable = ee.FeatureCollection([10, 12, 15, 19].map(function(minYears) {
       var eligible = bothCurrent.and(tReference).and(rangesOK)
-        .and(preview.select('ndvi_baseline_n').unmask(0).gte(minYears));
+        .and(preview.select('ndvi_baseline_n').unmask(0).gte(ee.Image.constant(ee.Number(minYears))));
       return ee.Feature(null, {ndvi_min_years: minYears,
         lst_min_years: CFG.minBaselineYears,
         joint_eligible_fraction: sumArea(eligible).divide(districtArea)});

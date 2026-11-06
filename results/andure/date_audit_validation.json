@@ -1,0 +1,14 @@
+{
+  "source": {
+    "name": "beed_october_pixel_date_audit_2001_2024.csv",
+    "library_file_id": "libfile_4dc9e3fbdb988191872cb96f2b8a1159",
+    "access": "Full parsed text returned by uploaded-file reader; not an original-byte download.",
+    "received": "2026-11-06"
+  },
+  "rows": 24,
+  "errors": [],
+  "historical_rows_crosschecked": 19,
+  "max_decomposition_residual": 9.992007221626409e-16,
+  "years_with_increased_coverage": 19,
+  "years_with_decreased_coverage": 5
+}
