@@ -7,7 +7,7 @@ from audit_export import audit
 
 
 class ExportAuditTests(unittest.TestCase):
-    def run_fixture(self, updates=None, duplicate=False):
+    def run_fixture(self, updates=None, duplicate=False, second_updates=None):
         row = dict(date='2020-10', ndvi=0.4, lst_k=300, vci=40, tci=60,
                    vhi=50, alpha=0.5, valid_fraction=0.9,
                    valid_area_km2=90, district_area_km2=100,
@@ -21,6 +21,8 @@ class ExportAuditTests(unittest.TestCase):
                 writer = csv.DictWriter(handle, fieldnames=row.keys())
                 writer.writeheader()
                 writer.writerows([row] * (2 if duplicate else 1))
+                if second_updates is not None:
+                    writer.writerow(dict(row, **second_updates))
             return audit(path)
 
     def test_valid_formula(self):
@@ -51,6 +53,18 @@ class ExportAuditTests(unittest.TestCase):
 
     def test_nan_is_rejected(self):
         self.assertTrue(self.run_fixture({'vhi': 'nan'})['errors'])
+
+    def test_same_month_different_settings_pass(self):
+        result = self.run_fixture(dict(min_ndvi_years=15, min_lst_years=15),
+                                  second_updates=dict(min_ndvi_years=12))
+        self.assertEqual(result['errors'], [])
+
+    def test_same_month_same_settings_fail(self):
+        result = self.run_fixture(dict(min_ndvi_years=15, min_lst_years=15), duplicate=True)
+        self.assertTrue(any('duplicate' in s for s in result['errors']))
+
+    def test_missing_variant_setting_fails(self):
+        self.assertTrue(self.run_fixture(dict(min_ndvi_years=12))['errors'])
 
 
 if __name__ == '__main__':

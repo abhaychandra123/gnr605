@@ -36,10 +36,6 @@ def audit(path, min_coverage=0.8, tolerance=1e-6):
                 raise ValueError
         except ValueError:
             errors.append(f'{label}: invalid YYYY-MM date')
-        if row['date'] in seen:
-            errors.append(f'{label}: duplicate district-month')
-        seen.add(row['date'])
-
         def number(key):
             text = row.get(key)
             if text is None or not text.strip():
@@ -54,6 +50,18 @@ def audit(path, min_coverage=0.8, tolerance=1e-6):
                 return None
 
         values = {key: number(key) for key in REQUIRED - {'date'}}
+        # Sensitivity exports legitimately repeat a month under different settings.
+        variant = []
+        if 'min_ndvi_years' in row or 'min_lst_years' in row:
+            for key in ('min_ndvi_years', 'min_lst_years'):
+                value = number(key)
+                if value is None or value < 2 or not value.is_integer():
+                    errors.append(f'{label}: invalid {key}')
+                variant.append(value)
+        identity = (row['date'], *variant)
+        if identity in seen:
+            errors.append(f'{label}: duplicate district-month/settings')
+        seen.add(identity)
         coverage = values['valid_fraction']
         area, district = values['valid_area_km2'], values['district_area_km2']
         if coverage is None or not 0 <= coverage <= 1 + tolerance:

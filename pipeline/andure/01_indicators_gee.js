@@ -6,6 +6,8 @@ var CFG = {
   previewYear: 2020,
   previewMonth: 10,
   batch: false, // First inspect one month; true exports 60 district-month rows.
+  inspectNDVIQuality: false, // Completed for October 2020; enable to repeat.
+  octoberPilot: true, // Compare 12 vs 15 NDVI reference years for October 2020-2024.
   startYear: 2020,
   endYear: 2024,
   baselineStart: 2001,
@@ -68,7 +70,8 @@ function monthly(year, month) {
     .set({date: start.format('YYYY-MM'), month: month, year: year,
       ndvi_source_images: n.size(), lst_source_images: t.size()});
 }
-function indices(year, month) {
+function indices(year, month, ndviMinYears) {
+  ndviMinYears = ndviMinYears === undefined ? CFG.minBaselineYears : ndviMinYears;
   var current = monthly(year, month);
   var reference = ee.ImageCollection.fromImages(
     ee.List.sequence(CFG.baselineStart, CFG.baselineEnd).map(function(y) {
@@ -81,7 +84,7 @@ function indices(year, month) {
   var vci = current.select('ndvi').subtract(lo.select('ndvi'))
     .divide(span.select('ndvi')).multiply(100).rename('vci')
     .updateMask(span.select('ndvi').gt(0))
-    .updateMask(count.select('ndvi').gte(CFG.minBaselineYears));
+    .updateMask(count.select('ndvi').gte(ndviMinYears));
   var tci = hi.select('lst_k').subtract(current.select('lst_k'))
     .divide(span.select('lst_k')).multiply(100).rename('tci')
     .updateMask(span.select('lst_k').gt(0))
@@ -128,8 +131,9 @@ function run() {
       ee.Number(sums.get('rain_area', 0)).divide(valid), null);
     return {value: result, images: source.size(), expected: days};
   }
-  function row(year, month) {
-    var im = indices(year, month);
+  function row(year, month, ndviMinYears) {
+    ndviMinYears = ndviMinYears === undefined ? CFG.minBaselineYears : ndviMinYears;
+    var im = indices(year, month, ndviMinYears);
     var bands = ['ndvi', 'lst_k', 'vci', 'tci', 'vhi'];
     var validArea = sumArea(im.select('vhi').mask());
     var totals = im.select(bands).multiply(areaImage).unmask(0).reduceRegion({
@@ -156,6 +160,7 @@ function run() {
       lst_source_images: im.get('lst_source_images'),
       baseline_start: CFG.baselineStart, baseline_end: CFG.baselineEnd,
       min_baseline_years: CFG.minBaselineYears,
+      min_ndvi_years: ndviMinYears, min_lst_years: CFG.minBaselineYears,
       boundary_source: CFG.boundaryAsset || 'FAO/GAUL/2015/level2',
       boundary_name: boundary.first().get('ADM2_NAME'),
       boundary_code: boundary.first().get('ADM2_CODE'),
@@ -213,7 +218,88 @@ function run() {
     diagnostics.aggregate_array('stage'), diagnostics.aggregate_array('fraction_of_district')));
   Export.table.toDrive({collection: diagnostics, description: 'beed_preview_coverage_diagnostics',
     folder: CFG.exportFolder, fileFormat: 'CSV'});
+  if (CFG.inspectNDVIQuality) {
+    // Early rows are diagnostics, not proposed replacements for quality control.
+    var qaNames = ['01_value_range', '02_plus_land', '03_plus_SummaryQA_good',
+      '04_plus_no_adjacent_cloud', '05_plus_no_mixed_cloud', '06_plus_no_snow_shadow'];
+    function qaStages(image) {
+      var raw = image.select('NDVI');
+      var qa = image.select('DetailedQA');
+      var range = raw.gte(-2000).and(raw.lte(10000));
+      var land = range.and(qa.rightShift(11).bitwiseAnd(7).eq(1));
+      var summary = land.and(image.select('SummaryQA').eq(0));
+      var adjacent = summary.and(qa.rightShift(8).bitwiseAnd(1).eq(0));
+      var mixed = adjacent.and(qa.rightShift(10).bitwiseAnd(1).eq(0));
+      var final = mixed.and(qa.rightShift(14).bitwiseAnd(3).eq(0));
+      return ee.Image.cat([range, land, summary, adjacent, mixed, final].map(function(mask, i) {
+        return raw.multiply(0.0001).updateMask(mask).rename(qaNames[i]);
+      }));
+    }
+    function qaMonthly(year) {
+      var start = ee.Date.fromYMD(year, CFG.previewMonth, 1);
+      return ndviRaw.filterDate(start, start.advance(1, 'month')).map(qaStages)
+        .mean().setDefaultProjection(grid);
+    }
+    var qaCurrent = qaMonthly(CFG.previewYear);
+    var qaHistory = ee.ImageCollection.fromImages(
+      ee.List.sequence(CFG.baselineStart, CFG.baselineEnd).map(qaMonthly));
+    var qaCount = qaHistory.count();
+    var qaSpan = qaHistory.max().subtract(qaHistory.min());
+    var thermalEligible = tCurrent.and(tReference)
+      .and(preview.select('lst_baseline_span').unmask(0).gt(0));
+    var qaTable = ee.FeatureCollection(qaNames.map(function(name) {
+      var currentMask = qaCurrent.select(name).mask().unmask(0).gt(0);
+      var historyMask = qaCount.select(name).unmask(0).gte(CFG.minBaselineYears);
+      var eligible = currentMask.and(historyMask).and(thermalEligible)
+        .and(qaSpan.select(name).unmask(0).gt(0));
+      return ee.Feature(null, {stage: name,
+        current_ndvi_fraction: sumArea(currentMask).divide(districtArea),
+        reference_ndvi_fraction: sumArea(historyMask).divide(districtArea),
+        joint_eligible_fraction: sumArea(eligible).divide(districtArea),
+        min_baseline_years: CFG.minBaselineYears});
+    }));
+    print('NDVI QA comparison (early rows are diagnostic only)', qaTable);
+    Export.table.toDrive({collection: qaTable, description: 'beed_preview_ndvi_qa_comparison',
+      folder: CFG.exportFolder, fileFormat: 'CSV'});
+    // Vary NDVI eligibility only; retain original LST eligibility and all QA.
+    var thresholdTable = ee.FeatureCollection([10, 12, 15, 19].map(function(minYears) {
+      var eligible = bothCurrent.and(tReference).and(rangesOK)
+        .and(preview.select('ndvi_baseline_n').unmask(0).gte(minYears));
+      return ee.Feature(null, {ndvi_min_years: minYears,
+        lst_min_years: CFG.minBaselineYears,
+        joint_eligible_fraction: sumArea(eligible).divide(districtArea)});
+    }));
+    print('NDVI reference sensitivity (coverage only; original QA)', thresholdTable);
+    Export.table.toDrive({collection: thresholdTable, description: 'beed_preview_reference_sensitivity',
+      folder: CFG.exportFolder, fileFormat: 'CSV'});
+  }
   print('Preview summary', row(CFG.previewYear, CFG.previewMonth));
+  if (CFG.octoberPilot) {
+    var pilot = ee.FeatureCollection(ee.List.sequence(2020, 2024).map(function(year) {
+      return ee.List([12, 15]).map(function(minYears) {
+        return row(year, 10, minYears).set('experiment', 'October_NDVI_reference_eligibility');
+      });
+    }).flatten());
+    // Preview one row only; compute all ten rows as a batch export.
+    print('October 2020 comparison: 12 NDVI years, original QA', row(2020, 10, 12));
+    Export.table.toDrive({collection: pilot, description: 'beed_october_2020_2024_ndvi12_vs15',
+      folder: CFG.exportFolder, fileFormat: 'CSV'});
+    Map.addLayer(indices(CFG.previewYear, CFG.previewMonth, 12).select('vhi').clip(aoi),
+      {min: 0, max: 100, palette: colors}, 'VHI sensitivity: NDVI history >=12 years', false);
+    // Explain why requiring all 19 historical Octobers admits no pixels.
+    // A low year may reflect quality filtering, not absence of source images.
+    var referenceAudit = ee.FeatureCollection(ee.List.sequence(CFG.baselineStart,
+      CFG.baselineEnd).map(function(year) {
+      var im = monthly(year, 10);
+      return ee.Feature(null, {year: year, month: 10,
+        ndvi_source_images: im.get('ndvi_source_images'),
+        lst_source_images: im.get('lst_source_images'),
+        ndvi_valid_fraction: sumArea(im.select('ndvi').mask()).divide(districtArea),
+        lst_valid_fraction: sumArea(im.select('lst_k').mask()).divide(districtArea)});
+    }));
+    Export.table.toDrive({collection: referenceAudit, description: 'beed_october_reference_year_audit',
+      folder: CFG.exportFolder, fileFormat: 'CSV'});
+  }
   var rows = CFG.batch ? ee.List.sequence(CFG.startYear, CFG.endYear).map(function(y) {
     return ee.List.sequence(1, 12).map(function(m) { return row(y, m); });
   }).flatten() : ee.List([row(CFG.previewYear, CFG.previewMonth)]);

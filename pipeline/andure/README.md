@@ -42,7 +42,9 @@ The exported `ndvi`, `lst_k`, `vci`, `tci`, `vhi` are district means over joint 
 
 ## Run the first month
 
-**Current next step:** rerun the updated script with `batch: false` and inspect `Coverage fractions by stage`. Do not expand the time series until the 26.2% coverage is understood. The diagnostics leave all scientific settings unchanged.
+**Current next step:** QA/sensitivity diagnostics are now received. SummaryQA=0 plus the 15-year NDVI requirement drives most exclusions; the additional detailed flags have little effect. See [the interpretation](../../results/andure/coverage_interpretation.md). The defaults now set `batch: false`, `inspectNDVIQuality: false`, `octoberPilot: true`. Run the script and start these two Tasks: `beed_october_2020_2024_ndvi12_vs15` and `beed_october_reference_year_audit`. Download their CSVs into `data/andure/`. This tests a 12-year NDVI eligibility threshold alongside the original 15, with unchanged QA, 2001–2019 reference bounds and 15-year LST eligibility. It does not yet adopt 12 as a final method.
+
+The pilot has 10 rows: one per October/year/NDVI threshold. Read `min_ndvi_years` and `min_lst_years` as the actual eligibility settings; `min_baseline_years` records the original default. Values on common pixels are unchanged by the eligibility threshold alone. Differences in aggregate means can therefore arise from changed spatial coverage. The reference audit reports source-image counts and QA-valid area separately for each October in 2001–2019. Run these exports as batch tasks rather than attempting to print all rows in the interactive console. New pilot execution remains pending.
 
 1. Open https://code.earthengine.google.com/ with an Earth Engine enabled project. Paste `01_indicators_gee.js` into a new script. Leave `batch: false`.
 2. Click Run. The console must find exactly one boundary. If it does not, inspect the printed Maharashtra district names or set `boundaryAsset` to a verified FeatureCollection containing one district feature. Do not substitute a hand-drawn rectangle.
