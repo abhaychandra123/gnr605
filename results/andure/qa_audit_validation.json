@@ -1,0 +1,12 @@
+{
+  "source": {
+    "name": "beed_october_pixel_date_qa_audit_2001_2024.csv",
+    "library_file_id": "libfile_ab610e6272648191ae12fe07808233f2",
+    "access": "Full parsed text returned by uploaded-file reader; not an original-byte download.",
+    "received": "2026-11-06"
+  },
+  "rows": 24,
+  "errors": [],
+  "max_strict_vs_date_residual": 0.0,
+  "interpretation": "Coverage consistency only; marginal-data accuracy remains unverified."
+}
