@@ -1,0 +1,29 @@
+[
+  {
+    "filename": "1-s2.0-S221478532106449X-main.pdf",
+    "doi": "10.1016/j.matpr.2021.09.523",
+    "pages": 10,
+    "size_bytes": 3111853,
+    "sha256": "43b92945819b3a1db2ff109a01ac1c48f9fa706cf35a01336ff9ff7ad5fb0c01",
+    "reviewed": "2026-10-27",
+    "status": "full_pdf_reviewed"
+  },
+  {
+    "filename": "aees-9-7-5.pdf",
+    "doi": "10.12691/aees-9-7-5",
+    "pages": 24,
+    "size_bytes": 15536553,
+    "sha256": "68ef64671a5e0a859065b54c99b8dde05d50dda4126527525d29337ea2d255db",
+    "reviewed": "2026-10-27",
+    "status": "full_pdf_reviewed"
+  },
+  {
+    "filename": "Andure_et_al_2025_Beed_Drought_ML.pdf",
+    "doi": "10.64252/y0bxsk22",
+    "pages": 16,
+    "size_bytes": 450374,
+    "sha256": "35bd111e6b0709cb3850ac4da9e44b593250596547222d345430a4b89b4b36a6",
+    "reviewed": "2026-10-27",
+    "status": "full_pdf_reviewed"
+  }
+]
