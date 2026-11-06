@@ -1,0 +1,18 @@
+{
+  "status": "executed_and_computationally_validated",
+  "scope": "Beed October 2015-2024 vegetation-covered area assignment",
+  "source_images_downloaded": 43,
+  "spectral_bands": 7,
+  "years_processed": 10,
+  "algorithm_tests_passed": 4,
+  "real_pixel_year_checks_passed": 90,
+  "visual_review": "passed",
+  "user_action_required": false,
+  "limitations": [
+    "No pixel-level field vegetation ground truth; official drought records provide contextual evidence only.",
+    "Fixed valid footprint covers 65.7% of district; do not extrapolate its trend.",
+    "One accepted October observation can represent a pixel; monthly temporal support varies.",
+    "NDVI > 0.30 is an operational threshold and classifies nearly all common pixels as vegetation."
+  ],
+  "prior_work_preserved": true
+}

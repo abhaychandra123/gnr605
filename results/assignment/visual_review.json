@@ -1,0 +1,30 @@
+{
+  "reviewed_utc": "2026-11-06T23:23:19.565925+00:00",
+  "status": "passed",
+  "figures": [
+    {
+      "file": "year_vs_vegetation_area.png",
+      "sha256": "0e40739baf2408cf809522d38d8415363521c145fa8ca58effe977031fcc681c"
+    },
+    {
+      "file": "threshold_sensitivity.png",
+      "sha256": "9c62fcd8d06b3d7f9d7c8db032a849582b007eacb80fb0a12270b0149db8c4ac"
+    },
+    {
+      "file": "october_vegetation_maps.png",
+      "sha256": "f057c482b14ec5f4f73bc7a972612371b76800b4706b9bf0391f9253801b02a4"
+    },
+    {
+      "file": "october_false_colour.png",
+      "sha256": "b80ebf02301c7e1065009af1539a024fa20643f6ea39d262908d004410790159"
+    }
+  ],
+  "checks": [
+    "Ten correct years and readable axes/titles/legends",
+    "Consistent map extent, palette and false-colour stretch",
+    "Observed-area uncertainty and fixed common footprint clearly distinguished",
+    "2024 missing coverage visible in maps",
+    "No clipped text or legends observed"
+  ],
+  "interpretation": "NDVI > 0.30 saturates vegetation presence; no steady decline on the common footprint. Missing 2024 coverage is not measured vegetation loss."
+}

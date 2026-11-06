@@ -1,0 +1,17 @@
+{
+  "comparison_rows": 240,
+  "impact_month_rows": 288,
+  "rainfall_rows": 528,
+  "crop_rows": 125,
+  "csv_checkpoint_identity": "passed",
+  "expected_keys": "passed",
+  "vhi_identity": "passed",
+  "class_partitions": "passed",
+  "common_support_consistency": "passed",
+  "comparison_vs_impact_post2019": "passed",
+  "rainfall_full_support_months": 528,
+  "all_land_grid_area_km2": 10602.126249546056,
+  "cropland_weighted_area_km2": 8143.01576126903,
+  "eligible_seasons_50pct": 96,
+  "eligible_seasons_75pct": 88
+}

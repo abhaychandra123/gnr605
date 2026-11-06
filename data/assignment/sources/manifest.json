@@ -1,0 +1,22 @@
+{
+  "beed_ddmp_2022_2023.pdf": {
+    "url": "https://cdnbbsr.s3waas.gov.in/s36143cc48107351648de16d8367dc5db4/uploads/2025/03/20250306517027863.pdf",
+    "sha256": "6401c618126d5a829b8fffd54a42bd5a6648318f5f40af9a7acbfc0dc515e83e",
+    "bytes": 6118983
+  },
+  "beed_official_drought_prone.html": {
+    "url": "https://www.zpbeed.gov.in/en/about-department/introduction/",
+    "sha256": "e7deb604f2657f5281742ae0e1c5fa7af07356b8643215433411541f1fdda812",
+    "bytes": 91948
+  },
+  "mod09a1_catalog.html": {
+    "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MOD09A1",
+    "sha256": "9cea023e9cdcea03e3170ce892ee9e3bb4bb4a2d05f04b40bb53d2fc25bfce4d",
+    "bytes": 118277
+  },
+  "modis_native_projection.prj": {
+    "url": "https://modis.ornl.gov/files/modis.prj",
+    "sha256": "c65b5637c5f47e5b444d46146514f45dc3f3ef89b1aa986af821ea4fc982298a",
+    "bytes": 311
+  }
+}

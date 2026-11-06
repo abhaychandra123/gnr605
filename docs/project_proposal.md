@@ -1,5 +1,7 @@
 # Proposed Beed pilot and meeting brief
 
+**Superseded for the course assignment, 7 November 2026.** The user clarified the actual problem as a ten-year, single post-monsoon-month vegetation-area analysis. That work is now executed for Beed, October 2015–2024: [report](../results/assignment/assignment_report.md), [plot](../results/assignment/year_vs_vegetation_area.png), [code and reproduction](../pipeline/assignment/README.md). The broader proposal below is retained as history, not an instruction to expand the assignment.
+
 27 October 2026. Proposed design, not empirical findings. The three supplied papers are reviewed; no imagery, crop data or drought-label dataset has yet been processed. GEE access has not been checked.
 
 ## Working question

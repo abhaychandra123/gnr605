@@ -1,0 +1,94 @@
+{
+  "year": 2021,
+  "files": [
+    {
+      "asset_id": "MODIS/061/MOD09A1/2021_09_30",
+      "composite_start": "2021-09-30",
+      "year": 2021,
+      "bands": [
+        "sur_refl_b01",
+        "sur_refl_b02",
+        "sur_refl_b03",
+        "sur_refl_b04",
+        "sur_refl_b05",
+        "sur_refl_b06",
+        "sur_refl_b07",
+        "QA",
+        "StateQA",
+        "DayOfYear"
+      ],
+      "sha256": "5f8bd6f18ba1301f2b6e66a140413d5829d83eb073aae803681fab9aa6c1889f",
+      "bytes": 1580844,
+      "retrieved_utc": "2026-11-06T23:11:06.189942+00:00",
+      "band_order_evidence": "Explicit select(BANDS) order in download request; Earth Engine omits TIFF band descriptions.",
+      "format_note": "Raw values stored as exact float64; -99999 fills native masks. Native sphere is encoded explicitly in local products; original download CRS tags are preserved here."
+    },
+    {
+      "asset_id": "MODIS/061/MOD09A1/2021_10_08",
+      "composite_start": "2021-10-08",
+      "year": 2021,
+      "bands": [
+        "sur_refl_b01",
+        "sur_refl_b02",
+        "sur_refl_b03",
+        "sur_refl_b04",
+        "sur_refl_b05",
+        "sur_refl_b06",
+        "sur_refl_b07",
+        "QA",
+        "StateQA",
+        "DayOfYear"
+      ],
+      "sha256": "7d636fb480c22a9cded10b420f5a70308a383b757509d586718e7bd8ee46cc5d",
+      "bytes": 1038099,
+      "retrieved_utc": "2026-11-06T23:12:50.442733+00:00",
+      "band_order_evidence": "Explicit select(BANDS) order in download request; Earth Engine omits TIFF band descriptions.",
+      "format_note": "Raw values stored as exact float64; -99999 fills native masks. Native sphere is encoded explicitly in local products; original download CRS tags are preserved here."
+    },
+    {
+      "asset_id": "MODIS/061/MOD09A1/2021_10_16",
+      "composite_start": "2021-10-16",
+      "year": 2021,
+      "bands": [
+        "sur_refl_b01",
+        "sur_refl_b02",
+        "sur_refl_b03",
+        "sur_refl_b04",
+        "sur_refl_b05",
+        "sur_refl_b06",
+        "sur_refl_b07",
+        "QA",
+        "StateQA",
+        "DayOfYear"
+      ],
+      "sha256": "7b46a2f00e171525b7601abce7b91c3a03b2eabbcaa41c6d01de8c721f50d32b",
+      "bytes": 1334054,
+      "retrieved_utc": "2026-11-06T23:12:57.070220+00:00",
+      "band_order_evidence": "Explicit select(BANDS) order in download request; Earth Engine omits TIFF band descriptions.",
+      "format_note": "Raw values stored as exact float64; -99999 fills native masks. Native sphere is encoded explicitly in local products; original download CRS tags are preserved here."
+    },
+    {
+      "asset_id": "MODIS/061/MOD09A1/2021_10_24",
+      "composite_start": "2021-10-24",
+      "year": 2021,
+      "bands": [
+        "sur_refl_b01",
+        "sur_refl_b02",
+        "sur_refl_b03",
+        "sur_refl_b04",
+        "sur_refl_b05",
+        "sur_refl_b06",
+        "sur_refl_b07",
+        "QA",
+        "StateQA",
+        "DayOfYear"
+      ],
+      "sha256": "209f606956bcf8f54db4433298ecad64933ae0247fded7c83866205a154e2dcd",
+      "bytes": 1392173,
+      "retrieved_utc": "2026-11-06T23:13:05.402989+00:00",
+      "band_order_evidence": "Explicit select(BANDS) order in download request; Earth Engine omits TIFF band descriptions.",
+      "format_note": "Raw values stored as exact float64; -99999 fills native masks. Native sphere is encoded explicitly in local products; original download CRS tags are preserved here."
+    }
+  ],
+  "grid_sha256": "1182a9928bab515165d0a472419bd08e90cf73cf5a3033f0bb95282861f4357e"
+}

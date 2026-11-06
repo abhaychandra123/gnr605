@@ -1,0 +1,35 @@
+{
+  "dataset": "ESA/WorldCover/v200",
+  "class": 40,
+  "aggregation": "10m mean to 100m mean to MODIS grid",
+  "boundary": "Survey of India ABDB2025 Beed LGD523",
+  "grid": {
+    "type": "Projection",
+    "crs": "SR-ORG:6974",
+    "transform": [
+      926.625433055833,
+      0,
+      -20015109.354,
+      0,
+      -926.6254330558334,
+      10007554.677003
+    ]
+  },
+  "sha256": "5c1e35b679a408e405d03c73df6d1393a28722d4a3b0f79dfff9c142f03cac94",
+  "valid_raster_pixels": 12940,
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "shape": [
+    107,
+    233
+  ],
+  "retrieved_utc": "2026-11-06T15:49:56.694510+00:00",
+  "original_download_sha256": "c3ccf70b6153ce9f21536f07b2f4c16718015e44768fe6c4778ee3ac02b91618",
+  "original_download": "worldcover2021_crop_fraction_soi_beed.ee_original.tif",
+  "corrected_crs": "PROJCS[\"unknown\",GEOGCS[\"unknown\",DATUM[\"unknown using nadgrids=@null\",SPHEROID[\"unknown\",6371007.181,0],EXTENSION[\"PROJ4_GRIDS\",\"@null\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+  "crs_correction": "Native MODIS sphere encoded explicitly; original TIFF preserved; pixel values and transform unchanged.",
+  "projection_source": "https://modis.ornl.gov/files/modis.prj",
+  "polygon_centres_inside_raster": 12393,
+  "limitation": "Fixed 2021 cropland fraction; no annual land-use, crop species or irrigation labels; not pure cropland MODIS retrievals.",
+  "reviewed_utc": "2026-11-06T16:02:55.743400+00:00"
+}

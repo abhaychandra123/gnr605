@@ -1,15 +1,33 @@
 # GNR605: Beed post-monsoon drought study
 
-**Current execution handoff:** [autonomous continuation and access setup](docs/AUTONOMOUS_HANDOFF.md).
-The [controlled seasonal/rainfall pipeline](pipeline/study/README.md) is implemented
-as a GEE export script plus local analysis, with seven statistical tests passing.
-New satellite jobs remain unexecuted because this session lacks network/authentication.
-Actual screened-NDVI coverage bounds are saved in `results/study/screened_coverage_bounds.csv`;
-they are derived from existing real exports, not new satellite downloads.
+**Current assignment completed, 7 November 2026:** [ten-year October report](results/assignment/assignment_report.md), [year–area plot](results/assignment/year_vs_vegetation_area.png), and [reproduction instructions](pipeline/assignment/README.md).
+
+The user clarified the required scope: select a drought-prone Indian area, download ten years of post-monsoon imagery, compute vegetation-covered area, and assess its year-to-year change. The completed assignment uses Beed and October 2015–2024: 43 downloaded MODIS images, seven spectral bands including infrared, and explicit local NDVI/classification/area calculations. On the fixed observable 65.7% of the district, cover is nearly stable at NDVI > 0.30, with four decreases and five increases. The larger apparent 2024 decline in raw observed area coincides with missing coverage. Computational validation passed; pixel-level field vegetation ground truth is unavailable.
+
+**The extended yield/VHI/SPI work below is preserved as historical exploration. It does not define the current assignment or its next steps.**
+
+**Corrected study completed 6 November 2026:** [results and limitations](results/study_corrected/research_results.md).
+The official-boundary/cropland rerun retrieved and validated 1,056 Earth Engine rows,
+harmonized 125 official crop records, and evaluated 30 simple indicator calibrations.
+On the five 2020-2024 evaluation years, previous-year yield had lower MAE than every
+indicator calibration. Better satellite coverage has not established crop-impact
+forecasting skill. [Validation](results/study_corrected/validation.json) and
+[comparison figure](results/study_corrected/holdout_error_comparison.png).
+
+The earlier GAUL experiment below is retained as execution history; its lack of an
+impact check was superseded by the corrected exploratory comparison above.
+
+**Executed 6 November 2026:** [actual results and limitations](results/study/research_results.md).
+The [controlled seasonal/rainfall pipeline](pipeline/study/README.md) ran on authenticated
+Earth Engine: 120 comparison, 288 history and 528 rainfall rows were retrieved and
+validated. SPI and figures are generated; all 12 tests pass. The original October
+results reproduce exactly. Official boundary verification found a material mismatch:
+8.56% of the provisional GAUL polygon is outside current official Beed. Crop-impact
+validation and ML have not been performed. [Execution provenance](results/study/execution_manifest.json).
 
 Updated 6 November 2026. All three requested research papers are present and reviewed. The user ran the first Andure-inspired October 2020 preview: VHI 91.43 over only 26.2% of the provisional district. The console result is archived, its consistency audit passes, and coverage diagnostics are ready to run. This is not yet a validated district-wide drought assessment.
 
-The detailed quality profile has now been audited in full: 174 rows, all 54 expected composites, six joint quality patterns. Internal checks pass. Marginal observations include intermediate- and high-aerosol groups, with large differences between years. See [the full-file review](results/andure/detailed_quality_review.md) for verified denominators, the unresolved usefulness-code label, and a proposed screened sensitivity comparison. That comparison, corrected VHI and ML remain pending.
+The detailed quality profile was audited in full: 174 rows, all 54 expected composites, six joint quality patterns. Internal checks pass. Marginal observations include intermediate- and high-aerosol groups, with large differences between years. See [the full-file review](results/andure/detailed_quality_review.md) for verified denominators and the unresolved usefulness-code label. The screened sensitivity comparison has now executed; ML remains unrun.
 
 - [Start the Andure reconstruction](pipeline/andure/README.md): first-month Earth Engine script, explicit assumptions and CSV audit.
 

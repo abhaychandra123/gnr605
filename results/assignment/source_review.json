@@ -1,0 +1,9 @@
+{
+  "official_drought_history": {
+    "file": "data/assignment/sources/beed_ddmp_2022_2023.pdf",
+    "page": 61,
+    "visually_checked": true,
+    "scope": "Documented summer/agricultural drought context, not October pixel labels"
+  },
+  "threshold_source": "USGS NDVI interpretation; thresholds are fixed sensitivity assumptions, not calibrated local truth"
+}

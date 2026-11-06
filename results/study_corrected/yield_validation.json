@@ -1,0 +1,6 @@
+{
+  "rows": 125,
+  "issues": [],
+  "rounding_discrepancies": [],
+  "note": "Reported yield retained. Rounding-incompatible rows require source review, not silent correction."
+}

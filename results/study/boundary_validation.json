@@ -1,0 +1,16 @@
+{
+  "source": "Survey of India ABDB 2025, publication 2026-05-06",
+  "official_url": "https://surveyofindia.gov.in/pages/administrative-boundary-data-base-abdb-",
+  "metadata": "Maharashtra harmonized with ORGI in 2025; 1:50,000 source mapping",
+  "official_district_lgd": "523",
+  "area_method": "EPSG:6933 equal-area polygon calculation; not raster pixel-area sum",
+  "gaul2015_area_km2": 11413.587312392274,
+  "soi2025_area_km2": 10603.222757271507,
+  "intersection_km2": 10436.057305968407,
+  "gaul_only_km2": 977.5300064238558,
+  "soi_only_km2": 167.16545130303697,
+  "intersection_over_union": 0.9011553496491697,
+  "official_area_included_in_gaul_fraction": 0.9842344676585747,
+  "gaul_area_outside_official_fraction": 0.08564616712245282,
+  "interpretation": "Primary controlled comparison retains historical GAUL for reproducibility; current official geography differs. Recompute on a justified historical/current boundary before crop-impact validation."
+}

@@ -1,0 +1,8 @@
+ scale  month  positive_n  ks_statistic_positive  bootstrap_p  replicates                         scope  holm_adjusted_p
+     1      1          34               0.219622       0.0030        1999 positive_gamma_component_only            0.144
+     1     11          39               0.172938       0.0060        1999 positive_gamma_component_only            0.282
+     1      5          39               0.165133       0.0115        1999 positive_gamma_component_only            0.529
+     1      7          39               0.161864       0.0130        1999 positive_gamma_component_only            0.585
+     3      1          38               0.157385       0.0220        1999 positive_gamma_component_only            0.968
+     1     12          39               0.155261       0.0255        1999 positive_gamma_component_only            1.000
+Corrected rainfall SPI and 1999-replicate gamma checks completed

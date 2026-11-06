@@ -1,0 +1,54 @@
+{
+  "rows": [
+    {
+      "boundary_code": 70179,
+      "date": "2007-10",
+      "lst_source_images": 3,
+      "lst_valid_fraction": 0.9977498435959382,
+      "month": 10,
+      "ndvi": 0.48242326008023456,
+      "ndvi_source_images": 1,
+      "ndvi_valid_fraction": 0.8144767941990372,
+      "scenario": "A_start_strict_8day",
+      "year": 2007
+    },
+    {
+      "boundary_code": 70179,
+      "date": "2007-10",
+      "lst_source_images": 3,
+      "lst_valid_fraction": 0.9977498435959382,
+      "month": 10,
+      "ndvi": 0.5344572238241525,
+      "ndvi_source_images": 2,
+      "ndvi_valid_fraction": 0.8824146108510503,
+      "scenario": "B_pixel_strict_8day",
+      "year": 2007
+    },
+    {
+      "boundary_code": 70179,
+      "date": "2007-10",
+      "lst_source_images": 3,
+      "lst_valid_fraction": 0.9977498435959382,
+      "month": 10,
+      "ndvi": 0.5339369545738009,
+      "ndvi_source_images": 2,
+      "ndvi_valid_fraction": 0.8839456171760653,
+      "scenario": "C_pixel_screened_8day",
+      "year": 2007
+    },
+    {
+      "boundary_code": 70179,
+      "date": "2007-10",
+      "lst_source_images": 31,
+      "lst_valid_fraction": 0.9988749213105673,
+      "month": 10,
+      "ndvi": 0.5339369545738009,
+      "ndvi_source_images": 2,
+      "ndvi_valid_fraction": 0.8839456171760653,
+      "scenario": "D_pixel_screened_daily",
+      "year": 2007
+    }
+  ],
+  "script_sha256": "0e8df31fe0a53fabae0628eedf9c5a168017ba7f5d75439a203d6fc154ce5475",
+  "retrieved_utc": "2026-11-06T14:51:59.466791+00:00"
+}

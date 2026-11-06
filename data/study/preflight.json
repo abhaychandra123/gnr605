@@ -1,0 +1,25 @@
+{
+  "boundary": {
+    "ADM0_CODE": 115,
+    "ADM0_NAME": "India",
+    "ADM1_CODE": 1498,
+    "ADM1_NAME": "Maharashtra",
+    "ADM2_CODE": 70179,
+    "ADM2_NAME": "Bid",
+    "DISP_AREA": "NO",
+    "EXP2_YEAR": 3000,
+    "STATUS": "Member State",
+    "STR2_YEAR": 1000,
+    "Shape_Area": 0.978864198584,
+    "Shape_Leng": 7.75962073127
+  },
+  "district_area_km2": 11412.55645769558,
+  "metrics": {
+    "lst_k": 305.9567477679886,
+    "ndvi": 0.5792413005834234,
+    "tci": 89.64423303836594,
+    "vci": 93.21072140651584,
+    "vhi": 91.427477222441
+  },
+  "valid_fraction": 0.2617443143005018
+}

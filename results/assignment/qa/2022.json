@@ -1,0 +1,30 @@
+[
+  {
+    "asset": "MODIS/061/MOD09A1/2022_09_30",
+    "outside_october_or_fill": 16949,
+    "quality_rejected": 10617,
+    "reflectance_rejected": 0,
+    "accepted": 21981
+  },
+  {
+    "asset": "MODIS/061/MOD09A1/2022_10_08",
+    "outside_october_or_fill": 1,
+    "quality_rejected": 41236,
+    "reflectance_rejected": 0,
+    "accepted": 8310
+  },
+  {
+    "asset": "MODIS/061/MOD09A1/2022_10_16",
+    "outside_october_or_fill": 49547,
+    "quality_rejected": 0,
+    "reflectance_rejected": 0,
+    "accepted": 0
+  },
+  {
+    "asset": "MODIS/061/MOD09A1/2022_10_24",
+    "outside_october_or_fill": 0,
+    "quality_rejected": 5195,
+    "reflectance_rejected": 0,
+    "accepted": 44352
+  }
+]

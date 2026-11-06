@@ -1,0 +1,31 @@
+{
+  "visually_inspected": [
+    {
+      "file": "official_apy_2011_12.pdf",
+      "page": 5,
+      "check": "Split rabi jowar and wheat headers and Beed yield values 691 and 1326"
+    },
+    {
+      "file": "official_apy_2016_17.pdf",
+      "page": 3,
+      "check": "All three table-only target records and district alignment"
+    },
+    {
+      "file": "official_apy_2019_20.pdf",
+      "page": 3,
+      "check": "Rightmost soybean header and printed Beed yield 775.34 despite missing detected table border"
+    },
+    {
+      "file": "official_apy_2024_25.pdf",
+      "page": 4,
+      "check": "Recent cotton, rabi jowar, wheat values and cotton bales footnote"
+    }
+  ],
+  "method": "Rendered complete pages with pdftoppm and visually inspected PNGs; 121/125 target rows also agree across table and complete-line extraction",
+  "historical_calendar_review": {
+    "file": "data/study_corrected/beed_icar_contingency_2011.pdf",
+    "page": 5,
+    "check": "Crop-specific rainfed and irrigated sowing windows"
+  },
+  "source_warning": "2019-2021 repeated rabi crop areas are present in the original sources, not filled values"
+}

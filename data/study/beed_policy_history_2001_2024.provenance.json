@@ -1,0 +1,10 @@
+{
+  "rows": 288,
+  "sha256": "174be990efb23b95f4f03924eb192bf584e0557195de77de9ed15966b1cf21a9",
+  "script_sha256": "0e8df31fe0a53fabae0628eedf9c5a168017ba7f5d75439a203d6fc154ce5475",
+  "checkpoints": 72,
+  "first_retrieved_utc": "2026-11-06T14:51:20.675477+00:00",
+  "last_retrieved_utc": "2026-11-06T14:53:19.651141+00:00",
+  "method": "official_earth_engine_computeFeatures",
+  "project": "weighttrack-493810"
+}

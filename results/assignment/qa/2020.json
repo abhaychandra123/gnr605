@@ -1,0 +1,37 @@
+[
+  {
+    "asset": "MODIS/061/MOD09A1/2020_09_29",
+    "outside_october_or_fill": 5474,
+    "quality_rejected": 5191,
+    "reflectance_rejected": 0,
+    "accepted": 38882
+  },
+  {
+    "asset": "MODIS/061/MOD09A1/2020_10_07",
+    "outside_october_or_fill": 0,
+    "quality_rejected": 42341,
+    "reflectance_rejected": 0,
+    "accepted": 7206
+  },
+  {
+    "asset": "MODIS/061/MOD09A1/2020_10_15",
+    "outside_october_or_fill": 0,
+    "quality_rejected": 17215,
+    "reflectance_rejected": 0,
+    "accepted": 32332
+  },
+  {
+    "asset": "MODIS/061/MOD09A1/2020_10_23",
+    "outside_october_or_fill": 0,
+    "quality_rejected": 7116,
+    "reflectance_rejected": 0,
+    "accepted": 42431
+  },
+  {
+    "asset": "MODIS/061/MOD09A1/2020_10_31",
+    "outside_october_or_fill": 10319,
+    "quality_rejected": 4211,
+    "reflectance_rejected": 0,
+    "accepted": 35017
+  }
+]

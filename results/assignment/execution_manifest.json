@@ -1,0 +1,1012 @@
+{
+  "created_utc": "2026-11-06T23:23:19.579591+00:00",
+  "status": "executed_and_verified",
+  "python": "3.13.5",
+  "platform": "macOS-26.3.1-arm64-arm-64bit-Mach-O",
+  "packages": {
+    "earthengine-api": "1.7.51",
+    "requests": "2.34.2",
+    "rasterio": "1.5.2",
+    "numpy": "2.5.4",
+    "matplotlib": "3.11.2"
+  },
+  "scope": "Beed, October 2015-2024, vegetation area",
+  "excluded": "Logs, bytecode and this manifest are excluded from self-hashing. Older exploratory study files are preserved separately.",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 4405,
+      "sha256": "c6372a879e89505ba40a2c1a45da7ab8118ee043b894f885e68252e425865978"
+    },
+    {
+      "path": "data/assignment/grid.json",
+      "bytes": 687,
+      "sha256": "1182a9928bab515165d0a472419bd08e90cf73cf5a3033f0bb95282861f4357e"
+    },
+    {
+      "path": "data/assignment/processed/common_valid_min1.tif",
+      "bytes": 5959,
+      "sha256": "237b97d1cb21904097144aa217dbf79ba206faeab3e1e40b26ea6a843f3de748"
+    },
+    {
+      "path": "data/assignment/processed/common_valid_min2.tif",
+      "bytes": 3021,
+      "sha256": "8b94bf4ff5bf1665c456f4636ef08fc1831c98b0c0a6765e8432d34974f07fab"
+    },
+    {
+      "path": "data/assignment/processed/district_mask.tif",
+      "bytes": 3727,
+      "sha256": "1653de9de1f09c6e03270df551a1f809e4abdf168e43d34e31fc8d8fab91a3de"
+    },
+    {
+      "path": "data/assignment/processed/october_2015_ndvi.tif",
+      "bytes": 358252,
+      "sha256": "df765165ffa82981f9055ffd7a59c4b9fdb71b56e6b36ca8207636c9c6f64ad7"
+    },
+    {
+      "path": "data/assignment/processed/october_2015_ndvi_min2.tif",
+      "bytes": 345044,
+      "sha256": "7036034a17ff31fba5daaa8e55426c047be63685cf2192698973558b64e69c24"
+    },
+    {
+      "path": "data/assignment/processed/october_2015_observations.tif",
+      "bytes": 9344,
+      "sha256": "c4fc6f8296310388baee868d285cef7db882bf51f66a6a60e4432fb449890eb9"
+    },
+    {
+      "path": "data/assignment/processed/october_2015_reflectance_7band.tif",
+      "bytes": 1095489,
+      "sha256": "1ce4f7ab1cb59d70c19c375fbff4036f329b47161b97f5d26ed795679887cda3"
+    },
+    {
+      "path": "data/assignment/processed/october_2015_vegetation_class.tif",
+      "bytes": 4765,
+      "sha256": "eec55c717154edfb28a3a1695f293056d84acd8ed2193b6527aa1618041726e4"
+    },
+    {
+      "path": "data/assignment/processed/october_2016_ndvi.tif",
+      "bytes": 355792,
+      "sha256": "732bf448bbbe0ea46478f9c2febb7e0ccef33497739a254a2b1a2d0822739e3b"
+    },
+    {
+      "path": "data/assignment/processed/october_2016_ndvi_min2.tif",
+      "bytes": 343816,
+      "sha256": "1d021a601f338cb34a6d23c062cf9f8025b3f51ce0e672828f966f806c14e6aa"
+    },
+    {
+      "path": "data/assignment/processed/october_2016_observations.tif",
+      "bytes": 8654,
+      "sha256": "3c6d8b567bad2080a5d3afbbc650d92291a225e098569d828cd14df413d6c1e6"
+    },
+    {
+      "path": "data/assignment/processed/october_2016_reflectance_7band.tif",
+      "bytes": 1084035,
+      "sha256": "191f75ba5123368df612f769dc95718d4e2b89cd5d7a7f6e79b2d9926ba27526"
+    },
+    {
+      "path": "data/assignment/processed/october_2016_vegetation_class.tif",
+      "bytes": 4789,
+      "sha256": "d350cc576afd20b73e43344acdd2516786252fcbd71bc563770b7a0adbd5ddb6"
+    },
+    {
+      "path": "data/assignment/processed/october_2017_ndvi.tif",
+      "bytes": 352474,
+      "sha256": "ef8e4707db3db7e3966dc6d5b6d6c1ede249e91fd616e6f2ce7a1c550b7e714f"
+    },
+    {
+      "path": "data/assignment/processed/october_2017_ndvi_min2.tif",
+      "bytes": 338460,
+      "sha256": "adf90fc0b5d5ca400183e466498bebe81c6217fc8061514af5e60934de513fce"
+    },
+    {
+      "path": "data/assignment/processed/october_2017_observations.tif",
+      "bytes": 8254,
+      "sha256": "20e55ee40f4d8b062c0a4b896fd2e6a84f4cb0e42fdd16860bf4544dd8f256b9"
+    },
+    {
+      "path": "data/assignment/processed/october_2017_reflectance_7band.tif",
+      "bytes": 1058813,
+      "sha256": "f3419cf78e626a8dc85c74ac13fa251a633a199776e30908ee94246494162f5f"
+    },
+    {
+      "path": "data/assignment/processed/october_2017_vegetation_class.tif",
+      "bytes": 4789,
+      "sha256": "9439fa9a400c72a1be281292f2c3479ee95585f141511bb38c47068f940dfd73"
+    },
+    {
+      "path": "data/assignment/processed/october_2018_ndvi.tif",
+      "bytes": 362918,
+      "sha256": "7d584c4f4327d1c23d60aa27ad5def485700a0376ff9d693b1cce0d88a80fd2a"
+    },
+    {
+      "path": "data/assignment/processed/october_2018_ndvi_min2.tif",
+      "bytes": 352166,
+      "sha256": "eea2cf70d7532b8e05a408871ca9fdfddcb2bee1ab652b8beeb61eb7f46a07e1"
+    },
+    {
+      "path": "data/assignment/processed/october_2018_observations.tif",
+      "bytes": 8240,
+      "sha256": "d70dba59f510d89dbf29506e2a199a18bdc7a41f8c105744d5ab92d7b852f895"
+    },
+    {
+      "path": "data/assignment/processed/october_2018_reflectance_7band.tif",
+      "bytes": 1103661,
+      "sha256": "d25b1bc5b6b1ad5cb298b99e27c46a9652d8232d11b570f480cf2d9cb9649bbf"
+    },
+    {
+      "path": "data/assignment/processed/october_2018_vegetation_class.tif",
+      "bytes": 5145,
+      "sha256": "9527ee34dad0bcfbfcd53aeff953409ad9b56b819c276e2780965a53b4495229"
+    },
+    {
+      "path": "data/assignment/processed/october_2019_ndvi.tif",
+      "bytes": 285534,
+      "sha256": "a6aa8eb9d9b8e857bdbc676054a741ecf4d0307e535ef31562532761bb07dfe0"
+    },
+    {
+      "path": "data/assignment/processed/october_2019_ndvi_min2.tif",
+      "bytes": 65732,
+      "sha256": "2f49582d83e7d8bc549a58b9a74dc77e53ff517fb8ffa5afb334d13063cca6d1"
+    },
+    {
+      "path": "data/assignment/processed/october_2019_observations.tif",
+      "bytes": 6524,
+      "sha256": "3542369a7fb999c22bc8d7c3b8c37915095a5273dd450c6fab0cf47b30300b95"
+    },
+    {
+      "path": "data/assignment/processed/october_2019_reflectance_7band.tif",
+      "bytes": 842939,
+      "sha256": "5e687fd4a98ed06c17b1b0788e8dbc4071e339240b2d5be26d75cb6a6ba49410"
+    },
+    {
+      "path": "data/assignment/processed/october_2019_vegetation_class.tif",
+      "bytes": 4931,
+      "sha256": "f16c12929b173da0897508cd392cf2128d40a9ae36ff2df71b29a78bd7a501ac"
+    },
+    {
+      "path": "data/assignment/processed/october_2020_ndvi.tif",
+      "bytes": 352992,
+      "sha256": "c5c2ee6710b5a2b89a0521f6f4d12805a5d11e5687e52f1540f97c5bb1887fe8"
+    },
+    {
+      "path": "data/assignment/processed/october_2020_ndvi_min2.tif",
+      "bytes": 339286,
+      "sha256": "bc12319a2863ffa0eac36af776b6390df81dcfaa1358ee8d9d2556d81eb95146"
+    },
+    {
+      "path": "data/assignment/processed/october_2020_observations.tif",
+      "bytes": 10774,
+      "sha256": "07c6f6bb8747737cb1a5d15d246153a72b1a81ec3ff426a675cbf2617f2645ae"
+    },
+    {
+      "path": "data/assignment/processed/october_2020_reflectance_7band.tif",
+      "bytes": 1093021,
+      "sha256": "51cd2eaa81a7cc83a76b6ab697c99acdc47200f72426e954aec715be514ef435"
+    },
+    {
+      "path": "data/assignment/processed/october_2020_vegetation_class.tif",
+      "bytes": 4819,
+      "sha256": "ec6281aec504a546a0b65f17c9ebf6fdea37f4c10298de8bf193ee3c05dc91d1"
+    },
+    {
+      "path": "data/assignment/processed/october_2021_ndvi.tif",
+      "bytes": 351120,
+      "sha256": "91a114989e29174b9762f93f560569c676a7a78d4f3d59f25d0d20843aa1f928"
+    },
+    {
+      "path": "data/assignment/processed/october_2021_ndvi_min2.tif",
+      "bytes": 337566,
+      "sha256": "031cde5e34dc2d4a2142248bd13568dae9b59507f06e88de77aa307e3d0469e7"
+    },
+    {
+      "path": "data/assignment/processed/october_2021_observations.tif",
+      "bytes": 8080,
+      "sha256": "2c48fb819b7175965201cb94590d8cc09798e28e554513f779ff47c8fba4278c"
+    },
+    {
+      "path": "data/assignment/processed/october_2021_reflectance_7band.tif",
+      "bytes": 1077157,
+      "sha256": "f930b54292a381b6540f29475d2c948bfb6ccf8ce7114b28d4cc3c86a04b0f1d"
+    },
+    {
+      "path": "data/assignment/processed/october_2021_vegetation_class.tif",
+      "bytes": 4809,
+      "sha256": "66bb7b8814b840a0838df1fd17d9e8882ba85af9fc1afd0d82f74f674a723fa0"
+    },
+    {
+      "path": "data/assignment/processed/october_2022_ndvi.tif",
+      "bytes": 332166,
+      "sha256": "ccecf7dff67f87b209ff20a04be3a4cec1d34f887955b2b9e50db616efbf4b8b"
+    },
+    {
+      "path": "data/assignment/processed/october_2022_ndvi_min2.tif",
+      "bytes": 212424,
+      "sha256": "fe1850f5ebade56b039864ebe1f0e7c667620a8d833762db0ce32910f0854c2f"
+    },
+    {
+      "path": "data/assignment/processed/october_2022_observations.tif",
+      "bytes": 8174,
+      "sha256": "f2a53fc0dd88a8094b7998741745807202f83d271c763615ba440ff8960c5d2b"
+    },
+    {
+      "path": "data/assignment/processed/october_2022_reflectance_7band.tif",
+      "bytes": 966343,
+      "sha256": "75fd499ae061c9d8f4bc3bed8efe5f2129e30098a056ecfc4569d34390374150"
+    },
+    {
+      "path": "data/assignment/processed/october_2022_vegetation_class.tif",
+      "bytes": 4939,
+      "sha256": "9d457370caf7dca89b2bde2139e010fdab6314f2a57be3b41718ce24ec5a7670"
+    },
+    {
+      "path": "data/assignment/processed/october_2023_ndvi.tif",
+      "bytes": 357474,
+      "sha256": "19b338e76d233ea70716b46b8691529fd52906aca715fd896463a6a0d0500b3e"
+    },
+    {
+      "path": "data/assignment/processed/october_2023_ndvi_min2.tif",
+      "bytes": 345860,
+      "sha256": "d846c31152be9df6b09dfb307b4075ee05a530670172e551316ce1a053f4b976"
+    },
+    {
+      "path": "data/assignment/processed/october_2023_observations.tif",
+      "bytes": 8440,
+      "sha256": "e778c14cb5edcf939991626fb171f43576b7460b2fd1953c1aba1ae3ed588262"
+    },
+    {
+      "path": "data/assignment/processed/october_2023_reflectance_7band.tif",
+      "bytes": 1088805,
+      "sha256": "dcbc7184722476173412bc7ede68bbbe8bcc7760399c226d783ee4f9dba61c0c"
+    },
+    {
+      "path": "data/assignment/processed/october_2023_vegetation_class.tif",
+      "bytes": 4679,
+      "sha256": "1b3a9f7dcaee369457c2a8e4208371f7d83e22b6d51ad584b56cb5b489735fe0"
+    },
+    {
+      "path": "data/assignment/processed/october_2024_ndvi.tif",
+      "bytes": 256264,
+      "sha256": "e8dcfe25c5eda98111606ccb45e417a7a952a009e5d0840946df8335169d273a"
+    },
+    {
+      "path": "data/assignment/processed/october_2024_ndvi_min2.tif",
+      "bytes": 150784,
+      "sha256": "625492e2ffa5448f49ced395b686720db69f95230fcf32ea9fe86c29a71fd428"
+    },
+    {
+      "path": "data/assignment/processed/october_2024_observations.tif",
+      "bytes": 8976,
+      "sha256": "2108ea75b4e0929efa562033021ae7755179e0bd0ccab0c50166fde4a52b4f64"
+    },
+    {
+      "path": "data/assignment/processed/october_2024_reflectance_7band.tif",
+      "bytes": 764979,
+      "sha256": "c952e23f667824255f12e26f99e0a907dc7f0986a94eb64c631c4e5478671e23"
+    },
+    {
+      "path": "data/assignment/processed/october_2024_vegetation_class.tif",
+      "bytes": 6337,
+      "sha256": "8284efb019c866ae3501345398d55b738df47d893bdcea2c6b6bcb6b29fbe671"
+    },
+    {
+      "path": "data/assignment/raw/2015/2015_09_30.json",
+      "bytes": 760,
+      "sha256": "7f8597ddbdff19ba1d28c5850edac7f1736d6be729c4f878dd956a831186dada"
+    },
+    {
+      "path": "data/assignment/raw/2015/2015_09_30.tif",
+      "bytes": 1079365,
+      "sha256": "65129705bdf7f735f25114ecdddd1802c10c284164e1612df75d9fcc23f9deb8"
+    },
+    {
+      "path": "data/assignment/raw/2015/2015_10_08.json",
+      "bytes": 760,
+      "sha256": "5ed86e78df41b9e6c46b968f71ceae6a345889f8c2c7a30ceb7c40e98cc74949"
+    },
+    {
+      "path": "data/assignment/raw/2015/2015_10_08.tif",
+      "bytes": 1380025,
+      "sha256": "27235e72c8c82fd0712ee3d874df03066797c33d21321e77f0f78c87c7e2a214"
+    },
+    {
+      "path": "data/assignment/raw/2015/2015_10_16.json",
+      "bytes": 760,
+      "sha256": "a8e02bfbd2ed869d1639e5a342fbf6f9502f73f3b96f8522eda56a221116e386"
+    },
+    {
+      "path": "data/assignment/raw/2015/2015_10_16.tif",
+      "bytes": 1418532,
+      "sha256": "d68c4fd8b522aa7fc8f6514db99f079eae1e8011b6e83ab5fc5d88c4fd0b2d5d"
+    },
+    {
+      "path": "data/assignment/raw/2015/2015_10_24.json",
+      "bytes": 760,
+      "sha256": "24ffb858a5836f2c6e18da01b788c4430b4db8ca1d77047dd8d6fd85ca3c9afe"
+    },
+    {
+      "path": "data/assignment/raw/2015/2015_10_24.tif",
+      "bytes": 1427909,
+      "sha256": "e69e2d83f9bc48daf433fbc7fe5e0d225074804724fad9631bbb0db019472c01"
+    },
+    {
+      "path": "data/assignment/raw/2015/manifest.json",
+      "bytes": 3517,
+      "sha256": "f0db34aa55a1d1c7df9d95c202a49f3f9674e7a6155085785bda5a22382fcb25"
+    },
+    {
+      "path": "data/assignment/raw/2016/2016_09_29.json",
+      "bytes": 760,
+      "sha256": "9e24fedda9c2684a62359e992cbf3123b55572997d87d0ebc9da5ed78e7098bd"
+    },
+    {
+      "path": "data/assignment/raw/2016/2016_09_29.tif",
+      "bytes": 1360270,
+      "sha256": "e64a4a394d52f457c7a47bce52258a1704f837de091d4403e0103e64db01df3b"
+    },
+    {
+      "path": "data/assignment/raw/2016/2016_10_07.json",
+      "bytes": 760,
+      "sha256": "1f0614a3fdf65ccd12af4659c5b6daa173c0adb8991782a995d61beab83799e8"
+    },
+    {
+      "path": "data/assignment/raw/2016/2016_10_07.tif",
+      "bytes": 1382571,
+      "sha256": "b9435600042b4b70fb46b92a97ebcc891af0e5ec8886c299e5f95901bd3b744e"
+    },
+    {
+      "path": "data/assignment/raw/2016/2016_10_15.json",
+      "bytes": 760,
+      "sha256": "bf010cc9042026742d845b064b9cccae46f6e1205975c1e99111f058abcc514b"
+    },
+    {
+      "path": "data/assignment/raw/2016/2016_10_15.tif",
+      "bytes": 1431063,
+      "sha256": "8f0be6ca1c77c8ed40be22b6c67a933a2aa7ce55956be029943270a533586e94"
+    },
+    {
+      "path": "data/assignment/raw/2016/2016_10_23.json",
+      "bytes": 760,
+      "sha256": "00567dd908cfc9ddde7e1147a9eb68baa25b3bf86831755edb34672897a0d1e7"
+    },
+    {
+      "path": "data/assignment/raw/2016/2016_10_23.tif",
+      "bytes": 1412709,
+      "sha256": "c3c40ebb94747dae78c555e8a05a80fcce959eef1642f9fd38fb784110391423"
+    },
+    {
+      "path": "data/assignment/raw/2016/2016_10_31.json",
+      "bytes": 760,
+      "sha256": "72bdd0f57e7fe703c6969986dfd61f6761deb9d1e6113083dcfd4b7ec2d3460d"
+    },
+    {
+      "path": "data/assignment/raw/2016/2016_10_31.tif",
+      "bytes": 1423407,
+      "sha256": "60ac74d458062f880f843635693ba35d4bcef685c3186a204b6f0c70c6c5dcb3"
+    },
+    {
+      "path": "data/assignment/raw/2016/manifest.json",
+      "bytes": 4366,
+      "sha256": "1b73b5d6e0d6c8a98974d198967ae00e9dccaa283af3f71752cc960c8865a379"
+    },
+    {
+      "path": "data/assignment/raw/2017/2017_09_30.json",
+      "bytes": 760,
+      "sha256": "bbb40eefec6b32f3bfd4e47a7046da47a928792e74a7b3c5aab95fab40fee527"
+    },
+    {
+      "path": "data/assignment/raw/2017/2017_09_30.tif",
+      "bytes": 1372233,
+      "sha256": "924335c75bbc3c2787d74c8033342a0d8bbe735f4e21c76613c09fa617103f04"
+    },
+    {
+      "path": "data/assignment/raw/2017/2017_10_08.json",
+      "bytes": 760,
+      "sha256": "35f466e10fbf979cdf01596f8ef47ebf18468946d9f9df7ee7c1a0c99cb81e85"
+    },
+    {
+      "path": "data/assignment/raw/2017/2017_10_08.tif",
+      "bytes": 1345020,
+      "sha256": "77df4802041f171c1ba13cdfa580f80ed9418f78e263c575a84b6d9065cc2ae7"
+    },
+    {
+      "path": "data/assignment/raw/2017/2017_10_16.json",
+      "bytes": 760,
+      "sha256": "e18e9db596146894214b236077c599531ad2cd7d1e23065205d7b42a2d695088"
+    },
+    {
+      "path": "data/assignment/raw/2017/2017_10_16.tif",
+      "bytes": 1457064,
+      "sha256": "f4edf4487924acbae5eee7876f6ccb0cb75ba46ffbce1a0b8d3cd13631ca5089"
+    },
+    {
+      "path": "data/assignment/raw/2017/2017_10_24.json",
+      "bytes": 760,
+      "sha256": "f330747ff5918e02734de60bc35d076348700e36a5fec597cbdafb1712d811be"
+    },
+    {
+      "path": "data/assignment/raw/2017/2017_10_24.tif",
+      "bytes": 1370351,
+      "sha256": "5b3628f693cf0eaf6642633fc0f1c18073588ae16d2155c5aed883bc5d796f33"
+    },
+    {
+      "path": "data/assignment/raw/2017/manifest.json",
+      "bytes": 3517,
+      "sha256": "2ab110bf997638f9d849f8fc1a3f31de0dff3adc980a2c7fdbb3ca3a177ad224"
+    },
+    {
+      "path": "data/assignment/raw/2018/2018_09_30.json",
+      "bytes": 760,
+      "sha256": "ea56cb20db3e65463ee2ec6536af6b86ccc87cba8dff9cfdd32e879b6bfb1d8e"
+    },
+    {
+      "path": "data/assignment/raw/2018/2018_09_30.tif",
+      "bytes": 1224340,
+      "sha256": "402f71f5083e5c1a9400a12b1378d4d15d478930c4f3a0485ebd64a7f9a31518"
+    },
+    {
+      "path": "data/assignment/raw/2018/2018_10_08.json",
+      "bytes": 760,
+      "sha256": "5b0c1f8aa9fb6def76c41cfabbfc62509fdfc7a01a54648bf2c04e3bb8621eb9"
+    },
+    {
+      "path": "data/assignment/raw/2018/2018_10_08.tif",
+      "bytes": 1407451,
+      "sha256": "8e522dd1a4e1141b8e66039342c7e6398cfcb8a14503837dc90a8787b49ae245"
+    },
+    {
+      "path": "data/assignment/raw/2018/2018_10_16.json",
+      "bytes": 760,
+      "sha256": "1b10bf457b308d7657395fd48f1957644fc485040881ceee18ccff814262de12"
+    },
+    {
+      "path": "data/assignment/raw/2018/2018_10_16.tif",
+      "bytes": 1390635,
+      "sha256": "2ecbb5560003633d6cbc29bd7bf5912ddf6d4668ccfa254e31fd960645a7dd50"
+    },
+    {
+      "path": "data/assignment/raw/2018/2018_10_24.json",
+      "bytes": 760,
+      "sha256": "456798388907981885b8c181d82471a9458ca03cf82215b8e04c63b85c932423"
+    },
+    {
+      "path": "data/assignment/raw/2018/2018_10_24.tif",
+      "bytes": 1449384,
+      "sha256": "e9c8ceff46573c4130832b0df594ce0b65814e12f26fb1367eea7a89b9660a81"
+    },
+    {
+      "path": "data/assignment/raw/2018/manifest.json",
+      "bytes": 3517,
+      "sha256": "73300a000d4c22780ba1120ff1995b1ac02b8b70bf095aa2a3fd05d193c9185b"
+    },
+    {
+      "path": "data/assignment/raw/2019/2019_09_30.json",
+      "bytes": 760,
+      "sha256": "80bb9dae390a4178ed0a7b7bbab6f487a4df560965cc6a79b6382910aeec5522"
+    },
+    {
+      "path": "data/assignment/raw/2019/2019_09_30.tif",
+      "bytes": 1119967,
+      "sha256": "ddae6626778eec8c12e838691f090a7b8bfc3dc8b9925c5311fbc1e86dcbcc7b"
+    },
+    {
+      "path": "data/assignment/raw/2019/2019_10_08.json",
+      "bytes": 760,
+      "sha256": "4761ff111646d3ac5a087fd8f4a00f492b878a232ac16b826e2ccf67085233d5"
+    },
+    {
+      "path": "data/assignment/raw/2019/2019_10_08.tif",
+      "bytes": 1283923,
+      "sha256": "cb3da3174fd91aed7b41474485e9801273c7999c0fefe43d334189380602bbd2"
+    },
+    {
+      "path": "data/assignment/raw/2019/2019_10_16.json",
+      "bytes": 759,
+      "sha256": "0338ae9f9dedf5367cbf506c364199bd24a337991be608cad853e69bdda65f22"
+    },
+    {
+      "path": "data/assignment/raw/2019/2019_10_16.tif",
+      "bytes": 981514,
+      "sha256": "9f1754ab5a1c933670d6ce6db53ba81cd61ab17a3c19a4871ef1d6913512b6cd"
+    },
+    {
+      "path": "data/assignment/raw/2019/2019_10_24.json",
+      "bytes": 760,
+      "sha256": "d17dc0b67ebbb9a5a266eda8574261533c90c176873911152bbd8a1671592433"
+    },
+    {
+      "path": "data/assignment/raw/2019/2019_10_24.tif",
+      "bytes": 1630317,
+      "sha256": "4ebb9ca67c087f4f036ac6baef10dc223ee1609948e35caac5ef87e874e0769b"
+    },
+    {
+      "path": "data/assignment/raw/2019/manifest.json",
+      "bytes": 3516,
+      "sha256": "49aa3589bd17e4e06fd307882b52a561811b1eb599765203bce2d724fd8b5ede"
+    },
+    {
+      "path": "data/assignment/raw/2020/2020_09_29.json",
+      "bytes": 760,
+      "sha256": "4f696f7cad3877a560eef990490c9eb534527c25d87785b3d11112d279c4bd86"
+    },
+    {
+      "path": "data/assignment/raw/2020/2020_09_29.tif",
+      "bytes": 1367464,
+      "sha256": "acf6c75df52b2818021aa909c73a22e476f931a820a2ec65819eb71b131b4d74"
+    },
+    {
+      "path": "data/assignment/raw/2020/2020_10_07.json",
+      "bytes": 760,
+      "sha256": "8ca2dcc7e37eed266bf788211797552a25398598429fbfe3672f073a58654a0a"
+    },
+    {
+      "path": "data/assignment/raw/2020/2020_10_07.tif",
+      "bytes": 1421017,
+      "sha256": "0df70ca71f5de7c28b3b7c3b028da1d7219a2cb9eea462c7a6d946b696b594c6"
+    },
+    {
+      "path": "data/assignment/raw/2020/2020_10_15.json",
+      "bytes": 760,
+      "sha256": "72a99dbe87ed22356079fbb468c30b8ee9f370234e2de40f6229b05327616cbb"
+    },
+    {
+      "path": "data/assignment/raw/2020/2020_10_15.tif",
+      "bytes": 1250403,
+      "sha256": "9260d6312552ffa6250e32670e973ab87edd0a0281ce467983ccf108e76dee24"
+    },
+    {
+      "path": "data/assignment/raw/2020/2020_10_23.json",
+      "bytes": 760,
+      "sha256": "226308bb7e5e9a142994e97a27cba3676bfc6dda4dff43f148bc86493b3bd4b9"
+    },
+    {
+      "path": "data/assignment/raw/2020/2020_10_23.tif",
+      "bytes": 1237448,
+      "sha256": "1c50dbfe146c0d1ee7fa06664499e3d81b587785d828477a6f597e2929020738"
+    },
+    {
+      "path": "data/assignment/raw/2020/2020_10_31.json",
+      "bytes": 760,
+      "sha256": "753784f5412dc4a1ca818027edfd980d7838a17de89df8ad89e829c860beb4c0"
+    },
+    {
+      "path": "data/assignment/raw/2020/2020_10_31.tif",
+      "bytes": 1420543,
+      "sha256": "00cadf03ba914b3f0924ca2e2ae665d8f954f2ffceb34221dfdf296301d6bee3"
+    },
+    {
+      "path": "data/assignment/raw/2020/manifest.json",
+      "bytes": 4366,
+      "sha256": "5b39a8bed29e82a8c4e756000bbbd4eaacb363546dc45ae96cb1b58a159b63d2"
+    },
+    {
+      "path": "data/assignment/raw/2021/2021_09_30.json",
+      "bytes": 760,
+      "sha256": "34919ae794a92465ebf0d37062ad2107e9e6836b66a00548d1feb03cfad60e52"
+    },
+    {
+      "path": "data/assignment/raw/2021/2021_09_30.tif",
+      "bytes": 1580844,
+      "sha256": "5f8bd6f18ba1301f2b6e66a140413d5829d83eb073aae803681fab9aa6c1889f"
+    },
+    {
+      "path": "data/assignment/raw/2021/2021_10_08.json",
+      "bytes": 760,
+      "sha256": "6c0b9292f5b321e0a0c494c7dc0f1e19f5e6332361773f1a0291ff698d40c302"
+    },
+    {
+      "path": "data/assignment/raw/2021/2021_10_08.tif",
+      "bytes": 1038099,
+      "sha256": "7d636fb480c22a9cded10b420f5a70308a383b757509d586718e7bd8ee46cc5d"
+    },
+    {
+      "path": "data/assignment/raw/2021/2021_10_16.json",
+      "bytes": 760,
+      "sha256": "7ea53b7815ba67206db6bfc392cfd7a8c5b7e0d90b3b864098449ca59b043505"
+    },
+    {
+      "path": "data/assignment/raw/2021/2021_10_16.tif",
+      "bytes": 1334054,
+      "sha256": "7b46a2f00e171525b7601abce7b91c3a03b2eabbcaa41c6d01de8c721f50d32b"
+    },
+    {
+      "path": "data/assignment/raw/2021/2021_10_24.json",
+      "bytes": 760,
+      "sha256": "6050c8feffbfa4970b74ff228444a024b697e6461b02fddfe2bd9818025edf00"
+    },
+    {
+      "path": "data/assignment/raw/2021/2021_10_24.tif",
+      "bytes": 1392173,
+      "sha256": "209f606956bcf8f54db4433298ecad64933ae0247fded7c83866205a154e2dcd"
+    },
+    {
+      "path": "data/assignment/raw/2021/manifest.json",
+      "bytes": 3517,
+      "sha256": "839f7ddf2b3fe5f5990cf829434cf8ad3a3589cf7b5c0a12f535f9a2a42eefd8"
+    },
+    {
+      "path": "data/assignment/raw/2022/2022_09_30.json",
+      "bytes": 760,
+      "sha256": "702cb9338f235ddc9b99ec22b7be360817399d7954828f299738c3f28bf6ef95"
+    },
+    {
+      "path": "data/assignment/raw/2022/2022_09_30.tif",
+      "bytes": 1257099,
+      "sha256": "76e501f1c7a24c82fa6b7285299f5a078100fd0764ee586bec9a21c6d996cb42"
+    },
+    {
+      "path": "data/assignment/raw/2022/2022_10_08.json",
+      "bytes": 760,
+      "sha256": "caec8d543b6b9c0a5d43da00c36668ae9f2837ca25d845940e0d2c56a93c93ea"
+    },
+    {
+      "path": "data/assignment/raw/2022/2022_10_08.tif",
+      "bytes": 1079733,
+      "sha256": "033230c593a233b98058f09f50c4e3d4416aec7a6dfd12708c81240fd4944735"
+    },
+    {
+      "path": "data/assignment/raw/2022/2022_10_16.json",
+      "bytes": 758,
+      "sha256": "476f920a7961b168d4be44a30430ccf8d1879d0322c2368b63579a75f21897f1"
+    },
+    {
+      "path": "data/assignment/raw/2022/2022_10_16.tif",
+      "bytes": 16000,
+      "sha256": "2ada0089c61d7d5f9e45f25b83b90b77277205cbf9e4a53de9381c7d285a9725"
+    },
+    {
+      "path": "data/assignment/raw/2022/2022_10_24.json",
+      "bytes": 760,
+      "sha256": "e2cfb49d38b0aa40eee0a743eb525dcc7a820e3bde99843dc8cd904ff940508f"
+    },
+    {
+      "path": "data/assignment/raw/2022/2022_10_24.tif",
+      "bytes": 1426127,
+      "sha256": "f5a4cc79de7909e4324840153a09d2ee8d75a050fd1259c248e7ec5118aacfc9"
+    },
+    {
+      "path": "data/assignment/raw/2022/manifest.json",
+      "bytes": 3515,
+      "sha256": "f7a53508b229ecbb1efc7040b51b31c3549aefe21463ec9e824870ba29987800"
+    },
+    {
+      "path": "data/assignment/raw/2023/2023_09_30.json",
+      "bytes": 760,
+      "sha256": "638158f5aa5bf6301719bb18a5f562b3ec63f01faf49da1d5be03a46ec57fe49"
+    },
+    {
+      "path": "data/assignment/raw/2023/2023_09_30.tif",
+      "bytes": 1268998,
+      "sha256": "994d3673024dbb7c41d9ba90a1bf0272fbf511cf1a30a0e51e44d6ded2ed0f80"
+    },
+    {
+      "path": "data/assignment/raw/2023/2023_10_08.json",
+      "bytes": 760,
+      "sha256": "61bd2912757330b15879054a7d09eb33cbb970534302329c5c0573c3b1f09630"
+    },
+    {
+      "path": "data/assignment/raw/2023/2023_10_08.tif",
+      "bytes": 1477221,
+      "sha256": "e13cb909895989f1998a2187407f187644f868a702b7ad858666df64c36b2191"
+    },
+    {
+      "path": "data/assignment/raw/2023/2023_10_16.json",
+      "bytes": 760,
+      "sha256": "9751be848efe5f6fc8bbbfbffc130b940a80dc8484acb81e903b7f8261f09a05"
+    },
+    {
+      "path": "data/assignment/raw/2023/2023_10_16.tif",
+      "bytes": 1270081,
+      "sha256": "84f32d5902070aad602816caf2e214fc976c451e846f1aec1df0c78ba8b244a0"
+    },
+    {
+      "path": "data/assignment/raw/2023/2023_10_24.json",
+      "bytes": 760,
+      "sha256": "d79dcaa47d15df4870b9103e928d82697cc4d11f2eec373e975b6776462ebca6"
+    },
+    {
+      "path": "data/assignment/raw/2023/2023_10_24.tif",
+      "bytes": 1425667,
+      "sha256": "c72f81569aca9041cc5899765163ea3106d90f25a5b5a7c616f2eaea2c6e45dd"
+    },
+    {
+      "path": "data/assignment/raw/2023/manifest.json",
+      "bytes": 3517,
+      "sha256": "f3281720d9a928e213192d1375cdf3f706b2d10c011e1b191af8c4ce115a6e8c"
+    },
+    {
+      "path": "data/assignment/raw/2024/2024_09_29.json",
+      "bytes": 760,
+      "sha256": "bca30f21c9ea9fff66521d0805fd83814924b7bd03bf03d8d988bb8d5ad6a733"
+    },
+    {
+      "path": "data/assignment/raw/2024/2024_09_29.tif",
+      "bytes": 1178934,
+      "sha256": "46269abc6f7f2de7019eff39ced6a9782a5618cfbcb794a653b79132c6209105"
+    },
+    {
+      "path": "data/assignment/raw/2024/2024_10_07.json",
+      "bytes": 760,
+      "sha256": "f95926db4c6c42240c6936b6c5c4c700fbc12119462c132e3f75c889b19ce50f"
+    },
+    {
+      "path": "data/assignment/raw/2024/2024_10_07.tif",
+      "bytes": 1538502,
+      "sha256": "03b899cd1729a0fa86f9f228d43392d5e656ebf7cfede6217c54851ab6ff6f48"
+    },
+    {
+      "path": "data/assignment/raw/2024/2024_10_15.json",
+      "bytes": 760,
+      "sha256": "ad91bf4e7d207bc2010ae288232309ad34ffd49eab66707cbf84bd488bfcf1d5"
+    },
+    {
+      "path": "data/assignment/raw/2024/2024_10_15.tif",
+      "bytes": 1655473,
+      "sha256": "99b0933cd207378654d15cfcefe09aba9d1b007f732436567d1e9d04551fda16"
+    },
+    {
+      "path": "data/assignment/raw/2024/2024_10_23.json",
+      "bytes": 760,
+      "sha256": "76e09615a426d62a05657285ea1971fe6ffc6e3d7d218066fffa418b98459672"
+    },
+    {
+      "path": "data/assignment/raw/2024/2024_10_23.tif",
+      "bytes": 1427644,
+      "sha256": "574d25647bee4a9577294b2f15b00a39aa98a0de70520088d1d5f357e7a8e98f"
+    },
+    {
+      "path": "data/assignment/raw/2024/2024_10_31.json",
+      "bytes": 760,
+      "sha256": "476d61925eb3aeee2dd23fba376f883784327b5b335b2313a7283474c634cebe"
+    },
+    {
+      "path": "data/assignment/raw/2024/2024_10_31.tif",
+      "bytes": 1366177,
+      "sha256": "e8d0c5852a6dece90e086b326cf1047024bcd8ed9435f781722d2af0845063a0"
+    },
+    {
+      "path": "data/assignment/raw/2024/manifest.json",
+      "bytes": 4366,
+      "sha256": "603cf37f851fecd9fd242af31bde23e6dc76ad6b8ca8b513aea31cd53e1cf650"
+    },
+    {
+      "path": "data/assignment/sources/beed_ddmp_2022_2023.pdf",
+      "bytes": 6118983,
+      "sha256": "6401c618126d5a829b8fffd54a42bd5a6648318f5f40af9a7acbfc0dc515e83e"
+    },
+    {
+      "path": "data/assignment/sources/beed_ddmp_page_60.txt",
+      "bytes": 2570,
+      "sha256": "a21e9fb26f9587932d95260e6fc40bcc43516acda5f428bdea5dde06ae2ee5c6"
+    },
+    {
+      "path": "data/assignment/sources/beed_ddmp_page_61.txt",
+      "bytes": 1264,
+      "sha256": "209b4e98560c1eaf9fed41d2c3b1464a6457cf8ac53d103d0ba30fa2c3dd336f"
+    },
+    {
+      "path": "data/assignment/sources/beed_official_drought_prone.html",
+      "bytes": 91948,
+      "sha256": "e7deb604f2657f5281742ae0e1c5fa7af07356b8643215433411541f1fdda812"
+    },
+    {
+      "path": "data/assignment/sources/manifest.json",
+      "bytes": 898,
+      "sha256": "392546a18cfd9e3462b0cfd150abcb53046c6781f99df2c7d370df6e71231462"
+    },
+    {
+      "path": "data/assignment/sources/mod09a1_catalog.html",
+      "bytes": 118277,
+      "sha256": "9cea023e9cdcea03e3170ce892ee9e3bb4bb4a2d05f04b40bb53d2fc25bfce4d"
+    },
+    {
+      "path": "data/assignment/sources/modis_native_projection.prj",
+      "bytes": 311,
+      "sha256": "c65b5637c5f47e5b444d46146514f45dc3f3ef89b1aa986af821ea4fc982298a"
+    },
+    {
+      "path": "data/study/ancillary/soi2025_beed.geojson",
+      "bytes": 715754,
+      "sha256": "bf85247d44911fcb919ea49648de4e2520fb97f98399983b62fa17fa3667c8cd"
+    },
+    {
+      "path": "docs/AUTONOMOUS_HANDOFF.md",
+      "bytes": 9908,
+      "sha256": "d6f444a5caf72bcf1dc922d16072ca704aa14f43deca79bbc4b95b5e9a55b143"
+    },
+    {
+      "path": "docs/project_proposal.md",
+      "bytes": 9559,
+      "sha256": "b427ffc60d4ceaf4491f57ffbed1cb8bb3d8769c05d1caa78d61757215e91a7a"
+    },
+    {
+      "path": "pipeline/assignment/README.md",
+      "bytes": 3712,
+      "sha256": "5f47a5ade17bcbf27724bd6e8217292f8ba6fa5c503b58c8a92e8eaf08aeb537"
+    },
+    {
+      "path": "pipeline/assignment/common.py",
+      "bytes": 1759,
+      "sha256": "8d7ff862512bc9df3937892b054718896a192130d29f0f7efa2296926941c03f"
+    },
+    {
+      "path": "pipeline/assignment/download_images.py",
+      "bytes": 3976,
+      "sha256": "22effd9b3ae29ead36ff911a7fc18d9e4641c99530335945c13144bdacefa614"
+    },
+    {
+      "path": "pipeline/assignment/present_results.py",
+      "bytes": 18754,
+      "sha256": "df77b3c045773e5cd6f26f092d9f1d8f55888ee25d16c0361deb67516de3e746"
+    },
+    {
+      "path": "pipeline/assignment/requirements.txt",
+      "bytes": 89,
+      "sha256": "ef5404290d76cd6b65b0fa7df2e8cbb10498f6b6ec50780b0e38c3b163cc7874"
+    },
+    {
+      "path": "pipeline/assignment/test_algorithms.py",
+      "bytes": 1667,
+      "sha256": "20ed89ec5132af228a7b5ce26782dc540b100e3f4c837e5fc10e00d13c155d06"
+    },
+    {
+      "path": "pipeline/assignment/validate_results.py",
+      "bytes": 5085,
+      "sha256": "b7967bbca370a1f2ad47f8a78146d092da55be8522fad7d772de85c6d570fecc"
+    },
+    {
+      "path": "pipeline/assignment/vegetation.py",
+      "bytes": 10937,
+      "sha256": "08c808438b24b19d7a1eadcdf6e217fc5ebf6d8fe576ee4817ced215c782dd8d"
+    },
+    {
+      "path": "pipeline/study/README.md",
+      "bytes": 10592,
+      "sha256": "b72d8cbff510de213ee64caa01b4975dfd63bccf9a0ab48f1bd743bea63e328e"
+    },
+    {
+      "path": "results/assignment/area_all_sensitivities.csv",
+      "bytes": 16854,
+      "sha256": "7764a01f32685e879e598ea34603c1099bb7d9968ebfdb85edd6ef0e23ab54fb"
+    },
+    {
+      "path": "results/assignment/assignment_report.md",
+      "bytes": 11981,
+      "sha256": "886544b934db1d133dcbd00adce92a04c5aaeb985cc2a0b9ea55df706471cdeb"
+    },
+    {
+      "path": "results/assignment/computation_provenance.json",
+      "bytes": 37243,
+      "sha256": "76a6ff0399ace973aa4ab95bb9b72a2681a53f45a2bf34a23794138f254d4a09"
+    },
+    {
+      "path": "results/assignment/execution_status.json",
+      "bytes": 793,
+      "sha256": "64a8f48aba27695ae64a5ac8806c44956fb0fbf147c1b767aa7f34ee5d12d91f"
+    },
+    {
+      "path": "results/assignment/initial_min2_audit/area_all_sensitivities.csv",
+      "bytes": 16854,
+      "sha256": "7764a01f32685e879e598ea34603c1099bb7d9968ebfdb85edd6ef0e23ab54fb"
+    },
+    {
+      "path": "results/assignment/initial_min2_audit/computation_provenance.json",
+      "bytes": 37243,
+      "sha256": "19501a82c68510ca10b93b96b2c517ac86418fd999dd0582394c2665f229b49a"
+    },
+    {
+      "path": "results/assignment/initial_min2_audit/trend_summary.json",
+      "bytes": 9801,
+      "sha256": "3ed5c1fca7e334fe60f62ae5812bb3470b8bd1d468ca292501d38bf0dc5d290a"
+    },
+    {
+      "path": "results/assignment/initial_min2_audit/vegetation_snapshot.py",
+      "bytes": 10810,
+      "sha256": "3ed9e818c56a45443b993d1e1b861e7ab275b9fe2f033cfd743744959d237c9d"
+    },
+    {
+      "path": "results/assignment/initial_min2_audit/year_vs_vegetation_area.csv",
+      "bytes": 3113,
+      "sha256": "5217aeeb9e7094cc09b0326ae16386bf3717edd95772bddea47ac0c3ba033aca"
+    },
+    {
+      "path": "results/assignment/october_false_colour.png",
+      "bytes": 991021,
+      "sha256": "b80ebf02301c7e1065009af1539a024fa20643f6ea39d262908d004410790159"
+    },
+    {
+      "path": "results/assignment/october_vegetation_maps.png",
+      "bytes": 102965,
+      "sha256": "f057c482b14ec5f4f73bc7a972612371b76800b4706b9bf0391f9253801b02a4"
+    },
+    {
+      "path": "results/assignment/protocol.md",
+      "bytes": 4938,
+      "sha256": "39fc20d5169c41c57462f54710f7e0413f3e640438241630b12a9027c68d890b"
+    },
+    {
+      "path": "results/assignment/qa/2015.json",
+      "bytes": 692,
+      "sha256": "86be7a3e37ef9043ef2ceda661738c2989822a51e655206876a13f24217c6104"
+    },
+    {
+      "path": "results/assignment/qa/2016.json",
+      "bytes": 861,
+      "sha256": "ac43a8ba1af3f519b27e3bac291878fefbf5679fbb85580c59d71b6b62441ce8"
+    },
+    {
+      "path": "results/assignment/qa/2017.json",
+      "bytes": 691,
+      "sha256": "8c49d34f5710a117fc34f93acbebcea45217a80c919c3d8fd735d2d78e13b57a"
+    },
+    {
+      "path": "results/assignment/qa/2018.json",
+      "bytes": 688,
+      "sha256": "bf6872a3093ce1be0ece5d4aa351d912506ddd49aba4801748b797cf68d18c55"
+    },
+    {
+      "path": "results/assignment/qa/2019.json",
+      "bytes": 689,
+      "sha256": "46cb394bbfb88749e71de88090b53e4c0cc53540ad2bf5563203d5de2aab8a10"
+    },
+    {
+      "path": "results/assignment/qa/2020.json",
+      "bytes": 866,
+      "sha256": "0ff0e60382f38f8cfd6360904f17e8b1c86eff24b9c4f3412dbf9b4859d4be67"
+    },
+    {
+      "path": "results/assignment/qa/2021.json",
+      "bytes": 691,
+      "sha256": "8cb735fbd5fe6db34a27bda691944909f0fb3affe124f7f19d910daf530d28ad"
+    },
+    {
+      "path": "results/assignment/qa/2022.json",
+      "bytes": 689,
+      "sha256": "b6789e8c314c6cb2ccf60ab60a9cf2a8dce6c470b93e3bf2e63adde318b89c82"
+    },
+    {
+      "path": "results/assignment/qa/2023.json",
+      "bytes": 688,
+      "sha256": "d3e3e61a88c31d02fb597be0e770589d106ebe4cbb531c51c3f1f031d0c1bbca"
+    },
+    {
+      "path": "results/assignment/qa/2024.json",
+      "bytes": 862,
+      "sha256": "d95f71601c3e577c040738289255db96a69cad07571772b36036348a5e8bd620"
+    },
+    {
+      "path": "results/assignment/source_review.json",
+      "bytes": 361,
+      "sha256": "a77dc07cb5f4eed24087d1591fffc4469f869ccd3586ca4e2774e291440d0fcd"
+    },
+    {
+      "path": "results/assignment/threshold_sensitivity.png",
+      "bytes": 138196,
+      "sha256": "9c62fcd8d06b3d7f9d7c8db032a849582b007eacb80fb0a12270b0149db8c4ac"
+    },
+    {
+      "path": "results/assignment/trend_summary.json",
+      "bytes": 9801,
+      "sha256": "3ed5c1fca7e334fe60f62ae5812bb3470b8bd1d468ca292501d38bf0dc5d290a"
+    },
+    {
+      "path": "results/assignment/validation.json",
+      "bytes": 662,
+      "sha256": "72047b8fa0c269d4165258593f538340713feaae1877cb6eb2ea7cd64350424a"
+    },
+    {
+      "path": "results/assignment/visual_review.json",
+      "bytes": 1130,
+      "sha256": "730621bee0ab26aa97d3f005c56d4620ed9efb8db79ea604d7c86c09952c7456"
+    },
+    {
+      "path": "results/assignment/year_vs_vegetation_area.csv",
+      "bytes": 3193,
+      "sha256": "587a223f61993cafa06bb19d704e230ed5fd83a01afe12b35add321f8365e7ba"
+    },
+    {
+      "path": "results/assignment/year_vs_vegetation_area.png",
+      "bytes": 155251,
+      "sha256": "0e40739baf2408cf809522d38d8415363521c145fa8ca58effe977031fcc681c"
+    }
+  ]
+}

@@ -225,7 +225,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--project', required=True)
     parser.add_argument('--stage', choices=['all', *NAMES], default='all')
-    parser.add_argument('--mode', choices=['direct', 'batch', 'preflight'], default='direct')
+    parser.add_argument('--mode', choices=['direct', 'batch', 'preflight', 'ancillary'], default='direct')
     parser.add_argument('--output-dir', type=Path, default=ROOT / 'data/study')
     args = parser.parse_args()
     args.output_dir.mkdir(parents=True, exist_ok=True)
@@ -233,6 +233,10 @@ def main():
     ee.data.setDeadline(180000)
     assert ee.Number(1).getInfo() == 1
     study = Study()
+    if args.mode == 'ancillary':
+        from acquire_masks import acquire
+        acquire(study, args.output_dir / 'ancillary')
+        return
     if args.mode == 'preflight':
         # A alone avoids computing the other three reference policies just to verify A.
         im = study.indices(2020, 10, 0)
@@ -268,19 +272,23 @@ def main():
             print(f'Submitted {stage}: {task.id}', flush=True)
             continue
         all_rows = []
-        for y, m in periods(stage):
-            checkpoint = args.output_dir / 'checkpoints' / stage / f'{y}-{m:02d}.json'
+        groups = ([[(y, m) for m in range(1, 13)] for y in range(1981, 2025)]
+                  if stage == 'rainfall' else [[period] for period in periods(stage)])
+        for group in groups:
+            y, m = group[0]
+            label = str(y) if stage == 'rainfall' else f'{y}-{m:02d}'
+            checkpoint = args.output_dir / 'checkpoints' / stage / f'{label}.json'
             if checkpoint.exists():
                 saved = json.loads(checkpoint.read_text())
                 if saved['script_sha256'] != fingerprint:
                     raise ValueError(f'Checkpoint implementation changed; review before reuse: {checkpoint}')
                 rows = saved['rows']
             else:
-                rows = compute(getattr(study, stage)(y, m))
+                rows = compute([row for gy, gm in group for row in getattr(study, stage)(gy, gm)])
                 atomic_json(checkpoint, {'rows': rows, 'script_sha256': fingerprint,
                                         'retrieved_utc': datetime.now(timezone.utc).isoformat()})
             all_rows.extend(rows)
-            print(f'{stage} {y}-{m:02d}: {len(all_rows)}/{EXPECTED[stage]} real rows', flush=True)
+            print(f'{stage} {label}: {len(all_rows)}/{EXPECTED[stage]} real rows', flush=True)
         if len(all_rows) != EXPECTED[stage]:
             raise ValueError(f'Unexpected row count in {stage}')
         fields = sorted(set().union(*(row.keys() for row in all_rows)))

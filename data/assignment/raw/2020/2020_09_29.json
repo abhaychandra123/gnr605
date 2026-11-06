@@ -1,0 +1,22 @@
+{
+  "asset_id": "MODIS/061/MOD09A1/2020_09_29",
+  "composite_start": "2020-09-29",
+  "year": 2020,
+  "bands": [
+    "sur_refl_b01",
+    "sur_refl_b02",
+    "sur_refl_b03",
+    "sur_refl_b04",
+    "sur_refl_b05",
+    "sur_refl_b06",
+    "sur_refl_b07",
+    "QA",
+    "StateQA",
+    "DayOfYear"
+  ],
+  "sha256": "acf6c75df52b2818021aa909c73a22e476f931a820a2ec65819eb71b131b4d74",
+  "bytes": 1367464,
+  "retrieved_utc": "2026-11-06T23:10:39.221027+00:00",
+  "band_order_evidence": "Explicit select(BANDS) order in download request; Earth Engine omits TIFF band descriptions.",
+  "format_note": "Raw values stored as exact float64; -99999 fills native masks. Native sphere is encoded explicitly in local products; original download CRS tags are preserved here."
+}

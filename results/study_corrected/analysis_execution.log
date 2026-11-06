@@ -1,0 +1,48 @@
+{
+  "comparison_rows": 240,
+  "impact_month_rows": 288,
+  "rainfall_rows": 528,
+  "crop_rows": 125,
+  "csv_checkpoint_identity": "passed",
+  "expected_keys": "passed",
+  "vhi_identity": "passed",
+  "class_partitions": "passed",
+  "common_support_consistency": "passed",
+  "comparison_vs_impact_post2019": "passed",
+  "rainfall_full_support_months": 528,
+  "all_land_grid_area_km2": 10602.126249546056,
+  "cropland_weighted_area_km2": 8143.01576126903,
+  "eligible_seasons_50pct": 96,
+  "eligible_seasons_75pct": 88
+}
+      crop                               feature  n_train  n_test  test_spearman  mae_gain_over_trend
+  chickpea                     all_land__C__ndvi       19       5            0.3            48.083932
+  chickpea                      all_land__C__vhi       19       5            0.1            66.552412
+  chickpea                     all_land__D__ndvi       19       5            0.3            48.044900
+  chickpea                      all_land__D__vhi       19       5           -0.3            72.201065
+  chickpea                district_SPI3_December       19       5            0.7             7.046375
+  chickpea                district_SPI6_December       19       5            0.6            42.149987
+  chickpea worldcover2021_crop_fraction__C__ndvi       19       5            0.1            44.177109
+  chickpea  worldcover2021_crop_fraction__C__vhi       19       5            0.1            63.725656
+  chickpea worldcover2021_crop_fraction__D__ndvi       19       5            0.1            44.125961
+  chickpea  worldcover2021_crop_fraction__D__vhi       19       5            0.1            68.939430
+rabi_jowar                     all_land__C__ndvi       19       5           -0.2           121.327442
+rabi_jowar                      all_land__C__vhi       19       5           -0.4           157.419356
+rabi_jowar                     all_land__D__ndvi       19       5           -0.2           121.408458
+rabi_jowar                      all_land__D__vhi       19       5           -0.8           162.457740
+rabi_jowar                district_SPI3_December       19       5           -0.3            26.281566
+rabi_jowar                district_SPI6_December       19       5           -0.4            81.433856
+rabi_jowar worldcover2021_crop_fraction__C__ndvi       19       5           -0.4           113.519082
+rabi_jowar  worldcover2021_crop_fraction__C__vhi       19       5           -0.4           152.130323
+rabi_jowar worldcover2021_crop_fraction__D__ndvi       19       5           -0.4           113.657199
+rabi_jowar  worldcover2021_crop_fraction__D__vhi       19       5           -0.9           156.903614
+     wheat                     all_land__C__ndvi       19       5           -0.6           187.376504
+     wheat                      all_land__C__vhi       19       5           -0.7           248.705874
+     wheat                     all_land__D__ndvi       19       5           -0.6           187.557644
+     wheat                      all_land__D__vhi       19       5           -0.9           261.817962
+     wheat                district_SPI3_December       19       5            0.6            55.449504
+     wheat                district_SPI6_December       19       5            0.3           161.980665
+     wheat worldcover2021_crop_fraction__C__ndvi       19       5           -0.7           177.343864
+     wheat  worldcover2021_crop_fraction__C__vhi       19       5           -0.7           244.697097
+     wheat worldcover2021_crop_fraction__D__ndvi       19       5           -0.7           177.647452
+     wheat  worldcover2021_crop_fraction__D__vhi       19       5           -0.7           257.255631

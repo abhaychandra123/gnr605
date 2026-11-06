@@ -1,0 +1,386 @@
+[
+  {
+    "min_observations": 2,
+    "ndvi_threshold": 0.2,
+    "common_area_km2": 450.78321392260284,
+    "common_coverage_pct": 4.238399903122288,
+    "ols_km2_per_year": 0.0,
+    "ols_intercept_at_2015": 450.78321392260284,
+    "sen_km2_per_year": 0.0,
+    "decreasing_transitions": 0,
+    "increasing_transitions": 0,
+    "unchanged_transitions": 9,
+    "decreases_every_year": false,
+    "end_minus_start_km2": 0.0,
+    "leave_one_year_out_slope_min": -7.865900123441542e-14,
+    "leave_one_year_out_slope_max": 0.0,
+    "year_changes": [
+      {
+        "from_year": 2015,
+        "to_year": 2016,
+        "change_km2": 0.0
+      },
+      {
+        "from_year": 2016,
+        "to_year": 2017,
+        "change_km2": 0.0
+      },
+      {
+        "from_year": 2017,
+        "to_year": 2018,
+        "change_km2": 0.0
+      },
+      {
+        "from_year": 2018,
+        "to_year": 2019,
+        "change_km2": 0.0
+      },
+      {
+        "from_year": 2019,
+        "to_year": 2020,
+        "change_km2": 0.0
+      },
+      {
+        "from_year": 2020,
+        "to_year": 2021,
+        "change_km2": 0.0
+      },
+      {
+        "from_year": 2021,
+        "to_year": 2022,
+        "change_km2": 0.0
+      },
+      {
+        "from_year": 2022,
+        "to_year": 2023,
+        "change_km2": 0.0
+      },
+      {
+        "from_year": 2023,
+        "to_year": 2024,
+        "change_km2": 0.0
+      }
+    ],
+    "interpretation": "Descriptive ten-year summaries, no significance or causal drought claim"
+  },
+  {
+    "min_observations": 2,
+    "ndvi_threshold": 0.3,
+    "common_area_km2": 450.78321392260284,
+    "common_coverage_pct": 4.238399903122288,
+    "ols_km2_per_year": 0.08586346931861374,
+    "ols_intercept_at_2015": 450.05337443339477,
+    "sen_km2_per_year": 0.0,
+    "decreasing_transitions": 1,
+    "increasing_transitions": 2,
+    "unchanged_transitions": 6,
+    "decreases_every_year": false,
+    "end_minus_start_km2": 0.6439760198894646,
+    "leave_one_year_out_slope_min": 0.0375652678268428,
+    "leave_one_year_out_slope_max": 0.12221695431231168,
+    "year_changes": [
+      {
+        "from_year": 2015,
+        "to_year": 2016,
+        "change_km2": 0.6439760198894646
+      },
+      {
+        "from_year": 2016,
+        "to_year": 2017,
+        "change_km2": 0.0
+      },
+      {
+        "from_year": 2017,
+        "to_year": 2018,
+        "change_km2": -2.790562752854214
+      },
+      {
+        "from_year": 2018,
+        "to_year": 2019,
+        "change_km2": 2.790562752854214
+      },
+      {
+        "from_year": 2019,
+        "to_year": 2020,
+        "change_km2": 0.0
+      },
+      {
+        "from_year": 2020,
+        "to_year": 2021,
+        "change_km2": 0.0
+      },
+      {
+        "from_year": 2021,
+        "to_year": 2022,
+        "change_km2": 0.0
+      },
+      {
+        "from_year": 2022,
+        "to_year": 2023,
+        "change_km2": 0.0
+      },
+      {
+        "from_year": 2023,
+        "to_year": 2024,
+        "change_km2": 0.0
+      }
+    ],
+    "interpretation": "Descriptive ten-year summaries, no significance or causal drought claim"
+  },
+  {
+    "min_observations": 2,
+    "ndvi_threshold": 0.4,
+    "common_area_km2": 450.78321392260284,
+    "common_coverage_pct": 4.238399903122288,
+    "ols_km2_per_year": 5.974015925923701,
+    "ols_intercept_at_2015": 400.37355166265235,
+    "sen_km2_per_year": 0.12266209902656199,
+    "decreasing_transitions": 2,
+    "increasing_transitions": 4,
+    "unchanged_transitions": 3,
+    "decreases_every_year": false,
+    "end_minus_start_km2": 46.36627343203912,
+    "leave_one_year_out_slope_min": 2.755680718443505,
+    "leave_one_year_out_slope_max": 8.434008518551877,
+    "year_changes": [
+      {
+        "from_year": 2015,
+        "to_year": 2016,
+        "change_km2": 45.722297412149715
+      },
+      {
+        "from_year": 2016,
+        "to_year": 2017,
+        "change_km2": 0.6439760198894078
+      },
+      {
+        "from_year": 2017,
+        "to_year": 2018,
+        "change_km2": -186.75304576793542
+      },
+      {
+        "from_year": 2018,
+        "to_year": 2019,
+        "change_km2": 186.53838709463895
+      },
+      {
+        "from_year": 2019,
+        "to_year": 2020,
+        "change_km2": 0.42931734659299536
+      },
+      {
+        "from_year": 2020,
+        "to_year": 2021,
+        "change_km2": 0.0
+      },
+      {
+        "from_year": 2021,
+        "to_year": 2022,
+        "change_km2": 0.0
+      },
+      {
+        "from_year": 2022,
+        "to_year": 2023,
+        "change_km2": 0.0
+      },
+      {
+        "from_year": 2023,
+        "to_year": 2024,
+        "change_km2": -0.2146586732965261
+      }
+    ],
+    "interpretation": "Descriptive ten-year summaries, no significance or causal drought claim"
+  },
+  {
+    "min_observations": 1,
+    "ndvi_threshold": 0.2,
+    "common_area_km2": 6983.275959681007,
+    "common_coverage_pct": 65.6588693563687,
+    "ols_km2_per_year": -0.01040769325061278,
+    "ols_intercept_at_2015": 6982.97934042336,
+    "sen_km2_per_year": 0.0,
+    "decreasing_transitions": 5,
+    "increasing_transitions": 3,
+    "unchanged_transitions": 1,
+    "decreases_every_year": false,
+    "end_minus_start_km2": -0.6439760198900331,
+    "leave_one_year_out_slope_min": -0.06578249665532983,
+    "leave_one_year_out_slope_max": 0.014310578220627375,
+    "year_changes": [
+      {
+        "from_year": 2015,
+        "to_year": 2016,
+        "change_km2": -1.2879520397791566
+      },
+      {
+        "from_year": 2016,
+        "to_year": 2017,
+        "change_km2": 1.2879520397791566
+      },
+      {
+        "from_year": 2017,
+        "to_year": 2018,
+        "change_km2": -0.21465867329698085
+      },
+      {
+        "from_year": 2018,
+        "to_year": 2019,
+        "change_km2": 0.21465867329698085
+      },
+      {
+        "from_year": 2019,
+        "to_year": 2020,
+        "change_km2": 0.0
+      },
+      {
+        "from_year": 2020,
+        "to_year": 2021,
+        "change_km2": -0.4293173465930522
+      },
+      {
+        "from_year": 2021,
+        "to_year": 2022,
+        "change_km2": -0.4293173465930522
+      },
+      {
+        "from_year": 2022,
+        "to_year": 2023,
+        "change_km2": 0.8586346931861044
+      },
+      {
+        "from_year": 2023,
+        "to_year": 2024,
+        "change_km2": -0.6439760198900331
+      }
+    ],
+    "interpretation": "Descriptive ten-year summaries, no significance or causal drought claim"
+  },
+  {
+    "min_observations": 1,
+    "ndvi_threshold": 0.3,
+    "common_area_km2": 6983.275959681007,
+    "common_coverage_pct": 65.6588693563687,
+    "ols_km2_per_year": 1.6678328434304532,
+    "ols_intercept_at_2015": 6967.6136823003035,
+    "sen_km2_per_year": 0.28621156439521656,
+    "decreasing_transitions": 4,
+    "increasing_transitions": 5,
+    "unchanged_transitions": 0,
+    "decreases_every_year": false,
+    "end_minus_start_km2": 8.586346931859225,
+    "leave_one_year_out_slope_min": 0.579578417900484,
+    "leave_one_year_out_slope_max": 2.3003100409382773,
+    "year_changes": [
+      {
+        "from_year": 2015,
+        "to_year": 2016,
+        "change_km2": 7.083736218783997
+      },
+      {
+        "from_year": 2016,
+        "to_year": 2017,
+        "change_km2": 1.9319280596682802
+      },
+      {
+        "from_year": 2017,
+        "to_year": 2018,
+        "change_km2": -62.03635658268195
+      },
+      {
+        "from_year": 2018,
+        "to_year": 2019,
+        "change_km2": 62.89499127586805
+      },
+      {
+        "from_year": 2019,
+        "to_year": 2020,
+        "change_km2": -0.8586346931861044
+      },
+      {
+        "from_year": 2020,
+        "to_year": 2021,
+        "change_km2": -0.4293173465930522
+      },
+      {
+        "from_year": 2021,
+        "to_year": 2022,
+        "change_km2": 0.21465867329607136
+      },
+      {
+        "from_year": 2022,
+        "to_year": 2023,
+        "change_km2": 0.4293173465930522
+      },
+      {
+        "from_year": 2023,
+        "to_year": 2024,
+        "change_km2": -0.6439760198891236
+      }
+    ],
+    "interpretation": "Descriptive ten-year summaries, no significance or causal drought claim"
+  },
+  {
+    "min_observations": 1,
+    "ndvi_threshold": 0.4,
+    "common_area_km2": 6983.275959681007,
+    "common_coverage_pct": 65.6588693563687,
+    "ols_km2_per_year": 78.43237633756334,
+    "ols_intercept_at_2015": 6308.428119686575,
+    "sen_km2_per_year": 7.835041575321611,
+    "decreasing_transitions": 3,
+    "increasing_transitions": 6,
+    "unchanged_transitions": 0,
+    "decreases_every_year": false,
+    "end_minus_start_km2": 605.9814347159563,
+    "leave_one_year_out_slope_min": 38.52675980102439,
+    "leave_one_year_out_slope_max": 105.9087809441491,
+    "year_changes": [
+      {
+        "from_year": 2015,
+        "to_year": 2016,
+        "change_km2": 506.16515163309396
+      },
+      {
+        "from_year": 2016,
+        "to_year": 2017,
+        "change_km2": 91.87391217089316
+      },
+      {
+        "from_year": 2017,
+        "to_year": 2018,
+        "change_km2": -2337.203634852048
+      },
+      {
+        "from_year": 2018,
+        "to_year": 2019,
+        "change_km2": 2342.3554430111626
+      },
+      {
+        "from_year": 2019,
+        "to_year": 2020,
+        "change_km2": 1.2879520397791566
+      },
+      {
+        "from_year": 2020,
+        "to_year": 2021,
+        "change_km2": -18.67530457679368
+      },
+      {
+        "from_year": 2021,
+        "to_year": 2022,
+        "change_km2": 4.507832139225684
+      },
+      {
+        "from_year": 2022,
+        "to_year": 2023,
+        "change_km2": -5.58112550570786
+      },
+      {
+        "from_year": 2023,
+        "to_year": 2024,
+        "change_km2": 21.251208656351082
+      }
+    ],
+    "interpretation": "Descriptive ten-year summaries, no significance or causal drought claim"
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "gfsad2010_crop_irrigation_classes_modis_grid.tif": {
+    "shape": [
+      112,
+      233
+    ],
+    "valid_pixels": 13865,
+    "minimum": 0.0,
+    "maximum": 5.0,
+    "crs_wkt": "PROJCS[\"MODIS Sinusoidal\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+    "transform": [
+      926.625433055833,
+      0.0,
+      7867049.9266500175,
+      0.0,
+      -926.6254330558334,
+      2161817.135319259,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "bounds_wgs84": [
+      74.54272335688933,
+      18.605807758088865,
+      77.02046892988523,
+      19.543374402140152
+    ],
+    "unweighted_pixel_mean_not_district_area_fraction": 1.2793364587089795
+  },
+  "worldcover2021_crop_fraction_modis_grid.tif": {
+    "shape": [
+      112,
+      233
+    ],
+    "valid_pixels": 13865,
+    "minimum": 0.0,
+    "maximum": 1.0,
+    "crs_wkt": "PROJCS[\"MODIS Sinusoidal\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+    "transform": [
+      926.625433055833,
+      0.0,
+      7867049.9266500175,
+      0.0,
+      -926.6254330558334,
+      2161817.135319259,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "bounds_wgs84": [
+      74.54272335688933,
+      18.605807758088865,
+      77.02046892988523,
+      19.543374402140152
+    ],
+    "unweighted_pixel_mean_not_district_area_fraction": 0.7691248478633249
+  }
+}

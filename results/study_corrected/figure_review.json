@@ -1,0 +1,11 @@
+{
+  "reviewed_figures": [
+    "corrected_comparison.png",
+    "cropland_weighting.png",
+    "yield_indicator_history.png",
+    "holdout_error_comparison.png",
+    "spi_gamma_qq.png"
+  ],
+  "status": "visually_inspected",
+  "findings": "Labels and units readable; no clipped plotted content. Final benchmark chart shows absolute errors and previous-year yield, avoiding the misleading impression from showing improvements against the weaker trend baseline alone. Yield-history dual axes explicitly labelled; bootstrap Q-Q plots use training data only."
+}

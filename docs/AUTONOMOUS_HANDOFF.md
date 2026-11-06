@@ -1,5 +1,36 @@
 # Resume the Beed drought study with authenticated network access
 
+> **Current scope and completed assignment, 7 November 2026:** The user explicitly returned to the course problem: find a drought-prone Indian region; download ten years of imagery for one post-monsoon month; compute and plot vegetation-covered area; assess low or annually declining cover. This supersedes the extended research agenda below. Start with `results/assignment/assignment_report.md` and `pipeline/assignment/README.md`.
+>
+> Beed, October 2015–2024 is executed: 43 actual seven-band MOD09A1 source images plus QA/date bands, ten local composites, handwritten QA/NDVI/classification/pixel-area calculations, figures and actual tables. Checks passed (43 source hashes, raster accounting, 90 sampled pixel-years, four algorithm tests); figures were inspected. NDVI > 0.30 cover is nearly stable on the fixed 65.7% common footprint, with four decreases and five increases. Missing 2024 coverage must not be presented as vegetation loss. Min2 coverage was only 4.2%; the documented coverage amendment makes min1 primary and retains min2 sensitivity. No pixel-level vegetation field truth is available; official drought history supports site selection only.
+>
+> No login or manual download is currently required. Preserve all earlier work. Do not resume yield auditing, forecasting, ML or other months as part of this assignment. Old access blockers and proposed next steps below are historical, not outstanding work. Execution provenance is in `results/assignment/execution_manifest.json`.
+
+> **Latest completed stage, 6 November 2026:** Read
+> `results/study_corrected/research_results.md` first. The official Survey of India
+> boundary and WorldCover cropland-weighted rerun is executed: 240 comparison,
+> 288 historical indicator and 528 rainfall rows, plus 125 harmonized crop records.
+> All outputs passed validation; 15 tests passed. All 30 simple indicator calibrations
+> lost to previous-year yield on 2020-2024 MAE. No complex ML or forecasting claim
+> is supported. No login/manual download is currently needed. Earlier work is intact.
+> Crop-year alignment, reported area repetitions, yield level shifts, current-boundary
+> historical use and fixed-2021 mixed-pixel weights are documented limitations.
+> The downloaded mask's local GeoTIFF CRS encoding was corrected to the native
+> MODIS sphere without resampling; the original download is preserved separately.
+>
+> Next scientific work is target/source-revision auditing and crop-specific seasonal
+> support, not fitting a larger model to the same five evaluation years. Earlier
+> unexecuted/access-blocked descriptions below are historical, not current status.
+
+> **Execution update, 6 November 2026:** Access was restored, Google OAuth completed,
+> and the controlled study executed. All 936 real rows are downloaded and validated;
+> SPI, figures, official boundary checks, candidate masks, and 25 crop-source PDFs
+> are available. Start with `results/study/research_results.md` and
+> `pipeline/study/README.md`. The access limitations and unexecuted status below are
+> preserved as the historical handoff, not the current state. The principal remaining
+> scientific constraint is the verified GAUL/official boundary mismatch; no independent
+> impact validation or ML claim has been made.
+
 User authorization: Abhay explicitly authorized implementing the plan, obtaining the
 needed data, executing analyses, inspecting results and fixing errors autonomously.
 Do not ask again for routine implementation or execution permission. Do not send

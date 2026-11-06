@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "source_images": 43,
+  "years": 10,
+  "bands_per_source": 10,
+  "spectral_bands_per_source": 7,
+  "primary_minimum_observations": 1,
+  "primary_threshold": 0.3,
+  "source_sha256_checks": "passed",
+  "image_grid_alignment": "passed",
+  "native_spherical_crs": "passed",
+  "pixel_class_and_area_accounting": "passed",
+  "common_footprint_nestedness": "passed",
+  "threshold_nestedness": "passed",
+  "independently_reconstructed_real_pixel_years": 90,
+  "algorithm_unit_tests": 4,
+  "field_vegetation_ground_truth_available": false,
+  "ground_reference": "Official district drought history; context only, not a pixel accuracy benchmark"
+}

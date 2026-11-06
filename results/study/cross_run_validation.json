@@ -1,0 +1,8 @@
+{
+  "prior_october_A_vhi_max_abs_error": 0.0,
+  "prior_october_A_valid_fraction_max_abs_error": 0.0,
+  "prior_october_rain_max_abs_error_mm": 0.0,
+  "prior_aug_oct_rain_consistency": "passed",
+  "history_audited_coverage_and_bounds": "passed",
+  "rain_full_coverage_months": 528
+}

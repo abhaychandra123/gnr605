@@ -189,6 +189,40 @@ def check_comparison(path):
     return data
 
 
+def check_history(path, bounds):
+    data = pd.read_csv(path)
+    keys = ['year', 'month', 'scenario']
+    required = keys + ['date', 'ndvi', 'ndvi_valid_fraction', 'lst_valid_fraction', 'boundary_code']
+    if not set(required) <= set(data):
+        raise ValueError('History export is missing required columns')
+    expected = {(y, m, s) for y in range(2001, 2025) for m in (10, 11, 12) for s in SCENARIOS}
+    if len(data) != 288 or set(map(tuple, data[keys].to_numpy())) != expected:
+        raise ValueError('Expected 288 unique historical policy rows')
+    if not (data.boundary_code == 70179).all():
+        raise ValueError('Unexpected historical boundary')
+    for column in ['ndvi_valid_fraction', 'lst_valid_fraction']:
+        if not data[column].between(0, 1 + 1e-9).all():
+            raise ValueError(f'Invalid historical fraction: {column}')
+    october = data[data.month == 10].pivot(index='year', columns='scenario', values='ndvi_valid_fraction')
+    old = pd.read_csv(io.StringIO(json.loads((ROOT / 'results/andure/date_audit_input_extract.json').read_text())['csv_text'])).set_index('year')
+    for scenario, column in [(SCENARIOS[0], 'old_valid_fraction'), (SCENARIOS[1], 'pixel_date_valid_fraction')]:
+        if not np.allclose(october[scenario], old.loc[october.index, column], atol=1e-8, rtol=0):
+            raise ValueError(f'History disagrees with independently audited October coverage: {scenario}')
+    aligned = bounds.set_index('year').loc[october.index]
+    for scenario in SCENARIOS[2:]:
+        if ((october[scenario] < aligned.screened_lower_bound - 1e-8) |
+                (october[scenario] > aligned.screened_upper_bound + 1e-8)).any():
+            raise ValueError('Screened October coverage violates derived set bounds')
+    pivot = data.pivot(index=['year', 'month'], columns='scenario', values='ndvi_valid_fraction')
+    if (pivot[SCENARIOS[2]] < pivot[SCENARIOS[1]] - 1e-9).any():
+        raise ValueError('Screened NDVI coverage must include strict pixel-date coverage')
+    for column in ['ndvi', 'ndvi_valid_fraction']:
+        pivot = data.pivot(index=['year', 'month'], columns='scenario', values=column)
+        if not np.allclose(pivot[SCENARIOS[2]], pivot[SCENARIOS[3]], equal_nan=True, atol=1e-9):
+            raise ValueError('C and D must have identical current NDVI')
+    return data
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--input-dir', type=Path, default=ROOT / 'data/study')
@@ -198,7 +232,8 @@ def main():
     bounds = screened_bounds()
     bounds.to_csv(args.output_dir / 'screened_coverage_bounds.csv', index=False)
     status = {'coverage_bounds': 'computed_from_real_uploaded_exports', 'satellite_comparison': 'awaiting_export',
-              'rainfall_SPI': 'awaiting_export', 'independent_impact_validation': 'not_available', 'ML': 'not_run'}
+              'satellite_history': 'awaiting_export', 'rainfall_SPI': 'awaiting_export',
+              'independent_impact_validation': 'not_available', 'ML': 'not_run'}
     rainfall = args.input_dir / 'beed_chirps_monthly_1981_2024.csv'
     if rainfall.exists():
         rain = load_rainfall(rainfall)
@@ -215,6 +250,18 @@ def main():
         metrics = check_comparison(comparison)
         metrics.to_csv(args.output_dir / 'validated_comparison.csv', index=False)
         status['satellite_comparison'] = 'real_export_passed_consistency_checks'
+    history = args.input_dir / 'beed_policy_history_2001_2024.csv'
+    if history.exists():
+        check_history(history, bounds).to_csv(args.output_dir / 'validated_history.csv', index=False)
+        status['satellite_history'] = 'real_export_passed_audited_october_and_screened_bounds_checks'
+    boundary_review = args.output_dir / 'boundary_validation.json'
+    if boundary_review.exists():
+        status['boundary_verification'] = 'official_SOI_comparison_completed_material_mismatch_found'
+        status['independent_impact_validation'] = 'not_run_requires_boundary_consistent_reconstruction'
+    if (args.output_dir / 'beed_crop_statistics_raw.csv').exists():
+        status['crop_data'] = '25_official_annual_PDFs_acquired_raw_Beed_rows_extracted_units_retained'
+    if (args.output_dir / 'mask_validation.json').exists():
+        status['candidate_masks'] = 'downloaded_and_inspected_not_applied_to_primary_experiment'
     (args.output_dir / 'execution_status.json').write_text(json.dumps(status, indent=2) + '\n')
     print(json.dumps(status, indent=2))
     print(bounds[bounds.year >= 2019].to_string(index=False))

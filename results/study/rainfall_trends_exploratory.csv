@@ -1,0 +1,3 @@
+season,status,n,kendall_tau,p_independence_assumption,sen_mm_per_year,sen_ci95_low,sen_ci95_high,lag1_correlation,limitation
+JJAS,exploratory,44,0.24735729386892175,0.01794566191613256,4.7732966600716775,0.9176440584539242,8.095280351081263,0.19664303464776695,No serial-dependence correction; do not claim significance from naive p alone.
+OND,exploratory,44,0.17758985200845664,0.08928224734784072,0.9336878179390515,-0.20921643388773462,2.2058107686533694,-0.12391388651199521,No serial-dependence correction; do not claim significance from naive p alone.

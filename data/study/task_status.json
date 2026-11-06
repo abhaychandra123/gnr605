@@ -1,0 +1,40 @@
+{
+  "comparison": {
+    "state": "CANCELLED",
+    "description": "beed_controlled_seasonal_2020_2024",
+    "priority": 100,
+    "creation_timestamp_ms": 1793975404061,
+    "update_timestamp_ms": 1793977171636,
+    "start_timestamp_ms": 1793976537630,
+    "task_type": "EXPORT_FEATURES",
+    "attempt": 2,
+    "batch_eecu_usage_seconds": 182.229431152,
+    "error_message": "Cancelled.",
+    "id": "4XSSBGAZJYI4JQTTS3CMRQW7",
+    "name": "projects/weighttrack-493810/operations/4XSSBGAZJYI4JQTTS3CMRQW7"
+  },
+  "history": {
+    "state": "CANCELLED",
+    "description": "beed_policy_history_2001_2024",
+    "priority": 100,
+    "creation_timestamp_ms": 1793975422718,
+    "update_timestamp_ms": 1793976860533,
+    "start_timestamp_ms": 0,
+    "task_type": "EXPORT_FEATURES",
+    "error_message": "Cancelled.",
+    "id": "LJZE6M4PIVG2LQY4HMK3GMW3",
+    "name": "projects/weighttrack-493810/operations/LJZE6M4PIVG2LQY4HMK3GMW3"
+  },
+  "rainfall": {
+    "state": "CANCELLED",
+    "description": "beed_chirps_monthly_1981_2024",
+    "priority": 100,
+    "creation_timestamp_ms": 1793975440922,
+    "update_timestamp_ms": 1793976864226,
+    "start_timestamp_ms": 0,
+    "task_type": "EXPORT_FEATURES",
+    "error_message": "Cancelled.",
+    "id": "RPZU77QNO4XMKK6CT2G3E6VJ",
+    "name": "projects/weighttrack-493810/operations/RPZU77QNO4XMKK6CT2G3E6VJ"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "completed_utc": "2026-11-06T14:53:34.562150+00:00",
+  "project": "weighttrack-493810",
+  "retrieval": "official ee.data.computeFeatures",
+  "scope": "Controlled comparison on provisional GAUL 2015; not independent impact validation",
+  "exports": {
+    "comparison": {
+      "rows": 120,
+      "sha256": "35c0a23737ecf1aaf7f4b1493100598bc6a4cfc3b61f458b95946131fd55d4fa",
+      "script_sha256": "0e8df31fe0a53fabae0628eedf9c5a168017ba7f5d75439a203d6fc154ce5475",
+      "checkpoints": 15,
+      "first_retrieved_utc": "2026-11-06T14:51:23.646947+00:00",
+      "last_retrieved_utc": "2026-11-06T14:52:59.376548+00:00",
+      "method": "official_earth_engine_computeFeatures",
+      "project": "weighttrack-493810"
+    },
+    "history": {
+      "rows": 288,
+      "sha256": "174be990efb23b95f4f03924eb192bf584e0557195de77de9ed15966b1cf21a9",
+      "script_sha256": "0e8df31fe0a53fabae0628eedf9c5a168017ba7f5d75439a203d6fc154ce5475",
+      "checkpoints": 72,
+      "first_retrieved_utc": "2026-11-06T14:51:20.675477+00:00",
+      "last_retrieved_utc": "2026-11-06T14:53:19.651141+00:00",
+      "method": "official_earth_engine_computeFeatures",
+      "project": "weighttrack-493810"
+    },
+    "rainfall": {
+      "rows": 528,
+      "sha256": "55199961fb503ebe966de38aeee37e9c1541dac7e42138f5e0a53113ad4056c4",
+      "script_sha256": "0e8df31fe0a53fabae0628eedf9c5a168017ba7f5d75439a203d6fc154ce5475",
+      "checkpoints": 44,
+      "first_retrieved_utc": "2026-11-06T14:50:27.100201+00:00",
+      "last_retrieved_utc": "2026-11-06T14:51:31.632136+00:00",
+      "method": "official_earth_engine_computeFeatures",
+      "project": "weighttrack-493810"
+    }
+  }
+}

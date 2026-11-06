@@ -1,0 +1,11 @@
+{
+  "rows": 240,
+  "implementation_sha256": "d6ecf121419ac8a36a9bcdda9875fba9ff4b2a004c65fa8fcdbab6b0af485b9b",
+  "csv_sha256": "f541cfb262551067b44c7fa19f5742a4509f6d4c05fc4aa021ec035fe6311c96",
+  "project": "weighttrack-493810",
+  "sources": {
+    "pipeline/study/execute_corrected.py": "ae3a00f8eab8585df599b9d06dd2d8b1d7d39f77adc6b1f83a4f25b62b557acb",
+    "pipeline/study/execute_ee.py": "0e8df31fe0a53fabae0628eedf9c5a168017ba7f5d75439a203d6fc154ce5475",
+    "data/study/ancillary/soi2025_beed.geojson": "bf85247d44911fcb919ea49648de4e2520fb97f98399983b62fa17fa3667c8cd"
+  }
+}

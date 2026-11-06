@@ -1,0 +1,226 @@
+[
+  {
+    "file": "official_apy_2014_15.pdf",
+    "page": 7,
+    "crop": "Other Su. Cereals",
+    "issue": "Merged-cell row alignment is ambiguous",
+    "cell": "10"
+  },
+  {
+    "file": "official_apy_2014_15.pdf",
+    "page": 7,
+    "crop": "Other Su. Pulses",
+    "issue": "Merged-cell row alignment is ambiguous",
+    "cell": ""
+  },
+  {
+    "file": "official_apy_2015_16.pdf",
+    "page": 6,
+    "crop": "Other Summer Cereals",
+    "issue": "Merged-cell row alignment is ambiguous",
+    "cell": "1"
+  },
+  {
+    "file": "official_apy_2015_16.pdf",
+    "page": 6,
+    "crop": "Total Summer Cereals",
+    "issue": "Merged-cell row alignment is ambiguous",
+    "cell": "9"
+  },
+  {
+    "file": "official_apy_2015_16.pdf",
+    "page": 6,
+    "crop": "Other Su. Pulses",
+    "issue": "Merged-cell row alignment is ambiguous",
+    "cell": "0"
+  },
+  {
+    "file": "official_apy_2015_16.pdf",
+    "page": 6,
+    "crop": "Total Su. Pulses",
+    "issue": "Merged-cell row alignment is ambiguous",
+    "cell": "0"
+  },
+  {
+    "file": "official_apy_2015_16.pdf",
+    "page": 6,
+    "crop": "Total Su. Foodgrains",
+    "issue": "Merged-cell row alignment is ambiguous",
+    "cell": "9"
+  },
+  {
+    "file": "official_apy_2015_16.pdf",
+    "page": 6,
+    "crop": "Summer Groundnut",
+    "issue": "Merged-cell row alignment is ambiguous",
+    "cell": "0.10"
+  },
+  {
+    "file": "official_apy_2015_16.pdf",
+    "page": 6,
+    "crop": "Summer Sunflower",
+    "issue": "Merged-cell row alignment is ambiguous",
+    "cell": "0"
+  },
+  {
+    "file": "official_apy_2015_16.pdf",
+    "page": 6,
+    "crop": "Other Su. Oilseeds",
+    "issue": "Merged-cell row alignment is ambiguous",
+    "cell": "0"
+  },
+  {
+    "file": "official_apy_2016_17.pdf",
+    "page": 1,
+    "crop": "Kh Rice",
+    "issue": "Merged-cell row alignment is ambiguous",
+    "cell": "31\n0.7"
+  },
+  {
+    "file": "official_apy_2016_17.pdf",
+    "page": 1,
+    "crop": "Ragi",
+    "issue": "Merged-cell row alignment is ambiguous",
+    "cell": ""
+  },
+  {
+    "file": "official_apy_2016_17.pdf",
+    "page": 3,
+    "crop": "Other Rabi cereals",
+    "issue": "Merged-cell row alignment is ambiguous",
+    "cell": "14\n0"
+  },
+  {
+    "file": "official_apy_2016_17.pdf",
+    "page": 4,
+    "crop": "Rabi Sesamum",
+    "issue": "Merged-cell row alignment is ambiguous",
+    "cell": "0.1\n0.9"
+  },
+  {
+    "file": "official_apy_2016_17.pdf",
+    "page": 5,
+    "crop": "Tobacco",
+    "issue": "Merged-cell row alignment is ambiguous",
+    "cell": ""
+  },
+  {
+    "file": "official_apy_2016_17.pdf",
+    "page": 5,
+    "crop": "Summer Rice",
+    "issue": "Merged-cell row alignment is ambiguous",
+    "cell": ""
+  },
+  {
+    "file": "official_apy_2016_17.pdf",
+    "page": 5,
+    "crop": "Other Su. Pulses",
+    "issue": "Merged-cell row alignment is ambiguous",
+    "cell": "0.1\n0.1"
+  },
+  {
+    "file": "official_apy_2016_17.pdf",
+    "page": 5,
+    "crop": "Total Su. Pulses",
+    "issue": "Merged-cell row alignment is ambiguous",
+    "cell": "0.1\n0.1"
+  },
+  {
+    "file": "official_apy_2016_17.pdf",
+    "page": 6,
+    "crop": "Summer Sunflower",
+    "issue": "Merged-cell row alignment is ambiguous",
+    "cell": ""
+  },
+  {
+    "file": "official_apy_2016_17.pdf",
+    "page": 6,
+    "crop": "Summer Sesamum",
+    "issue": "Merged-cell row alignment is ambiguous",
+    "cell": ""
+  },
+  {
+    "file": "official_apy_2016_17.pdf",
+    "page": 6,
+    "crop": "Other Su. Oilseeds",
+    "issue": "Merged-cell row alignment is ambiguous",
+    "cell": ""
+  },
+  {
+    "file": "official_apy_2017_18.pdf",
+    "page": 6,
+    "crop": "Tobacco",
+    "issue": "Merged-cell row alignment is ambiguous",
+    "cell": ""
+  },
+  {
+    "file": "official_apy_2019_20.pdf",
+    "page": 7,
+    "crop": "Summer Rice",
+    "issue": "Merged-cell row alignment is ambiguous",
+    "cell": ""
+  },
+  {
+    "file": "official_apy_2019_20.pdf",
+    "page": 8,
+    "crop": "Summer Sunflower",
+    "issue": "Merged-cell row alignment is ambiguous",
+    "cell": "565.00"
+  },
+  {
+    "file": "official_apy_2019_20.pdf",
+    "page": 8,
+    "crop": "Summer Sesamum",
+    "issue": "Merged-cell row alignment is ambiguous",
+    "cell": "200.00"
+  },
+  {
+    "file": "official_apy_2019_20.pdf",
+    "page": 8,
+    "crop": "Other Su. Oilseeds",
+    "issue": "Merged-cell row alignment is ambiguous",
+    "cell": ""
+  },
+  {
+    "file": "official_apy_2019_20.pdf",
+    "page": 9,
+    "crop": "Tobacco",
+    "issue": "Merged-cell row alignment is ambiguous",
+    "cell": ""
+  },
+  {
+    "file": "official_apy_2020_21.pdf",
+    "page": 7,
+    "crop": "Tobacco",
+    "issue": "Merged-cell row alignment is ambiguous",
+    "cell": ""
+  },
+  {
+    "file": "official_apy_2021_22.pdf",
+    "page": 7,
+    "crop": "Tobacco",
+    "issue": "Merged-cell row alignment is ambiguous",
+    "cell": ""
+  },
+  {
+    "file": "official_apy_2022_23.pdf",
+    "page": 7,
+    "crop": "Tobacco",
+    "issue": "Merged-cell row alignment is ambiguous",
+    "cell": ""
+  },
+  {
+    "file": "official_apy_2023_24.pdf",
+    "page": 7,
+    "crop": "Tobacco",
+    "issue": "Merged-cell row alignment is ambiguous",
+    "cell": ""
+  },
+  {
+    "file": "official_apy_2024_25.pdf",
+    "page": 7,
+    "crop": "Tobacco",
+    "issue": "Merged-cell row alignment is ambiguous",
+    "cell": ""
+  }
+]

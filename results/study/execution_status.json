@@ -1,7 +1,11 @@
 {
   "coverage_bounds": "computed_from_real_uploaded_exports",
-  "satellite_comparison": "awaiting_export",
-  "rainfall_SPI": "awaiting_export",
-  "independent_impact_validation": "not_available",
-  "ML": "not_run"
+  "satellite_comparison": "real_export_passed_consistency_checks",
+  "satellite_history": "real_export_passed_audited_october_and_screened_bounds_checks",
+  "rainfall_SPI": "computed_from_real_export_review_fit_diagnostics",
+  "independent_impact_validation": "not_run_requires_boundary_consistent_reconstruction",
+  "ML": "not_run",
+  "boundary_verification": "official_SOI_comparison_completed_material_mismatch_found",
+  "crop_data": "25_official_annual_PDFs_acquired_raw_Beed_rows_extracted_units_retained",
+  "candidate_masks": "downloaded_and_inspected_not_applied_to_primary_experiment"
 }

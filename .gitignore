@@ -1,3 +1,8 @@
 __pycache__/
 *.py[cod]
 .venv/
+
+# Large national boundary sources stay local; Beed GeoJSON is tracked.
+/data/study/ancillary/soi_complete.rar
+/data/study/ancillary/soi_administrative_boundaries.rar.partial
+/data/study/ancillary/soi_district/

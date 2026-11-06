@@ -1,0 +1,42 @@
+{
+  "gfsad2010_crop_irrigation_classes_modis_grid": {
+    "dataset": "USGS/GFSAD1000_V1",
+    "limitation": "Nearest-neighbour class sampling on MODIS grid; nominal 2010, inputs 2007\u20132012. 0 noncrop; 1 major irrigation; 2 minor irrigation; 3\u20135 rainfed. Not a 2020\u20132024 irrigation observation or crop-type map.",
+    "sha256": "b6435143c3ac95511d9ca14d70a6b3969c344764b74d5822382b1f836906976e",
+    "bytes": 3354,
+    "grid": {
+      "type": "Projection",
+      "crs": "SR-ORG:6974",
+      "transform": [
+        926.625433055833,
+        0,
+        -20015109.354,
+        0,
+        -926.6254330558334,
+        10007554.677003
+      ]
+    },
+    "aoi": "FAO/GAUL/2015/level2 ADM2_CODE=70179",
+    "retrieved_utc": "2026-11-06T14:40:50.482169+00:00"
+  },
+  "worldcover2021_crop_fraction_modis_grid": {
+    "dataset": "ESA/WorldCover/v200",
+    "limitation": "Area-weighted 10m cropland class 40 fraction aggregated via a 100m intermediate to MODIS grid, nominal 2021. No crop species or irrigation identification; CC-BY-4.0, ESA WorldCover consortium.",
+    "sha256": "7d7e58bee489821eaed8b042e3287c7269b12ae3e099675596e45230a604da49",
+    "bytes": 50133,
+    "grid": {
+      "type": "Projection",
+      "crs": "SR-ORG:6974",
+      "transform": [
+        926.625433055833,
+        0,
+        -20015109.354,
+        0,
+        -926.6254330558334,
+        10007554.677003
+      ]
+    },
+    "aoi": "FAO/GAUL/2015/level2 ADM2_CODE=70179",
+    "retrieved_utc": "2026-11-06T14:41:44.150851+00:00"
+  }
+}
