@@ -1,6 +1,8 @@
 # GNR605: Beed post-monsoon drought study
 
-Updated 27 October 2026. All three requested research papers are present and reviewed. No satellite experiment has yet been run.
+Updated 6 November 2026. All three requested research papers are present and reviewed. An Andure-inspired indicator pipeline is implemented; its satellite execution is pending Earth Engine access. No empirical results have yet been produced.
+
+- [Start the Andure reconstruction](pipeline/andure/README.md): first-month Earth Engine script, explicit assumptions and CSV audit.
 
 - [Critical paper review](literature/notes/paper_review.md): methods, findings, limitations and page references.
 - [Literature matrix](literature/literature_matrix.md): comparable extraction fields and prioritized reading queue.
