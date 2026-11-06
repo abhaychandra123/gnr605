@@ -1,8 +1,15 @@
 # GNR605: Beed post-monsoon drought study
 
+**Current execution handoff:** [autonomous continuation and access setup](docs/AUTONOMOUS_HANDOFF.md).
+The [controlled seasonal/rainfall pipeline](pipeline/study/README.md) is implemented
+as a GEE export script plus local analysis, with seven statistical tests passing.
+New satellite jobs remain unexecuted because this session lacks network/authentication.
+Actual screened-NDVI coverage bounds are saved in `results/study/screened_coverage_bounds.csv`;
+they are derived from existing real exports, not new satellite downloads.
+
 Updated 6 November 2026. All three requested research papers are present and reviewed. The user ran the first Andure-inspired October 2020 preview: VHI 91.43 over only 26.2% of the provisional district. The console result is archived, its consistency audit passes, and coverage diagnostics are ready to run. This is not yet a validated district-wide drought assessment.
 
-The five-year pilot, historical audit, selected-pixel date audit and QA audit have been read. Numerical consistency checks pass. The remaining large exclusions are concentrated at the good-only SummaryQA gate. Allowing marginal observations greatly increases coverage, but their reliability is unverified. See [the QA findings](results/andure/qa_audit_review.md). Next run [the detailed quality profile](pipeline/andure/04_marginal_quality_profile_gee.js) before choosing a marginal-data policy. Corrected VHI and ML remain pending.
+The detailed quality profile has now been audited in full: 174 rows, all 54 expected composites, six joint quality patterns. Internal checks pass. Marginal observations include intermediate- and high-aerosol groups, with large differences between years. See [the full-file review](results/andure/detailed_quality_review.md) for verified denominators, the unresolved usefulness-code label, and a proposed screened sensitivity comparison. That comparison, corrected VHI and ML remain pending.
 
 - [Start the Andure reconstruction](pipeline/andure/README.md): first-month Earth Engine script, explicit assumptions and CSV audit.
 

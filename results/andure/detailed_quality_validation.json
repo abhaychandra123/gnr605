@@ -1,0 +1,65 @@
+{
+  "source": {
+    "name": "beed_october_detailed_quality_profile_2001_2024.csv",
+    "library_file_id": "libfile_d36c5d764f288191b9bcf05888518a6a",
+    "reported_original_size_bytes": 39372,
+    "reader_total_lines": 175,
+    "reader_has_more": false,
+    "access": "Complete reader-returned CSV text; not an original-byte download. Reader text may normalize final newline.",
+    "received": "2026-11-06"
+  },
+  "parsed_rows": 174,
+  "quality_rows": 169,
+  "empty_composite_rows": 5,
+  "expected_composites": 54,
+  "observed_composites": 54,
+  "max_area_fraction_residual": 2.220446049250313e-16,
+  "errors": [],
+  "warnings": [
+    "Usefulness code 3 is observed and bit-consistent, but absent from the current catalogue enumerated labels. Preserve it as observed/unlabelled; do not map it to another value."
+  ],
+  "quality_patterns": [
+    {
+      "summary_qa": 0,
+      "modland_qa": 0,
+      "vi_usefulness": 0,
+      "aerosol": 1,
+      "summed_observation_area_km2": 252604.96455873558
+    },
+    {
+      "summary_qa": 0,
+      "modland_qa": 0,
+      "vi_usefulness": 1,
+      "aerosol": 1,
+      "summed_observation_area_km2": 9568.669943325733
+    },
+    {
+      "summary_qa": 1,
+      "modland_qa": 1,
+      "vi_usefulness": 1,
+      "aerosol": 2,
+      "summed_observation_area_km2": 127054.66248890154
+    },
+    {
+      "summary_qa": 1,
+      "modland_qa": 1,
+      "vi_usefulness": 2,
+      "aerosol": 2,
+      "summed_observation_area_km2": 15737.099970416419
+    },
+    {
+      "summary_qa": 1,
+      "modland_qa": 1,
+      "vi_usefulness": 3,
+      "aerosol": 3,
+      "summed_observation_area_km2": 3044.004870014215
+    },
+    {
+      "summary_qa": 1,
+      "modland_qa": 1,
+      "vi_usefulness": 4,
+      "aerosol": 3,
+      "summed_observation_area_km2": 6410.781206108089
+    }
+  ]
+}

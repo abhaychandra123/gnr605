@@ -1,0 +1,7 @@
+{
+  "coverage_bounds": "computed_from_real_uploaded_exports",
+  "satellite_comparison": "awaiting_export",
+  "rainfall_SPI": "awaiting_export",
+  "independent_impact_validation": "not_available",
+  "ML": "not_run"
+}
