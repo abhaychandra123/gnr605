@@ -1,0 +1,856 @@
+[
+  {
+    "row": 2753,
+    "col": 4817,
+    "x": 624330.0,
+    "y": 2066160.0,
+    "split": "test",
+    "id": "P01",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221028T051931_20221028T052450_T43QFA",
+    "lag_days": 1,
+    "sha256": "35a9796f3b74e08136c8fa6cb45a40ec5e9b4ac1cc180750a20a4cf3a3ca78d1"
+  },
+  {
+    "row": 802,
+    "col": 5072,
+    "x": 631980.0,
+    "y": 2124690.0,
+    "split": "test",
+    "id": "P02",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221028T051931_20221028T052450_T43QFB",
+    "lag_days": 1,
+    "sha256": "7208a9ab8468f6f1f6bb09d144f82483e3493c0388eb9ff5ab9c616f43c33e62"
+  },
+  {
+    "row": 1852,
+    "col": 3011,
+    "x": 570150.0,
+    "y": 2093190.0,
+    "split": "train",
+    "id": "P03",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221028T051931_20221028T052450_T43QEA",
+    "lag_days": 1,
+    "sha256": "f81c7f77011bd7dc43a98c566273c2729e26a7a796bb398f61871a793e80cb29"
+  },
+  {
+    "row": 1927,
+    "col": 2964,
+    "x": 568740.0,
+    "y": 2090940.0,
+    "split": "train",
+    "id": "P04",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221028T051931_20221028T052450_T43QEA",
+    "lag_days": 1,
+    "sha256": "43ca1c9b3889deea785252e22cbe6bb0aec29fbe62fd0ce2ba14765d9f5915dc"
+  },
+  {
+    "row": 1595,
+    "col": 4164,
+    "x": 604740.0,
+    "y": 2100900.0,
+    "split": "test",
+    "id": "P05",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221028T051931_20221028T052450_T43QEB",
+    "lag_days": 1,
+    "sha256": "8b08dadfcd0fefc3d32b0c5eda5b70cabf324c4801238bf87491feec1ada145d"
+  },
+  {
+    "row": 2027,
+    "col": 589,
+    "x": 497490.0,
+    "y": 2087940.0,
+    "split": "train",
+    "id": "P06",
+    "landsat_days": [
+      29
+    ]
+  },
+  {
+    "row": 1934,
+    "col": 835,
+    "x": 504870.0,
+    "y": 2090730.0,
+    "split": "train",
+    "id": "P07",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221031T052951_20221031T053909_T43QDA",
+    "lag_days": 2,
+    "sha256": "fc4f897065e2a341e0b4665a2660992e15273dde056351c2222aa995cb47ff62"
+  },
+  {
+    "row": 1177,
+    "col": 4533,
+    "x": 615810.0,
+    "y": 2113440.0,
+    "split": "test",
+    "id": "P08",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221028T051931_20221028T052450_T43QFB",
+    "lag_days": 1,
+    "sha256": "c75468bf17ccf01ed515edb6cb12558932505457232bba6d5e872f447b9f2743"
+  },
+  {
+    "row": 2120,
+    "col": 1856,
+    "x": 535500.0,
+    "y": 2085150.0,
+    "split": "train",
+    "id": "P09",
+    "landsat_days": [
+      29
+    ]
+  },
+  {
+    "row": 1102,
+    "col": 4830,
+    "x": 624720.0,
+    "y": 2115690.0,
+    "split": "test",
+    "id": "P10",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221028T051931_20221028T052450_T43QFB",
+    "lag_days": 1,
+    "sha256": "c714e5298df609aa634b0a24b246cf54f86c45f6a0e92310b95af8798181c91a"
+  },
+  {
+    "row": 1797,
+    "col": 5452,
+    "x": 643380.0,
+    "y": 2094840.0,
+    "split": "test",
+    "id": "P11",
+    "landsat_days": [
+      29
+    ]
+  },
+  {
+    "row": 987,
+    "col": 4645,
+    "x": 619170.0,
+    "y": 2119140.0,
+    "split": "test",
+    "id": "P12",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221028T051931_20221028T052450_T43QFB",
+    "lag_days": 1,
+    "sha256": "ad0dfff6cc8210e400c5e3b1be0c4e00b8a3973efbffb7021947c76fc1010185"
+  },
+  {
+    "row": 1310,
+    "col": 4265,
+    "x": 607770.0,
+    "y": 2109450.0,
+    "split": "test",
+    "id": "P13",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221028T051931_20221028T052450_T43QEB",
+    "lag_days": 1,
+    "sha256": "34c7103dd701021e01a8fcfde7af8ff11a2b3f52492dc4a3057f854798858358"
+  },
+  {
+    "row": 2382,
+    "col": 4078,
+    "x": 602160.0,
+    "y": 2077290.0,
+    "split": "test",
+    "id": "P14",
+    "landsat_days": [
+      29
+    ]
+  },
+  {
+    "row": 2052,
+    "col": 5168,
+    "x": 634860.0,
+    "y": 2087190.0,
+    "split": "test",
+    "id": "P15",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221028T051931_20221028T052450_T43QFA",
+    "lag_days": 1,
+    "sha256": "dd95219b409c4c8113452d0ea049410b00c412a9a8913f5ee5252adaac707e0a"
+  },
+  {
+    "row": 1667,
+    "col": 2462,
+    "x": 553680.0,
+    "y": 2098740.0,
+    "split": "train",
+    "id": "P16",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221031T052951_20221031T053909_T43QEA",
+    "lag_days": 2,
+    "sha256": "af016fa2a75458f4a9dec4848421cba1079b8984e917b29274d1f4be951cbe60"
+  },
+  {
+    "row": 2826,
+    "col": 5257,
+    "x": 637530.0,
+    "y": 2063970.0,
+    "split": "test",
+    "id": "P17",
+    "landsat_days": [
+      29
+    ]
+  },
+  {
+    "row": 2904,
+    "col": 4367,
+    "x": 610830.0,
+    "y": 2061630.0,
+    "split": "test",
+    "id": "P18",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221028T051931_20221028T052450_T43QFA",
+    "lag_days": 1,
+    "sha256": "c7297a54fd2dbe83aed7520d4d407e2009d8b9bf77ac36b38bc582d86c8ec009"
+  },
+  {
+    "row": 1653,
+    "col": 3751,
+    "x": 592350.0,
+    "y": 2099160.0,
+    "split": "test",
+    "id": "P19",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221028T051931_20221028T052450_T43QEA",
+    "lag_days": 1,
+    "sha256": "3076a59a77bfa745f6f0d3eddbbef6642368f547fcbf38085d1d18d8c4515da4"
+  },
+  {
+    "row": 1075,
+    "col": 4891,
+    "x": 626550.0,
+    "y": 2116500.0,
+    "split": "test",
+    "id": "P20",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221028T051931_20221028T052450_T43QFB",
+    "lag_days": 1,
+    "sha256": "99bd0790e77bc143858fa8e020db048614357526632190b4807e001264dd1a4e"
+  },
+  {
+    "row": 1742,
+    "col": 1270,
+    "x": 517920.0,
+    "y": 2096490.0,
+    "split": "train",
+    "id": "P21",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221031T052951_20221031T053909_T43QEA",
+    "lag_days": 2,
+    "sha256": "5aca440243dfe296fef225d22df27c88c49388a9b7bc7fc2016796de2306c40e"
+  },
+  {
+    "row": 1222,
+    "col": 3653,
+    "x": 589410.0,
+    "y": 2112090.0,
+    "split": "test",
+    "id": "P22",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221028T051931_20221028T052450_T43QEB",
+    "lag_days": 1,
+    "sha256": "f8205e78937637212453bdebeedc7948b532074af45e37de09f7a352a15be35e"
+  },
+  {
+    "row": 2569,
+    "col": 2423,
+    "x": 552510.0,
+    "y": 2071680.0,
+    "split": "train",
+    "id": "P23",
+    "landsat_days": [
+      29
+    ]
+  },
+  {
+    "row": 1715,
+    "col": 1759,
+    "x": 532590.0,
+    "y": 2097300.0,
+    "split": "train",
+    "id": "P24",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221031T052951_20221031T053909_T43QEA",
+    "lag_days": 2,
+    "sha256": "38c3a60f9316e0be58ba7adad068e5415b843b38abe4523fbaf195ca0c2a47b1"
+  },
+  {
+    "row": 948,
+    "col": 3172,
+    "x": 574980.0,
+    "y": 2120310.0,
+    "split": "train",
+    "id": "P25",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221028T051931_20221028T052450_T43QEB",
+    "lag_days": 1,
+    "sha256": "c0e5b3efc7cf54fa0b6deed130b1c7cb5d9b750604ed764c7fca1a7f8d2a49ec"
+  },
+  {
+    "row": 1270,
+    "col": 463,
+    "x": 493710.0,
+    "y": 2110650.0,
+    "split": "train",
+    "id": "P26",
+    "landsat_days": [
+      29
+    ]
+  },
+  {
+    "row": 679,
+    "col": 2962,
+    "x": 568680.0,
+    "y": 2128380.0,
+    "split": "train",
+    "id": "P27",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221031T052951_20221031T053909_T43QEB",
+    "lag_days": 2,
+    "sha256": "d0b28589ca042be43256f05819538ccda7c21d64b85f836b1f3b3a3886e98e8d"
+  },
+  {
+    "row": 2342,
+    "col": 1674,
+    "x": 530040.0,
+    "y": 2078490.0,
+    "split": "train",
+    "id": "P28",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221031T052951_20221031T053909_T43QEA",
+    "lag_days": 2,
+    "sha256": "f0ad5b0958f0ef5ff157f41c9e8619341d234c3b055e7dbe836e31f0f982813e"
+  },
+  {
+    "row": 972,
+    "col": 4814,
+    "x": 624240.0,
+    "y": 2119590.0,
+    "split": "test",
+    "id": "P29",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221028T051931_20221028T052450_T43QFB",
+    "lag_days": 1,
+    "sha256": "db142da6a49aefb57c41680986ce176f3983c51a588d80ca9453ca1d4b762fb0"
+  },
+  {
+    "row": 1784,
+    "col": 2377,
+    "x": 551130.0,
+    "y": 2095230.0,
+    "split": "train",
+    "id": "P30",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221031T052951_20221031T053909_T43QEA",
+    "lag_days": 2,
+    "sha256": "35b69d767d819897df349481f1dff998db3c6e2c1691c6c38c6490174bbbb6ec"
+  },
+  {
+    "row": 2086,
+    "col": 4479,
+    "x": 614190.0,
+    "y": 2086170.0,
+    "split": "test",
+    "id": "P31",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221028T051931_20221028T052450_T43QFA",
+    "lag_days": 1,
+    "sha256": "749315f5124a6dc5b50ae36d2b3534c5c637e2fc9f4abe90b218c4274122582b"
+  },
+  {
+    "row": 2265,
+    "col": 1171,
+    "x": 514950.0,
+    "y": 2080800.0,
+    "split": "train",
+    "id": "P32",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221031T052951_20221031T053909_T43QEA",
+    "lag_days": 2,
+    "sha256": "9d01e6333b420367cba8749caf1705722334c21c1ac2ba2a766865c8e8bc8b89"
+  },
+  {
+    "row": 604,
+    "col": 5164,
+    "x": 634740.0,
+    "y": 2130630.0,
+    "split": "test",
+    "id": "P33",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221028T051931_20221028T052450_T43QFB",
+    "lag_days": 1,
+    "sha256": "3e8548e76105d9dc2b2010c8047e72303e4cd7962cca5ad0e24d32ef7f58ebf2"
+  },
+  {
+    "row": 1214,
+    "col": 4731,
+    "x": 621750.0,
+    "y": 2112330.0,
+    "split": "test",
+    "id": "P34",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221028T051931_20221028T052450_T43QFB",
+    "lag_days": 1,
+    "sha256": "103865a1577295e9c1a82eda5a4a48dd3bfd59d32a734849bf43da94552ed0e4"
+  },
+  {
+    "row": 2122,
+    "col": 1896,
+    "x": 536700.0,
+    "y": 2085090.0,
+    "split": "train",
+    "id": "P35",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221031T052951_20221031T053909_T43QEA",
+    "lag_days": 2,
+    "sha256": "72dd7c4ccc9ce1d06b63236c95a70511e1eeb18655dbe0df49e8ae9c7f212af5"
+  },
+  {
+    "row": 2521,
+    "col": 1033,
+    "x": 510810.0,
+    "y": 2073120.0,
+    "split": "train",
+    "id": "P36",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221031T052951_20221031T053909_T43QEA",
+    "lag_days": 2,
+    "sha256": "1bc481f72b39e7ac75b837989a5ef4e320bf4ffb3b211fff521e637e59e9f9d0"
+  },
+  {
+    "row": 226,
+    "col": 2723,
+    "x": 561510.0,
+    "y": 2141970.0,
+    "split": "train",
+    "id": "P37",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221031T052951_20221031T053909_T43QEB",
+    "lag_days": 2,
+    "sha256": "b1dcc8ec26dcbbad8123fc6903de6dd78cd60d1b9a942a2e1f04f4db483a2446"
+  },
+  {
+    "row": 1233,
+    "col": 5281,
+    "x": 638250.0,
+    "y": 2111760.0,
+    "split": "test",
+    "id": "P38",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221028T051931_20221028T052450_T43QFB",
+    "lag_days": 1,
+    "sha256": "7c771cdfd2d40ed0965c931c778c904e16969bf42ce134240978f0735f1805d1"
+  },
+  {
+    "row": 1111,
+    "col": 5053,
+    "x": 631410.0,
+    "y": 2115420.0,
+    "split": "test",
+    "id": "P39",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221028T051931_20221028T052450_T43QFB",
+    "lag_days": 1,
+    "sha256": "d0dd4d9b8256d67ff215f66dd1b1f007c99268742087c844459e1ba674230842"
+  },
+  {
+    "row": 2288,
+    "col": 1534,
+    "x": 525840.0,
+    "y": 2080110.0,
+    "split": "train",
+    "id": "P40",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221031T052951_20221031T053909_T43QEA",
+    "lag_days": 2,
+    "sha256": "7452b47ab14c4035e30779a4c307c2ad22055919db4a65acd9d424d2d69ccea0"
+  },
+  {
+    "row": 1341,
+    "col": 391,
+    "x": 491550.0,
+    "y": 2108520.0,
+    "split": "train",
+    "id": "P41",
+    "landsat_days": [
+      29
+    ]
+  },
+  {
+    "row": 2411,
+    "col": 3696,
+    "x": 590700.0,
+    "y": 2076420.0,
+    "split": "test",
+    "id": "P42",
+    "landsat_days": [
+      29
+    ]
+  },
+  {
+    "row": 2763,
+    "col": 5276,
+    "x": 638100.0,
+    "y": 2065860.0,
+    "split": "test",
+    "id": "P43",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221028T051931_20221028T052450_T43QFA",
+    "lag_days": 1,
+    "sha256": "45d010fa3db97ceece0cef0f1daf12391d79ff2c3a66145dc666f827ab4fb83f"
+  },
+  {
+    "row": 2804,
+    "col": 4364,
+    "x": 610740.0,
+    "y": 2064630.0,
+    "split": "test",
+    "id": "P44",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221028T051931_20221028T052450_T43QFA",
+    "lag_days": 1,
+    "sha256": "a711e45d9387225650dcc93616f0d6ec8b489c2c895321de8eb529b1f5425e93"
+  },
+  {
+    "row": 2189,
+    "col": 2598,
+    "x": 557760.0,
+    "y": 2083080.0,
+    "split": "train",
+    "id": "P45",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221031T052951_20221031T053909_T43QEA",
+    "lag_days": 2,
+    "sha256": "cfdffdbfeeccad63ee18ebe5c8cd67a935d0c417166a36adaf6b6867549a4610"
+  },
+  {
+    "row": 1465,
+    "col": 1192,
+    "x": 515580.0,
+    "y": 2104800.0,
+    "split": "train",
+    "id": "P46",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221031T052951_20221031T053909_T43QEB",
+    "lag_days": 2,
+    "sha256": "e4d2afe70eabf46d8f9a1e641c4e2f393be51c5cc4eaa4dad97ef3a240ded190"
+  },
+  {
+    "row": 697,
+    "col": 4495,
+    "x": 614670.0,
+    "y": 2127840.0,
+    "split": "test",
+    "id": "P47",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221028T051931_20221028T052450_T43QFB",
+    "lag_days": 1,
+    "sha256": "b4096249a2455307a678257b1c166238932972f90d255fbcf256d7d1c7efa74f"
+  },
+  {
+    "row": 2449,
+    "col": 4014,
+    "x": 600240.0,
+    "y": 2075280.0,
+    "split": "test",
+    "id": "P48",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221028T051931_20221028T052450_T43QEA",
+    "lag_days": 1,
+    "sha256": "282934668d73b6ad0501d4c2e38724c6657555d91d5275d5616d1430be317a25"
+  },
+  {
+    "row": 2407,
+    "col": 4554,
+    "x": 616440.0,
+    "y": 2076540.0,
+    "split": "test",
+    "id": "P49",
+    "landsat_days": [
+      29
+    ]
+  },
+  {
+    "row": 1471,
+    "col": 5609,
+    "x": 648090.0,
+    "y": 2104620.0,
+    "split": "test",
+    "id": "P50",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221028T051931_20221028T052450_T43QFB",
+    "lag_days": 1,
+    "sha256": "ad218235d5f9728e7accb992b127d492462e36858879ad15b34f8f0ab36e33eb"
+  },
+  {
+    "row": 2136,
+    "col": 2173,
+    "x": 545010.0,
+    "y": 2084670.0,
+    "split": "train",
+    "id": "P51",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221031T052951_20221031T053909_T43QEA",
+    "lag_days": 2,
+    "sha256": "ea6cd63b3d55f81d1b191def41316479a5465dae13f2bf1925cb1cedd0dc43fb"
+  },
+  {
+    "row": 3114,
+    "col": 4602,
+    "x": 617880.0,
+    "y": 2055330.0,
+    "split": "test",
+    "id": "P52",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221028T051931_20221028T052450_T43QFA",
+    "lag_days": 1,
+    "sha256": "e3576e67da89c38accd4d5ac3841f6a77650204911f81e74b84956b0883d32af"
+  },
+  {
+    "row": 2067,
+    "col": 1346,
+    "x": 520200.0,
+    "y": 2086740.0,
+    "split": "train",
+    "id": "P53",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221031T052951_20221031T053909_T43QEA",
+    "lag_days": 2,
+    "sha256": "039c3509baf4e7b598f8362076939d64394ffcf2df92b22be6986d33710e43fb"
+  },
+  {
+    "row": 2113,
+    "col": 1438,
+    "x": 522960.0,
+    "y": 2085360.0,
+    "split": "train",
+    "id": "P54",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221031T052951_20221031T053909_T43QEA",
+    "lag_days": 2,
+    "sha256": "a59a64c66c208d169761d5d78b0b7ce5ca999f62a5987af79a3e86699c184bd1"
+  },
+  {
+    "row": 2359,
+    "col": 5396,
+    "x": 641700.0,
+    "y": 2077980.0,
+    "split": "test",
+    "id": "P55",
+    "landsat_days": [
+      29
+    ]
+  },
+  {
+    "row": 2979,
+    "col": 4881,
+    "x": 626250.0,
+    "y": 2059380.0,
+    "split": "test",
+    "id": "P56",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221028T051931_20221028T052450_T43QFA",
+    "lag_days": 1,
+    "sha256": "7460e5bbddb5ea038a565b7dbabe544ed10f183408d6ef2df8bb748938361ab1"
+  },
+  {
+    "row": 2313,
+    "col": 2625,
+    "x": 558570.0,
+    "y": 2079360.0,
+    "split": "train",
+    "id": "P57",
+    "landsat_days": [
+      29
+    ]
+  },
+  {
+    "row": 2322,
+    "col": 1475,
+    "x": 524070.0,
+    "y": 2079090.0,
+    "split": "train",
+    "id": "P58",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221031T052951_20221031T053909_T43QEA",
+    "lag_days": 2,
+    "sha256": "45e7a9d224d00b95adf1e7221f48302c41871a20c5ff58ec9be7042ddb91bf7c"
+  },
+  {
+    "row": 2435,
+    "col": 4145,
+    "x": 604170.0,
+    "y": 2075700.0,
+    "split": "test",
+    "id": "P59",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221028T051931_20221028T052450_T43QEA",
+    "lag_days": 1,
+    "sha256": "04c921922009627bd62dde7304ef3f8a2e697a1b13606f26e8a6161af21f667a"
+  },
+  {
+    "row": 1639,
+    "col": 1262,
+    "x": 517680.0,
+    "y": 2099580.0,
+    "split": "train",
+    "id": "P60",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221031T052951_20221031T053909_T43QEA",
+    "lag_days": 2,
+    "sha256": "e2763b354d6ec925db63d436f4a7b22a2089c04289da6027120e26085bec3974"
+  },
+  {
+    "row": 2202,
+    "col": 1950,
+    "x": 538320.0,
+    "y": 2082690.0,
+    "split": "train",
+    "id": "P61",
+    "landsat_days": [
+      29
+    ]
+  },
+  {
+    "row": 2213,
+    "col": 2524,
+    "x": 555540.0,
+    "y": 2082360.0,
+    "split": "train",
+    "id": "P62",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221026T052909_20221026T053726_T43QEA",
+    "lag_days": 3,
+    "sha256": "06789b4fc46de0f67984417320140891df640ef378282566467049c94d459014"
+  },
+  {
+    "row": 1644,
+    "col": 1382,
+    "x": 521280.0,
+    "y": 2099430.0,
+    "split": "train",
+    "id": "P63",
+    "landsat_days": [
+      29
+    ],
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED/20221026T052909_20221026T053726_T43QEA",
+    "lag_days": 3,
+    "sha256": "6af1767a9221cd91bcb3f6b682beac4958b1cfc473b201b8ba128b5016b1fa88"
+  },
+  {
+    "row": 2315,
+    "col": 1637,
+    "x": 528930.0,
+    "y": 2079300.0,
+    "split": "train",
+    "id": "P64",
+    "landsat_days": [
+      29
+    ]
+  }
+]

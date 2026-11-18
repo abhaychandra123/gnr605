@@ -1,0 +1,50 @@
+{
+  "sites": 64,
+  "labels": {
+    "water": 11,
+    "green": 21,
+    "uncertain": 7,
+    "unavailable": 14,
+    "exposed": 11
+  },
+  "train": {
+    "green": 8,
+    "exposed": 8,
+    "water": 2
+  },
+  "test": {
+    "water": 9,
+    "green": 13,
+    "exposed": 3
+  },
+  "baseline": {
+    "tn": 11,
+    "fp": 1,
+    "fn": 0,
+    "tp": 13,
+    "accuracy": 0.96,
+    "green_recall": 1.0,
+    "other_recall": 0.9166666666666666,
+    "balanced_accuracy": 0.9583333333333333
+  },
+  "knn": {
+    "tn": 12,
+    "fp": 0,
+    "fn": 0,
+    "tp": 13,
+    "accuracy": 1.0,
+    "green_recall": 1.0,
+    "other_recall": 1.0,
+    "balanced_accuracy": 1.0
+  },
+  "standardized_distance_scales": [
+    0.01512778877320884,
+    0.02717878561247317,
+    0.07948277484153862,
+    0.05347722400727219,
+    0.03984359638070525
+  ],
+  "same_decision": 24,
+  "nearest_train_test_metres": 16607.025621706012,
+  "labels_sha256": "a9a984d12400b0d5ade13b75a71c979432bf4fccd3835e94f53432cb5df7f6cf"
+}

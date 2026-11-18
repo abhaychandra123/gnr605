@@ -1,12 +1,9 @@
 """Select well-separated Landsat sites and retrieve blinded Sentinel-2 reference chips."""
-import csv
 import hashlib
 import json
-import math
 import random
 import sys
 from concurrent.futures import ProcessPoolExecutor
-from datetime import date
 from pathlib import Path
 
 import ee
@@ -101,6 +98,7 @@ def retrieve(s):
 def main():
     import matplotlib.pyplot as plt
     from matplotlib.patches import Rectangle
+    (DATA/'chips').mkdir(parents=True,exist_ok=True)
     sites=sample()
     with ProcessPoolExecutor(max_workers=6,initializer=init) as pool:
         sites=list(pool.map(retrieve,sites))

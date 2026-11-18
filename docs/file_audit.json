@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-18",
+  "head": "36dcfc08ac8803435ae6a538ca7897fd6694bb67",
+  "file_count": 1995,
+  "excluded": [
+    ".git",
+    ".venv",
+    "__pycache__",
+    "pipeline/landsat/build",
+    ".DS_Store",
+    "docs/file_audit.json",
+    "docs/file_inventory.tsv"
+  ],
+  "by_git_state": {
+    "tracked": 763,
+    "ignored/local": 1220,
+    "working tree": 12
+  },
+  "manifest_paths": 1103,
+  "manifest_comparisons": 1106,
+  "changed": [
+    [
+      "landsat",
+      ".gitignore"
+    ],
+    [
+      "assignment",
+      "README.md"
+    ],
+    [
+      "landsat",
+      "README.md"
+    ],
+    [
+      "assignment",
+      "docs/AUTONOMOUS_HANDOFF.md"
+    ],
+    [
+      "landsat",
+      "docs/AUTONOMOUS_HANDOFF.md"
+    ]
+  ],
+  "missing": []
+}

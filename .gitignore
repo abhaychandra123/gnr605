@@ -13,3 +13,5 @@ __pycache__/
 /data/landsat/download.log
 /pipeline/landsat/build/
 *.DS_Store
+
+data/reference/
