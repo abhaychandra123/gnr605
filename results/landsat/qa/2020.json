@@ -1,0 +1,163 @@
+{
+  "year": 2020,
+  "signature": {
+    "kernel": "9c9ae791c9a043b51d83bec6a906f7a17901386e67dba6a70f0f046825c6e035",
+    "analysis": "d9f3e49968f1217e65a88701e2797c9f3dcca5a2dae99c851923d13a9dccae02",
+    "common": "3ee64aac6587b1837d9c7a65e92696448b519b02b56fdcddbbc39324837107fe",
+    "grid": "ed59754cd48c232084339937552471ec1774995267b84a48632849409f7aabc4",
+    "sources": {
+      "data/landsat/raw/LC08_146046_20201007/r0_c0.tif": "2b91482cac21ecb833428968121fe697a68388631a11e28d7790a0df8d409e31",
+      "data/landsat/raw/LC08_146046_20201007/r0_c1200.tif": "8607122919e815b056e25092f4b77be9684e8b406578c4193538138f59407712",
+      "data/landsat/raw/LC08_146046_20201007/r0_c2400.tif": "b73749aa3ebaa579da8c80c31be025981bf6fcd1875090394ec69b3b958ed5f3",
+      "data/landsat/raw/LC08_146046_20201007/r0_c3600.tif": "ec50ae953b1d4b96ec6da032ea9caadaf4ee8bd49a56f3a0908e05f67a96d762",
+      "data/landsat/raw/LC08_146046_20201007/r0_c4800.tif": "0d5d1a8bf366186545375ceb80c0b9aa087d801eeb0d1450fd0dd39a753463f3",
+      "data/landsat/raw/LC08_146046_20201007/r0_c6000.tif": "7b4103c6739da45a5035df1a158b32f5c5b4971ff5b15f687d925bfb0468aea3",
+      "data/landsat/raw/LC08_146047_20201007/r0_c0.tif": "6412d2091f4d43d710e5bf80978115fe41d07726860dd5e1947e4fa08d6c2866",
+      "data/landsat/raw/LC08_146047_20201007/r0_c1200.tif": "9ce26de4f64f0a593838a85782566521464e19523197b33cee734de9e5ed0927",
+      "data/landsat/raw/LC08_146047_20201007/r0_c2400.tif": "0454b524e7cee2a3c40075fbab901b63f7cc927d946610574f3987140320b1dd",
+      "data/landsat/raw/LC08_146047_20201007/r0_c3600.tif": "70a2f9a81c29121f660ab12c3517844258440357df127925db6bf3148c23b1d0",
+      "data/landsat/raw/LC08_146047_20201007/r0_c4800.tif": "e65534f003754007c5fd9fc145f881603b56433672b26838bcc24dc36a5ded84",
+      "data/landsat/raw/LC08_146047_20201007/r0_c6000.tif": "921212c6759c3f98f4e8ecb98384d7c1fb1af9056147cf65c2d34a71bcee05c2",
+      "data/landsat/raw/LC08_146047_20201007/r1200_c0.tif": "612b5863b689a17f85b8a20744b02e3dafc347315b4104d39592829c71c11666",
+      "data/landsat/raw/LC08_146047_20201007/r1200_c1200.tif": "86466681e34e77f68ee6be0be425d8f0febbbd1bc94c78e52645bb13cb65a329",
+      "data/landsat/raw/LC08_146047_20201007/r1200_c2400.tif": "5bcf7a13e7155cc60e3c66c009ad90424f2e1cca7ced9a6e36ec806e046ece5b",
+      "data/landsat/raw/LC08_146047_20201007/r1200_c3600.tif": "9c1daf4e6c2d40c727d1de814703f8b8b982bda7ba22d1043fa5358211ba2bdf",
+      "data/landsat/raw/LC08_146047_20201007/r1200_c4800.tif": "782be2a028578244ecac549b8c55513eab186f5ab38828705fa06180ad0cb121",
+      "data/landsat/raw/LC08_146047_20201007/r1200_c6000.tif": "2ec24dbc4960503f38405c05e7f75ebe45fccf2a4a65c5862747df11aa1031b1",
+      "data/landsat/raw/LC08_146047_20201007/r2400_c0.tif": "6a2cb084b49bb154ad31f12b24a7ce9bab2c7b67435a7a30d49dcd6613d73389",
+      "data/landsat/raw/LC08_146047_20201007/r2400_c1200.tif": "a98272e7b3ae45924eae8a617b71192632aa668198cbe0f68be23e5f23ed6e63",
+      "data/landsat/raw/LC08_146047_20201007/r2400_c2400.tif": "7d96dd3b7a00f384c66124e1c5deed83754398944d7ed7463dc39e89bec623fa",
+      "data/landsat/raw/LC08_146047_20201007/r2400_c3600.tif": "04673335c604b204a5b8fefdff274c0f806b80f9499b861c21cd1838be2e6ea7",
+      "data/landsat/raw/LC08_146047_20201007/r2400_c4800.tif": "2cfbf8114b35c42b3853a69061e5a201ade5548505735c1bc628e25754a481bf",
+      "data/landsat/raw/LC08_146047_20201007/r2400_c6000.tif": "4cb0becb2e35df82dac714f69ab379621d929dcf37887dc998e39970d5663260",
+      "data/landsat/raw/LC08_147047_20201014/r0_c0.tif": "856f9806039307f0018314c1fe742acce8bf32d557f711c30b91e3ea0d484bc0",
+      "data/landsat/raw/LC08_147047_20201014/r1200_c0.tif": "3fbb590d212dcb91816801f6e004a979794fffb6e631befb6072a1e6c11c855e",
+      "data/landsat/raw/LC08_147047_20201014/r2400_c0.tif": "9116c8fa951f94a34619049848add2bbbc7c0547a8c1ee248e21d550b79e48b6",
+      "data/landsat/raw/LC08_146046_20201023/r0_c0.tif": "2b91482cac21ecb833428968121fe697a68388631a11e28d7790a0df8d409e31",
+      "data/landsat/raw/LC08_146046_20201023/r0_c1200.tif": "15f7d320db08e4bf544e343be0978f10cf9bcbb4d112003b09b5fe3ba6217a30",
+      "data/landsat/raw/LC08_146046_20201023/r0_c2400.tif": "5d93b797982dfd70e3b8be6b151b124083a56d8e4bf20db0b0245cbf704ad576",
+      "data/landsat/raw/LC08_146046_20201023/r0_c3600.tif": "f70811bcc954628b51f6d72dab498195656f05453cd39adfcc6118d54e15b9fd",
+      "data/landsat/raw/LC08_146046_20201023/r0_c4800.tif": "f9d708ebd72db3f4bf58354a836326f1f3499ee00ce0deb1b4334d1aec1881c7",
+      "data/landsat/raw/LC08_146046_20201023/r0_c6000.tif": "6c1da64dbf510cd8dbaabb81319f43410076f682c96ea4e43e934c0bee6598f2",
+      "data/landsat/raw/LC08_146047_20201023/r0_c0.tif": "e2a47322256bc62d85026219a8c70c59fee4d29acb2a1411e8c4ec3fdd4f0cf8",
+      "data/landsat/raw/LC08_146047_20201023/r0_c1200.tif": "4ddeb0f743f2eead475beff2bb3707828a0db821dea6e316213a64977884b546",
+      "data/landsat/raw/LC08_146047_20201023/r0_c2400.tif": "69250ea8af303b8abb7569edca089a189aae43c22f610f91a7a2d4e27addff1d",
+      "data/landsat/raw/LC08_146047_20201023/r0_c3600.tif": "7e28325af962b8c0ca4cbfde46e6f70ea2ee2370204e3ddbb352b72e9ff42456",
+      "data/landsat/raw/LC08_146047_20201023/r0_c4800.tif": "e5e7fbfb4e48430087c974f55ae3eaa9c8e5ff2c57dd3b739b589976b3d0a74e",
+      "data/landsat/raw/LC08_146047_20201023/r0_c6000.tif": "f4ab4fd01d89d1ffeccd2becc94ff6e37b01d888cb748f06d28f94d841148784",
+      "data/landsat/raw/LC08_146047_20201023/r1200_c0.tif": "69781de5c30436bde8473802395977a7e44b56a90d9bf3e47d9ca436842f4ae4",
+      "data/landsat/raw/LC08_146047_20201023/r1200_c1200.tif": "6ba762aa6fba2f280006d12f7374cf73c2b8cfd74d17e28ab2eb23380235f460",
+      "data/landsat/raw/LC08_146047_20201023/r1200_c2400.tif": "c717b85e433ae3ce95f2d7a1419243ea8c636fec2c098fe49091b7d4b412b8b9",
+      "data/landsat/raw/LC08_146047_20201023/r1200_c3600.tif": "586270a4cc7814f0b05e999c063dda19e3422a4b6444c0cd6749d12705699ac2",
+      "data/landsat/raw/LC08_146047_20201023/r1200_c4800.tif": "c3d6bb12ebfab73f3abfa5ca9ffea634c2d7dad32836672c3d0ad3e2d33fecc6",
+      "data/landsat/raw/LC08_146047_20201023/r1200_c6000.tif": "2ec24dbc4960503f38405c05e7f75ebe45fccf2a4a65c5862747df11aa1031b1",
+      "data/landsat/raw/LC08_146047_20201023/r2400_c0.tif": "3b4e5178148fded1438a3aadfd7805da2e7493b0c4dc0e21ce152d2a6d1029d5",
+      "data/landsat/raw/LC08_146047_20201023/r2400_c1200.tif": "9108b777322f5ca60c08d2717859c21730a3d77ec4f45bf478ad87c0f44733b4",
+      "data/landsat/raw/LC08_146047_20201023/r2400_c2400.tif": "fd15cf514b81ef7fd92842c865e633a7e224ae5c8a962bbf3d7af20fdac33e0e",
+      "data/landsat/raw/LC08_146047_20201023/r2400_c3600.tif": "8296ef9555af8612a0ca911f09871cbd8feb4afe6061fbef08005a3e0436efff",
+      "data/landsat/raw/LC08_146047_20201023/r2400_c4800.tif": "9a5206e56fcefd527975acee854f8ea88bde0700e9b2e6c70c5d49cbfaa42348",
+      "data/landsat/raw/LC08_146047_20201023/r2400_c6000.tif": "4cb0becb2e35df82dac714f69ab379621d929dcf37887dc998e39970d5663260",
+      "data/landsat/raw/LC08_147047_20201030/r0_c0.tif": "62f6e36acef664a8c11361683a7e0ad55b648858c142080e890a50348304761a",
+      "data/landsat/raw/LC08_147047_20201030/r1200_c0.tif": "bc6b05bd2c624c0ee760261d9ae401c98519b72422a3001acdd65931172d7087",
+      "data/landsat/raw/LC08_147047_20201030/r2400_c0.tif": "dce1f543f376a248f99e54e7eec0731fa6b7b7ed1ff4383531ac1aa4ba7820f5"
+    }
+  },
+  "scenes": [
+    {
+      "scene": "LC08_146046_20201007",
+      "counts": {
+        "quality_accepted_before_date_dedup": 0,
+        "invalid_dn": 2198482,
+        "cloud_snow_fill": 405364,
+        "saturation_occlusion": 0,
+        "aerosol": 0,
+        "invalid_red_nir": 0,
+        "accepted_unique_date": 0,
+        "accepted_water_flag": 0,
+        "accepted_interpolated_aerosol": 0,
+        "accepted_climatology_aerosol": 0
+      }
+    },
+    {
+      "scene": "LC08_146047_20201007",
+      "counts": {
+        "quality_accepted_before_date_dedup": 8170,
+        "invalid_dn": 1238837,
+        "cloud_snow_fill": 8438313,
+        "saturation_occlusion": 0,
+        "aerosol": 2089499,
+        "invalid_red_nir": 0,
+        "accepted_unique_date": 8170,
+        "accepted_water_flag": 1,
+        "accepted_interpolated_aerosol": 6694,
+        "accepted_climatology_aerosol": 0
+      }
+    },
+    {
+      "scene": "LC08_147047_20201014",
+      "counts": {
+        "quality_accepted_before_date_dedup": 0,
+        "invalid_dn": 1050155,
+        "cloud_snow_fill": 33971,
+        "saturation_occlusion": 0,
+        "aerosol": 0,
+        "invalid_red_nir": 0,
+        "accepted_unique_date": 0,
+        "accepted_water_flag": 0,
+        "accepted_interpolated_aerosol": 0,
+        "accepted_climatology_aerosol": 0
+      }
+    },
+    {
+      "scene": "LC08_146046_20201023",
+      "counts": {
+        "quality_accepted_before_date_dedup": 125,
+        "invalid_dn": 2206597,
+        "cloud_snow_fill": 340483,
+        "saturation_occlusion": 0,
+        "aerosol": 56641,
+        "invalid_red_nir": 0,
+        "accepted_unique_date": 125,
+        "accepted_water_flag": 0,
+        "accepted_interpolated_aerosol": 122,
+        "accepted_climatology_aerosol": 0
+      }
+    },
+    {
+      "scene": "LC08_146047_20201023",
+      "counts": {
+        "quality_accepted_before_date_dedup": 425,
+        "invalid_dn": 1221060,
+        "cloud_snow_fill": 6364439,
+        "saturation_occlusion": 0,
+        "aerosol": 4188895,
+        "invalid_red_nir": 0,
+        "accepted_unique_date": 425,
+        "accepted_water_flag": 0,
+        "accepted_interpolated_aerosol": 354,
+        "accepted_climatology_aerosol": 0
+      }
+    },
+    {
+      "scene": "LC08_147047_20201030",
+      "counts": {
+        "quality_accepted_before_date_dedup": 39822,
+        "invalid_dn": 1040290,
+        "cloud_snow_fill": 0,
+        "saturation_occlusion": 0,
+        "aerosol": 4014,
+        "invalid_red_nir": 0,
+        "accepted_unique_date": 39822,
+        "accepted_water_flag": 230,
+        "accepted_interpolated_aerosol": 35461,
+        "accepted_climatology_aerosol": 0
+      }
+    }
+  ],
+  "unique_source_dates": [
+    "20201007",
+    "20201014",
+    "20201023",
+    "20201030"
+  ]
+}

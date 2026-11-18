@@ -1,0 +1,672 @@
+[
+  {
+    "CLOUD_COVER": 25.76,
+    "CLOUD_COVER_LAND": 25.76,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_145047_20151003_20200908_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 145,
+    "WRS_ROW": 47,
+    "system:index": "LC08_145047_20151003",
+    "system:time_start": 1443849328656
+  },
+  {
+    "CLOUD_COVER": 0,
+    "CLOUD_COVER_LAND": 0,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_145047_20151019_20200908_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 145,
+    "WRS_ROW": 47,
+    "system:index": "LC08_145047_20151019",
+    "system:time_start": 1445231729852
+  },
+  {
+    "CLOUD_COVER": 57.72,
+    "CLOUD_COVER_LAND": 57.72,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_145047_20161005_20200906_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 145,
+    "WRS_ROW": 47,
+    "system:index": "LC08_145047_20161005",
+    "system:time_start": 1475644543830
+  },
+  {
+    "CLOUD_COVER": 0.05,
+    "CLOUD_COVER_LAND": 0.05,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_145047_20161021_20200905_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 145,
+    "WRS_ROW": 47,
+    "system:index": "LC08_145047_20161021",
+    "system:time_start": 1477026948235
+  },
+  {
+    "CLOUD_COVER": 0,
+    "CLOUD_COVER_LAND": 0,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_145047_20171024_20200902_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 145,
+    "WRS_ROW": 47,
+    "system:index": "LC08_145047_20171024",
+    "system:time_start": 1508822145810
+  },
+  {
+    "CLOUD_COVER": 40.37,
+    "CLOUD_COVER_LAND": 40.37,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_145047_20181011_20200830_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 145,
+    "WRS_ROW": 47,
+    "system:index": "LC08_145047_20181011",
+    "system:time_start": 1539234916395
+  },
+  {
+    "CLOUD_COVER": 0,
+    "CLOUD_COVER_LAND": 0,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_145047_20181027_20200830_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 145,
+    "WRS_ROW": 47,
+    "system:index": "LC08_145047_20181027",
+    "system:time_start": 1540617321436
+  },
+  {
+    "CLOUD_COVER": 15.74,
+    "CLOUD_COVER_LAND": 15.74,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_145047_20191014_20200825_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 145,
+    "WRS_ROW": 47,
+    "system:index": "LC08_145047_20191014",
+    "system:time_start": 1571030150942
+  },
+  {
+    "CLOUD_COVER": 41.64,
+    "CLOUD_COVER_LAND": 41.64,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_145047_20191030_20200825_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 145,
+    "WRS_ROW": 47,
+    "system:index": "LC08_145047_20191030",
+    "system:time_start": 1572412551155
+  },
+  {
+    "CLOUD_COVER": 15.41,
+    "CLOUD_COVER_LAND": 15.41,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_145047_20211019_20211026_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 145,
+    "WRS_ROW": 47,
+    "system:index": "LC08_145047_20211019",
+    "system:time_start": 1634620553396
+  },
+  {
+    "CLOUD_COVER": 5.68,
+    "CLOUD_COVER_LAND": 5.68,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_145047_20221022_20221101_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 145,
+    "WRS_ROW": 47,
+    "system:index": "LC08_145047_20221022",
+    "system:time_start": 1666415763082
+  },
+  {
+    "CLOUD_COVER": 0.5,
+    "CLOUD_COVER_LAND": 0.5,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_145047_20231009_20231017_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 145,
+    "WRS_ROW": 47,
+    "system:index": "LC08_145047_20231009",
+    "system:time_start": 1696828536541
+  },
+  {
+    "CLOUD_COVER": 0.07,
+    "CLOUD_COVER_LAND": 0.07,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_145047_20231025_20231101_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 145,
+    "WRS_ROW": 47,
+    "system:index": "LC08_145047_20231025",
+    "system:time_start": 1698210939232
+  },
+  {
+    "CLOUD_COVER": 0.03,
+    "CLOUD_COVER_LAND": 0.03,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_145047_20241027_20241104_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 145,
+    "WRS_ROW": 47,
+    "system:index": "LC08_145047_20241027",
+    "system:time_start": 1730006129059
+  },
+  {
+    "CLOUD_COVER": 5.53,
+    "CLOUD_COVER_LAND": 5.53,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_146046_20151010_20200908_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 146,
+    "WRS_ROW": 46,
+    "system:index": "LC08_146046_20151010",
+    "system:time_start": 1444454475370
+  },
+  {
+    "CLOUD_COVER": 14.82,
+    "CLOUD_COVER_LAND": 14.82,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_146046_20151026_20200908_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 146,
+    "WRS_ROW": 46,
+    "system:index": "LC08_146046_20151026",
+    "system:time_start": 1445836879905
+  },
+  {
+    "CLOUD_COVER": 21.21,
+    "CLOUD_COVER_LAND": 21.21,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_146046_20161012_20200905_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 146,
+    "WRS_ROW": 46,
+    "system:index": "LC08_146046_20161012",
+    "system:time_start": 1476249693357
+  },
+  {
+    "CLOUD_COVER": 0,
+    "CLOUD_COVER_LAND": 0,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_146046_20161028_20200905_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 146,
+    "WRS_ROW": 46,
+    "system:index": "LC08_146046_20161028",
+    "system:time_start": 1477632095564
+  },
+  {
+    "CLOUD_COVER": 27.6,
+    "CLOUD_COVER_LAND": 27.6,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_146046_20171015_20200902_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 146,
+    "WRS_ROW": 46,
+    "system:index": "LC08_146046_20171015",
+    "system:time_start": 1508044891972
+  },
+  {
+    "CLOUD_COVER": 0,
+    "CLOUD_COVER_LAND": 0,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_146046_20171031_20200902_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 146,
+    "WRS_ROW": 46,
+    "system:index": "LC08_146046_20171031",
+    "system:time_start": 1509427292427
+  },
+  {
+    "CLOUD_COVER": 4.14,
+    "CLOUD_COVER_LAND": 4.14,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_146046_20181002_20200830_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 146,
+    "WRS_ROW": 46,
+    "system:index": "LC08_146046_20181002",
+    "system:time_start": 1538457659234
+  },
+  {
+    "CLOUD_COVER": 11.17,
+    "CLOUD_COVER_LAND": 11.17,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_146046_20181018_20200830_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 146,
+    "WRS_ROW": 46,
+    "system:index": "LC08_146046_20181018",
+    "system:time_start": 1539840065825
+  },
+  {
+    "CLOUD_COVER": 36.51,
+    "CLOUD_COVER_LAND": 36.51,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_146046_20191005_20200825_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 146,
+    "WRS_ROW": 46,
+    "system:index": "LC08_146046_20191005",
+    "system:time_start": 1570252896559
+  },
+  {
+    "CLOUD_COVER": 61.95,
+    "CLOUD_COVER_LAND": 61.95,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_146046_20201007_20220526_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 146,
+    "WRS_ROW": 46,
+    "system:index": "LC08_146046_20201007",
+    "system:time_start": 1602048094106
+  },
+  {
+    "CLOUD_COVER": 18.27,
+    "CLOUD_COVER_LAND": 18.27,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_146046_20201023_20201105_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 146,
+    "WRS_ROW": 46,
+    "system:index": "LC08_146046_20201023",
+    "system:time_start": 1603430494529
+  },
+  {
+    "CLOUD_COVER": 30.99,
+    "CLOUD_COVER_LAND": 30.99,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_146046_20211010_20211019_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 146,
+    "WRS_ROW": 46,
+    "system:index": "LC08_146046_20211010",
+    "system:time_start": 1633843298862
+  },
+  {
+    "CLOUD_COVER": 0.06,
+    "CLOUD_COVER_LAND": 0.06,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_146046_20211026_20211104_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 146,
+    "WRS_ROW": 46,
+    "system:index": "LC08_146046_20211026",
+    "system:time_start": 1635225700531
+  },
+  {
+    "CLOUD_COVER": 54.7,
+    "CLOUD_COVER_LAND": 54.7,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_146046_20221013_20221020_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 146,
+    "WRS_ROW": 46,
+    "system:index": "LC08_146046_20221013",
+    "system:time_start": 1665638504152
+  },
+  {
+    "CLOUD_COVER": 0.01,
+    "CLOUD_COVER_LAND": 0.01,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_146046_20221029_20221108_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 146,
+    "WRS_ROW": 46,
+    "system:index": "LC08_146046_20221029",
+    "system:time_start": 1667020912795
+  },
+  {
+    "CLOUD_COVER": 2.68,
+    "CLOUD_COVER_LAND": 2.68,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_146046_20231016_20231102_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 146,
+    "WRS_ROW": 46,
+    "system:index": "LC08_146046_20231016",
+    "system:time_start": 1697433684105
+  },
+  {
+    "CLOUD_COVER": 17.44,
+    "CLOUD_COVER_LAND": 17.44,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_146046_20241002_20241006_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 146,
+    "WRS_ROW": 46,
+    "system:index": "LC08_146046_20241002",
+    "system:time_start": 1727846465248
+  },
+  {
+    "CLOUD_COVER": 27.57,
+    "CLOUD_COVER_LAND": 27.57,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_146046_20241018_20241031_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 146,
+    "WRS_ROW": 46,
+    "system:index": "LC08_146046_20241018",
+    "system:time_start": 1729228878917
+  },
+  {
+    "CLOUD_COVER": 3.62,
+    "CLOUD_COVER_LAND": 3.62,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_146047_20151010_20200908_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 146,
+    "WRS_ROW": 47,
+    "system:index": "LC08_146047_20151010",
+    "system:time_start": 1444454499278
+  },
+  {
+    "CLOUD_COVER": 6.36,
+    "CLOUD_COVER_LAND": 6.36,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_146047_20151026_20200908_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 146,
+    "WRS_ROW": 47,
+    "system:index": "LC08_146047_20151026",
+    "system:time_start": 1445836903809
+  },
+  {
+    "CLOUD_COVER": 2.65,
+    "CLOUD_COVER_LAND": 2.65,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_146047_20161012_20200905_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 146,
+    "WRS_ROW": 47,
+    "system:index": "LC08_146047_20161012",
+    "system:time_start": 1476249717261
+  },
+  {
+    "CLOUD_COVER": 0,
+    "CLOUD_COVER_LAND": 0,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_146047_20161028_20200905_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 146,
+    "WRS_ROW": 47,
+    "system:index": "LC08_146047_20161028",
+    "system:time_start": 1477632119463
+  },
+  {
+    "CLOUD_COVER": 33.81,
+    "CLOUD_COVER_LAND": 33.81,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_146047_20171015_20200902_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 146,
+    "WRS_ROW": 47,
+    "system:index": "LC08_146047_20171015",
+    "system:time_start": 1508044915876
+  },
+  {
+    "CLOUD_COVER": 15.57,
+    "CLOUD_COVER_LAND": 15.57,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_146047_20171031_20200902_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 146,
+    "WRS_ROW": 47,
+    "system:index": "LC08_146047_20171031",
+    "system:time_start": 1509427316327
+  },
+  {
+    "CLOUD_COVER": 9.99,
+    "CLOUD_COVER_LAND": 9.99,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_146047_20181002_20200830_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 146,
+    "WRS_ROW": 47,
+    "system:index": "LC08_146047_20181002",
+    "system:time_start": 1538457683142
+  },
+  {
+    "CLOUD_COVER": 33.55,
+    "CLOUD_COVER_LAND": 33.55,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_146047_20181018_20200830_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 146,
+    "WRS_ROW": 47,
+    "system:index": "LC08_146047_20181018",
+    "system:time_start": 1539840089729
+  },
+  {
+    "CLOUD_COVER": 36.29,
+    "CLOUD_COVER_LAND": 36.29,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_146047_20191005_20200825_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 146,
+    "WRS_ROW": 47,
+    "system:index": "LC08_146047_20191005",
+    "system:time_start": 1570252920467
+  },
+  {
+    "CLOUD_COVER": 90.99,
+    "CLOUD_COVER_LAND": 90.99,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_146047_20191021_20200825_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 146,
+    "WRS_ROW": 47,
+    "system:index": "LC08_146047_20191021",
+    "system:time_start": 1571635322174
+  },
+  {
+    "CLOUD_COVER": 63.41,
+    "CLOUD_COVER_LAND": 63.41,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_146047_20201007_20220526_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 146,
+    "WRS_ROW": 47,
+    "system:index": "LC08_146047_20201007",
+    "system:time_start": 1602048118010
+  },
+  {
+    "CLOUD_COVER": 34.25,
+    "CLOUD_COVER_LAND": 34.25,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_146047_20201023_20201105_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 146,
+    "WRS_ROW": 47,
+    "system:index": "LC08_146047_20201023",
+    "system:time_start": 1603430518428
+  },
+  {
+    "CLOUD_COVER": 0.42,
+    "CLOUD_COVER_LAND": 0.42,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_146047_20211026_20211104_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 146,
+    "WRS_ROW": 47,
+    "system:index": "LC08_146047_20211026",
+    "system:time_start": 1635225724431
+  },
+  {
+    "CLOUD_COVER": 0,
+    "CLOUD_COVER_LAND": 0,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_146047_20221029_20221108_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 146,
+    "WRS_ROW": 47,
+    "system:index": "LC08_146047_20221029",
+    "system:time_start": 1667020936699
+  },
+  {
+    "CLOUD_COVER": 0.97,
+    "CLOUD_COVER_LAND": 0.97,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_146047_20231016_20231102_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 146,
+    "WRS_ROW": 47,
+    "system:index": "LC08_146047_20231016",
+    "system:time_start": 1697433708005
+  },
+  {
+    "CLOUD_COVER": 10.82,
+    "CLOUD_COVER_LAND": 10.82,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_146047_20241002_20241006_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 146,
+    "WRS_ROW": 47,
+    "system:index": "LC08_146047_20241002",
+    "system:time_start": 1727846489152
+  },
+  {
+    "CLOUD_COVER": 11.62,
+    "CLOUD_COVER_LAND": 11.67,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_147047_20151001_20200908_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 147,
+    "WRS_ROW": 47,
+    "system:index": "LC08_147047_20151001",
+    "system:time_start": 1443677270108
+  },
+  {
+    "CLOUD_COVER": 3.35,
+    "CLOUD_COVER_LAND": 3.37,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_147047_20151017_20200908_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 147,
+    "WRS_ROW": 47,
+    "system:index": "LC08_147047_20151017",
+    "system:time_start": 1445059670244
+  },
+  {
+    "CLOUD_COVER": 4.3,
+    "CLOUD_COVER_LAND": 4.34,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_147047_20161019_20200905_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 147,
+    "WRS_ROW": 47,
+    "system:index": "LC08_147047_20161019",
+    "system:time_start": 1476854889620
+  },
+  {
+    "CLOUD_COVER": 41.22,
+    "CLOUD_COVER_LAND": 40.9,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_147047_20171006_20200903_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 147,
+    "WRS_ROW": 47,
+    "system:index": "LC08_147047_20171006",
+    "system:time_start": 1507267684845
+  },
+  {
+    "CLOUD_COVER": 28.67,
+    "CLOUD_COVER_LAND": 28.59,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_147047_20171022_20200902_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 147,
+    "WRS_ROW": 47,
+    "system:index": "LC08_147047_20171022",
+    "system:time_start": 1508650087384
+  },
+  {
+    "CLOUD_COVER": 0.53,
+    "CLOUD_COVER_LAND": 0.52,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_147047_20181009_20200830_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 147,
+    "WRS_ROW": 47,
+    "system:index": "LC08_147047_20181009",
+    "system:time_start": 1539062857208
+  },
+  {
+    "CLOUD_COVER": 5.18,
+    "CLOUD_COVER_LAND": 5.23,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_147047_20181025_20200830_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 147,
+    "WRS_ROW": 47,
+    "system:index": "LC08_147047_20181025",
+    "system:time_start": 1540445262592
+  },
+  {
+    "CLOUD_COVER": 11.44,
+    "CLOUD_COVER_LAND": 11.52,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_147047_20191012_20200825_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 147,
+    "WRS_ROW": 47,
+    "system:index": "LC08_147047_20191012",
+    "system:time_start": 1570858092363
+  },
+  {
+    "CLOUD_COVER": 20.41,
+    "CLOUD_COVER_LAND": 20.55,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_147047_20191028_20200825_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 147,
+    "WRS_ROW": 47,
+    "system:index": "LC08_147047_20191028",
+    "system:time_start": 1572240492918
+  },
+  {
+    "CLOUD_COVER": 99.96,
+    "CLOUD_COVER_LAND": 99.96,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_147047_20201014_20201105_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 147,
+    "WRS_ROW": 47,
+    "system:index": "LC08_147047_20201014",
+    "system:time_start": 1602653289331
+  },
+  {
+    "CLOUD_COVER": 0.02,
+    "CLOUD_COVER_LAND": 0.02,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_147047_20201030_20201106_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 147,
+    "WRS_ROW": 47,
+    "system:index": "LC08_147047_20201030",
+    "system:time_start": 1604035688529
+  },
+  {
+    "CLOUD_COVER": 41.84,
+    "CLOUD_COVER_LAND": 41.97,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_147047_20211001_20211013_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 147,
+    "WRS_ROW": 47,
+    "system:index": "LC08_147047_20211001",
+    "system:time_start": 1633066090729
+  },
+  {
+    "CLOUD_COVER": 52.43,
+    "CLOUD_COVER_LAND": 52.46,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_147047_20211017_20211026_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 147,
+    "WRS_ROW": 47,
+    "system:index": "LC08_147047_20211017",
+    "system:time_start": 1634448494817
+  },
+  {
+    "CLOUD_COVER": 20.66,
+    "CLOUD_COVER_LAND": 20.79,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_147047_20221004_20221012_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 147,
+    "WRS_ROW": 47,
+    "system:index": "LC08_147047_20221004",
+    "system:time_start": 1664861306119
+  },
+  {
+    "CLOUD_COVER": 46.31,
+    "CLOUD_COVER_LAND": 46.65,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_147047_20221020_20221101_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 147,
+    "WRS_ROW": 47,
+    "system:index": "LC08_147047_20221020",
+    "system:time_start": 1666243703528
+  },
+  {
+    "CLOUD_COVER": 4.29,
+    "CLOUD_COVER_LAND": 4.32,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_147047_20231007_20231011_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 147,
+    "WRS_ROW": 47,
+    "system:index": "LC08_147047_20231007",
+    "system:time_start": 1696656476859
+  },
+  {
+    "CLOUD_COVER": 0.54,
+    "CLOUD_COVER_LAND": 0.55,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_147047_20231023_20231031_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 147,
+    "WRS_ROW": 47,
+    "system:index": "LC08_147047_20231023",
+    "system:time_start": 1698038879744
+  },
+  {
+    "CLOUD_COVER": 91.26,
+    "CLOUD_COVER_LAND": 91.2,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_147047_20241009_20241018_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 147,
+    "WRS_ROW": 47,
+    "system:index": "LC08_147047_20241009",
+    "system:time_start": 1728451664377
+  },
+  {
+    "CLOUD_COVER": 5.08,
+    "CLOUD_COVER_LAND": 5.12,
+    "LANDSAT_PRODUCT_ID": "LC08_L2SP_147047_20241025_20241029_02_T1",
+    "PROCESSING_LEVEL": "L2SP",
+    "WRS_PATH": 147,
+    "WRS_ROW": 47,
+    "system:index": "LC08_147047_20241025",
+    "system:time_start": 1729834072437
+  }
+]

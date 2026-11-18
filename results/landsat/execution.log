@@ -1,0 +1,44 @@
+Waiting for completed source manifest
+RUN analyze.py
+Reusing validated year 2015
+Reusing validated year 2016
+Reusing validated year 2017
+Reusing validated year 2018
+Reusing validated year 2019
+Reusing validated year 2020
+Reusing validated year 2021
+Reusing validated year 2022
+Processing 2023 48 source tiles
+Completed 2023
+Processing 2024 45 source tiles
+Completed 2024
+ANALYSIS COMPLETE
+RUN validate.py
+All 573 source hashes, dimensions and transforms passed
+Reconstructed 2015 96 pixel histories
+Reconstructed 2016 96 pixel histories
+Reconstructed 2017 96 pixel histories
+Reconstructed 2018 96 pixel histories
+Reconstructed 2019 96 pixel histories
+Reconstructed 2020 96 pixel histories
+Reconstructed 2021 96 pixel histories
+Reconstructed 2022 96 pixel histories
+Reconstructed 2023 96 pixel histories
+Reconstructed 2024 96 pixel histories
+VALIDATION COMPLETE
+RUN aerosol_audit.py
+2015 25.9 -> 99.9 % diagnostic only
+2016 97.2 -> 100.0 % diagnostic only
+2017 76.3 -> 98.7 % diagnostic only
+2018 30.9 -> 91.9 % diagnostic only
+2019 1.2 -> 53.8 % diagnostic only
+2020 0.4 -> 38.6 % diagnostic only
+2021 82.6 -> 94.9 % diagnostic only
+2022 88.9 -> 97.8 % diagnostic only
+2023 18.5 -> 97.6 % diagnostic only
+2024 26.8 -> 77.6 % diagnostic only
+RUN transitions.py
+PAIRWISE ANALYSIS COMPLETE
+RUN present.py
+LANDSAT REPORT AND FIGURES COMPLETE
+ALL LANDSAT STAGES EXECUTED

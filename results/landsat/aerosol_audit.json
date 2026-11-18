@@ -1,0 +1,7 @@
+{
+  "interpretation": "Counterfactual coverage only. High-aerosol pixels are not admitted to the primary NDVI/vegetation calculation.",
+  "common_if_high_aerosol_included_pct": 13.44010468441171,
+  "strict_nested_in_diagnostic": "passed",
+  "code_sha256": "b98fdebba2221fd1b2e9a33cf7043887d2b1701e269d098df61657886d0fc40c",
+  "kernel_sha256": "7dc3bc4c96d2e18a37efd2a2f0f3a65b13214b4a791fa0dd307ea9b734475623"
+}

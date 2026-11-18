@@ -1,0 +1,26 @@
+[
+  {
+    "path": "data/landsat/sources/landsat_catalog.html",
+    "url": "https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LC08_C02_T1_L2",
+    "bytes": 134556,
+    "sha256": "675b19a907e0a36a143cb6ed9fce9216ca472e701e7b2eb603ac99be7a4f0138"
+  },
+  {
+    "path": "data/landsat/sources/usgs_surface_reflectance.html",
+    "url": "https://www.usgs.gov/landsat-missions/landsat-collection-2-surface-reflectance",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "data/landsat/sources/usgs_known_issues.html",
+    "url": "https://www.usgs.gov/landsat-missions/landsat-collection-2-known-issues",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "data/landsat/sources/ee_download_reference.html",
+    "url": "https://developers.google.com/earth-engine/apidocs/ee-image-getdownloadurl",
+    "bytes": 561949,
+    "sha256": "b8d9ba9e3333b2603be411bc08a01c9895b5bca023c1dd3ae6c5ccf6c1cd40d6"
+  }
+]

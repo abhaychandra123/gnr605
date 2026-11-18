@@ -6,3 +6,10 @@ __pycache__/
 /data/study/ancillary/soi_complete.rar
 /data/study/ancillary/soi_administrative_boundaries.rar.partial
 /data/study/ancillary/soi_district/
+
+# Landsat source/derived rasters stay local; provenance and summaries are tracked.
+/data/landsat/raw/
+/data/landsat/processed/
+/data/landsat/download.log
+/pipeline/landsat/build/
+*.DS_Store

@@ -1,0 +1,21 @@
+{
+  "analysis_sha256": "d9f3e49968f1217e65a88701e2797c9f3dcca5a2dae99c851923d13a9dccae02",
+  "kernel_sha256": "9c9ae791c9a043b51d83bec6a906f7a17901386e67dba6a70f0f046825c6e035",
+  "common_sha256": "3ee64aac6587b1837d9c7a65e92696448b519b02b56fdcddbbc39324837107fe",
+  "reused_assignment_algorithm_sha256": "08c808438b24b19d7a1eadcdf6e217fc5ebf6d8fe576ee4817ced215c782dd8d",
+  "download_manifest_sha256": "40a5c313b285369a780ddff6e8bb6607886d475af4eb9744b2fb06e6584396a2",
+  "completed_utc": "2026-11-06T23:55:14Z",
+  "years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "all_common_min2_pixels": 0
+}

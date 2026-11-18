@@ -1,0 +1,194 @@
+{
+  "year": 2016,
+  "signature": {
+    "kernel": "9c9ae791c9a043b51d83bec6a906f7a17901386e67dba6a70f0f046825c6e035",
+    "analysis": "d9f3e49968f1217e65a88701e2797c9f3dcca5a2dae99c851923d13a9dccae02",
+    "common": "3ee64aac6587b1837d9c7a65e92696448b519b02b56fdcddbbc39324837107fe",
+    "grid": "ed59754cd48c232084339937552471ec1774995267b84a48632849409f7aabc4",
+    "sources": {
+      "data/landsat/raw/LC08_145047_20161005/r0_c3600.tif": "bbad38a3ebba37a27a046f45ddc93a9d9eefb1ce40ccc6b8e6ea38e5d8c8b298",
+      "data/landsat/raw/LC08_145047_20161005/r0_c4800.tif": "93a0b006095998ced9d71e46b74d5890babd0d7200fdf7381ac16f41448b1b22",
+      "data/landsat/raw/LC08_145047_20161005/r0_c6000.tif": "b3a80e8ca61a9f15fc9fd231612d230b175b2fb90aff09f93fe2cd16eb581dff",
+      "data/landsat/raw/LC08_145047_20161005/r1200_c3600.tif": "d448e12d048bce3521625727cd2cb81d0a8fc40a47cb68987263e51989766a05",
+      "data/landsat/raw/LC08_145047_20161005/r1200_c4800.tif": "448ff08b7b48ba03efaf41e970584cc776dfdd3e666a60a7c05ae8164238ba55",
+      "data/landsat/raw/LC08_145047_20161005/r1200_c6000.tif": "2930fdd7e93b2c17948fe193fc9d16fd6d7780b55c28268f1410388a3aad4a2e",
+      "data/landsat/raw/LC08_145047_20161005/r2400_c3600.tif": "e450bcdb94e72d66f23797a5c5af4c87d0d7605092f105f8520f70a4537b8b0c",
+      "data/landsat/raw/LC08_145047_20161005/r2400_c4800.tif": "d29b73a8ac4ab4ef6ebb810133c3834e3ffca29f2a04319293f0fb04ec6d00a6",
+      "data/landsat/raw/LC08_145047_20161005/r2400_c6000.tif": "b43d2bd5b690dec2e2db874e266d09caa90f1a4963de5ef32453fd040bda0575",
+      "data/landsat/raw/LC08_146046_20161012/r0_c0.tif": "2b91482cac21ecb833428968121fe697a68388631a11e28d7790a0df8d409e31",
+      "data/landsat/raw/LC08_146046_20161012/r0_c1200.tif": "9f62389946aa68c1e8fc72032090c5971d27ef6af446a885ab5f8e1e3aa798e8",
+      "data/landsat/raw/LC08_146046_20161012/r0_c2400.tif": "1c577a32bfd31bc285017a36f695dff98e0c335270e91c17b319dd47f6f794ad",
+      "data/landsat/raw/LC08_146046_20161012/r0_c3600.tif": "1a231ed0f9712a3244b0a2c6e75d4ecb5210ca059e264d1972b6cdb0f88e68ca",
+      "data/landsat/raw/LC08_146046_20161012/r0_c4800.tif": "0b84c9668318269c4ee96190fe89f2ef0cc084262fafa8acf4b0e2e576420e6d",
+      "data/landsat/raw/LC08_146046_20161012/r0_c6000.tif": "90d213a2bb772f2170940775952773d2995638b9e37d46682a694addee68e267",
+      "data/landsat/raw/LC08_146047_20161012/r0_c0.tif": "d399620ea2511744d03108d79cb77a7791f2c93e18f9037dc48c6adefa877d2c",
+      "data/landsat/raw/LC08_146047_20161012/r0_c1200.tif": "380177cf209188ff9a5606e42dc20b828ad6cc635626c1306a12b8b138f25410",
+      "data/landsat/raw/LC08_146047_20161012/r0_c2400.tif": "15b0b423a81d5ff89b2a9e54d133ef79f7f5726b9fcff68d8bf698bf8dc13516",
+      "data/landsat/raw/LC08_146047_20161012/r0_c3600.tif": "c58374bb01b25b6243a451cfbfdddc9397fba0af12d90637a085fd7afe908cce",
+      "data/landsat/raw/LC08_146047_20161012/r0_c4800.tif": "8a5fd53ce3e0e45c1d3cdd3b80c0401d19a09928b1df9441ce0e1fc2bbc71a11",
+      "data/landsat/raw/LC08_146047_20161012/r0_c6000.tif": "1ccd6965073e9c9b4f950d83ffae6232703a92db5c7d4afd9e9401fb60173f53",
+      "data/landsat/raw/LC08_146047_20161012/r1200_c0.tif": "f14607dd78661754c00ffa328f52e361a92ef14b3db21aa9be1a3595305c609a",
+      "data/landsat/raw/LC08_146047_20161012/r1200_c1200.tif": "4b00edd958e8f111a1505e642adad9faf055c0dc7c6daa0851ab6c0b23416e24",
+      "data/landsat/raw/LC08_146047_20161012/r1200_c2400.tif": "29f09305c4584cdf52c086ef71805945059570e32d7afd15ab000b498df6eee4",
+      "data/landsat/raw/LC08_146047_20161012/r1200_c3600.tif": "cf21496c3ed639f108867cff3291af623bbc8d31f55da6a1629d8ee61cea272b",
+      "data/landsat/raw/LC08_146047_20161012/r1200_c4800.tif": "c9dc0c956d53ca74fc5d0db49be00f90f4af0057239a2b03b6a8ceecb1f723b2",
+      "data/landsat/raw/LC08_146047_20161012/r1200_c6000.tif": "2ec24dbc4960503f38405c05e7f75ebe45fccf2a4a65c5862747df11aa1031b1",
+      "data/landsat/raw/LC08_146047_20161012/r2400_c0.tif": "7f7b8a3997326a101b7f1ebe99f8556a023b7247ffc47598b5f68b1ab221ea11",
+      "data/landsat/raw/LC08_146047_20161012/r2400_c1200.tif": "7e24b2726ba944df5e58e442ca1d22a47e2a8addb97ae35af3d18f902727c068",
+      "data/landsat/raw/LC08_146047_20161012/r2400_c2400.tif": "4d634c22df3b564b209c0a2dbaf5c3af1243bbae780ecd3be7650ff3be1dfb2e",
+      "data/landsat/raw/LC08_146047_20161012/r2400_c3600.tif": "494975cdb93b618311fa457cf31ee89bac43dba6d775e5cd22d01c006101c577",
+      "data/landsat/raw/LC08_146047_20161012/r2400_c4800.tif": "49450eeffc4dc8a5a6331d0dee90759aee742a0008bba3b82308c3d4ffa7e34b",
+      "data/landsat/raw/LC08_146047_20161012/r2400_c6000.tif": "4cb0becb2e35df82dac714f69ab379621d929dcf37887dc998e39970d5663260",
+      "data/landsat/raw/LC08_147047_20161019/r0_c0.tif": "f97ef22c4af64d6380c022dac9deaf7bd91ebfb3fc0aad64845e0ffe134000e0",
+      "data/landsat/raw/LC08_147047_20161019/r1200_c0.tif": "f18bb7a7539443eb1b0d7ff6fe6d559b8407aad4f745002818e87d9f9b4cfc09",
+      "data/landsat/raw/LC08_147047_20161019/r2400_c0.tif": "80ce84c56940b6796f0366a5373a965cd79b3ec3cec3c67c0ceaca6005fac8ee",
+      "data/landsat/raw/LC08_145047_20161021/r0_c3600.tif": "bbad38a3ebba37a27a046f45ddc93a9d9eefb1ce40ccc6b8e6ea38e5d8c8b298",
+      "data/landsat/raw/LC08_145047_20161021/r0_c4800.tif": "0598471aea2c6f3dca8aed4ebc4ed18dc66eac5d5075d81329b8612086acb613",
+      "data/landsat/raw/LC08_145047_20161021/r0_c6000.tif": "42d0ac727334d3e0f44c2a56d2fb179ffb6c9916f3e4debec0d863656a1df556",
+      "data/landsat/raw/LC08_145047_20161021/r1200_c3600.tif": "24ed4b71f1aa9507db0c88e0aaa21385c5e63a32a78626d7f31f8f410bf6d172",
+      "data/landsat/raw/LC08_145047_20161021/r1200_c4800.tif": "addd029b489eeef8208abcca2e7764a7c33b69ca2d3cf0d5bae93ddb465b62a8",
+      "data/landsat/raw/LC08_145047_20161021/r1200_c6000.tif": "ed198ca7ab5b230185e278b25291912003d2632396fd03726c93e31f71b78dce",
+      "data/landsat/raw/LC08_145047_20161021/r2400_c3600.tif": "86296055b39b92e392894be81f640efa7d521057dc61d99204d4edf8c0615e1e",
+      "data/landsat/raw/LC08_145047_20161021/r2400_c4800.tif": "c213218c34495615930c2c6b0639b07cfa38b4a6e974f9b2fca672b36a45908e",
+      "data/landsat/raw/LC08_145047_20161021/r2400_c6000.tif": "894f211ad9fc01d74e3145029c8a68fc54194066bcfa0b37ff9d984145fbc343",
+      "data/landsat/raw/LC08_146046_20161028/r0_c0.tif": "2b91482cac21ecb833428968121fe697a68388631a11e28d7790a0df8d409e31",
+      "data/landsat/raw/LC08_146046_20161028/r0_c1200.tif": "0da1ac867926b51e0ce83c388c57262c47f2253c73fd055d32171bf77f07a06a",
+      "data/landsat/raw/LC08_146046_20161028/r0_c2400.tif": "3fa8d0aa914cbc9212aaa2ca36f9f297ddfacdea425a1861d0bfdcf9c820d2ba",
+      "data/landsat/raw/LC08_146046_20161028/r0_c3600.tif": "8adfae2948634012a643eb8dce4319641547cc41863327b2a46b1c0b65dd4b2e",
+      "data/landsat/raw/LC08_146046_20161028/r0_c4800.tif": "9440ed64755844cab726023b52c75acdabb2a77ddffefa1b0994b277393bef97",
+      "data/landsat/raw/LC08_146046_20161028/r0_c6000.tif": "87ce30b464373d7ac248354fd5240e0beea27920805f0496be6f497d3df95348",
+      "data/landsat/raw/LC08_146047_20161028/r0_c0.tif": "703cc4089f4baa5df1f11a913c3b8b06a8df005dcddac4b83abb4ce39d1d11df",
+      "data/landsat/raw/LC08_146047_20161028/r0_c1200.tif": "f99189a14cd98328e745222476183a707939461231843a9addf588ac672dee36",
+      "data/landsat/raw/LC08_146047_20161028/r0_c2400.tif": "bc84b187c6fe7b7d9bff1e095cae2f163dd8f342af6b22674e7e75349c8c8267",
+      "data/landsat/raw/LC08_146047_20161028/r0_c3600.tif": "4bd16b0229770418e2a75c2655b86e1d2a085d184b965abdccc88a82158c87d8",
+      "data/landsat/raw/LC08_146047_20161028/r0_c4800.tif": "ab758f26e9a758f7056cbebca03bbe0da78bfd4d708cbd25dbf3ab6bc4f0c7fb",
+      "data/landsat/raw/LC08_146047_20161028/r0_c6000.tif": "87ce30b464373d7ac248354fd5240e0beea27920805f0496be6f497d3df95348",
+      "data/landsat/raw/LC08_146047_20161028/r1200_c0.tif": "479792ec2ea6a2b9bba2ce650cd023cbedb2489183a598a1e4406d07e9a2824a",
+      "data/landsat/raw/LC08_146047_20161028/r1200_c1200.tif": "be9a2fbdb2facd2738326ed9bd27a0b8d44032afe86fb1c9de3f4e0850a69c73",
+      "data/landsat/raw/LC08_146047_20161028/r1200_c2400.tif": "56fc5cc06342f9226c3587d4a9dff71afbf46ffa8747c896b15a17f34771050d",
+      "data/landsat/raw/LC08_146047_20161028/r1200_c3600.tif": "24f6ec797978afd6a92b5d457484526c892cc9dd453cc12f402be554785d19cb",
+      "data/landsat/raw/LC08_146047_20161028/r1200_c4800.tif": "fcf3892671c22a620cc99eaaf08cb631cb0232be3f66d48582b7c46e6031a05e",
+      "data/landsat/raw/LC08_146047_20161028/r1200_c6000.tif": "2ec24dbc4960503f38405c05e7f75ebe45fccf2a4a65c5862747df11aa1031b1",
+      "data/landsat/raw/LC08_146047_20161028/r2400_c0.tif": "7b68bbdcc6213d34b99045c5265eb0b3d17dcf4cb99344afb2b856227ba20d91",
+      "data/landsat/raw/LC08_146047_20161028/r2400_c1200.tif": "88ed1bb40d0487033c815cc673fc6984227bef2732eb3e37bbba9fea45237b5a",
+      "data/landsat/raw/LC08_146047_20161028/r2400_c2400.tif": "0748ff244019b8eca9007ca79b8bc45e0d753a355294fc3971e4b7371bbcc246",
+      "data/landsat/raw/LC08_146047_20161028/r2400_c3600.tif": "78df38ed911c3024c00a8865d4ac64bf7163e3a9fd6e20b4dea42c977a72cf6e",
+      "data/landsat/raw/LC08_146047_20161028/r2400_c4800.tif": "59637338b4d121904fd9ded4b5be1f632e5eb5d3cae35c4e6e5e0e7c3fa0ad9e",
+      "data/landsat/raw/LC08_146047_20161028/r2400_c6000.tif": "4cb0becb2e35df82dac714f69ab379621d929dcf37887dc998e39970d5663260"
+    }
+  },
+  "scenes": [
+    {
+      "scene": "LC08_145047_20161005",
+      "counts": {
+        "quality_accepted_before_date_dedup": 1109746,
+        "invalid_dn": 2995618,
+        "cloud_snow_fill": 1474294,
+        "saturation_occlusion": 0,
+        "aerosol": 606116,
+        "invalid_red_nir": 0,
+        "accepted_unique_date": 1109746,
+        "accepted_water_flag": 7130,
+        "accepted_interpolated_aerosol": 985931,
+        "accepted_climatology_aerosol": 0
+      }
+    },
+    {
+      "scene": "LC08_146046_20161012",
+      "counts": {
+        "quality_accepted_before_date_dedup": 365562,
+        "invalid_dn": 2202738,
+        "cloud_snow_fill": 7060,
+        "saturation_occlusion": 0,
+        "aerosol": 28486,
+        "invalid_red_nir": 0,
+        "accepted_unique_date": 365562,
+        "accepted_water_flag": 1383,
+        "accepted_interpolated_aerosol": 325250,
+        "accepted_climatology_aerosol": 0
+      }
+    },
+    {
+      "scene": "LC08_146047_20161012",
+      "counts": {
+        "quality_accepted_before_date_dedup": 8849214,
+        "invalid_dn": 1231595,
+        "cloud_snow_fill": 283492,
+        "saturation_occlusion": 0,
+        "aerosol": 1410518,
+        "invalid_red_nir": 0,
+        "accepted_unique_date": 8512526,
+        "accepted_water_flag": 71136,
+        "accepted_interpolated_aerosol": 7573852,
+        "accepted_climatology_aerosol": 0
+      }
+    },
+    {
+      "scene": "LC08_147047_20161019",
+      "counts": {
+        "quality_accepted_before_date_dedup": 26012,
+        "invalid_dn": 1054636,
+        "cloud_snow_fill": 389,
+        "saturation_occlusion": 0,
+        "aerosol": 3089,
+        "invalid_red_nir": 0,
+        "accepted_unique_date": 26012,
+        "accepted_water_flag": 44,
+        "accepted_interpolated_aerosol": 23141,
+        "accepted_climatology_aerosol": 0
+      }
+    },
+    {
+      "scene": "LC08_145047_20161021",
+      "counts": {
+        "quality_accepted_before_date_dedup": 3275425,
+        "invalid_dn": 2857566,
+        "cloud_snow_fill": 4,
+        "saturation_occlusion": 0,
+        "aerosol": 52779,
+        "invalid_red_nir": 0,
+        "accepted_unique_date": 3275425,
+        "accepted_water_flag": 54312,
+        "accepted_interpolated_aerosol": 2913662,
+        "accepted_climatology_aerosol": 0
+      }
+    },
+    {
+      "scene": "LC08_146046_20161028",
+      "counts": {
+        "quality_accepted_before_date_dedup": 398313,
+        "invalid_dn": 2188328,
+        "cloud_snow_fill": 0,
+        "saturation_occlusion": 0,
+        "aerosol": 17205,
+        "invalid_red_nir": 0,
+        "accepted_unique_date": 398313,
+        "accepted_water_flag": 5432,
+        "accepted_interpolated_aerosol": 354239,
+        "accepted_climatology_aerosol": 0
+      }
+    },
+    {
+      "scene": "LC08_146047_20161028",
+      "counts": {
+        "quality_accepted_before_date_dedup": 9992053,
+        "invalid_dn": 1279280,
+        "cloud_snow_fill": 5,
+        "saturation_occlusion": 2,
+        "aerosol": 503479,
+        "invalid_red_nir": 0,
+        "accepted_unique_date": 9619380,
+        "accepted_water_flag": 106826,
+        "accepted_interpolated_aerosol": 8559441,
+        "accepted_climatology_aerosol": 0
+      }
+    }
+  ],
+  "unique_source_dates": [
+    "20161005",
+    "20161012",
+    "20161019",
+    "20161021",
+    "20161028"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "reviewed_utc": "2026-11-07T00:00:02.628532+00:00",
+  "figures": [
+    {
+      "file": "results/landsat/ndvi_and_coverage.png",
+      "sha256": "affffa8c190eb2228c57b67608b42c5fa8b93e17566cc2bcf644311fbded08d1"
+    },
+    {
+      "file": "results/landsat/ndvi_distribution.png",
+      "sha256": "37b5bb2c6e2c0f22ec57ea8abfe9f7b9a87e61992fd1fbee0a9ce021825aab0c"
+    },
+    {
+      "file": "results/landsat/october_false_colour.png",
+      "sha256": "9c7494364d0ddbd46fffed57b7de5922906a01e93db072297c888c3980b6d75f"
+    },
+    {
+      "file": "results/landsat/october_vegetation.png",
+      "sha256": "d3136e23de3b581b8fbe69fbb75c04ddd8eb2ca9e98f7eee4cdb03850a7a8357"
+    },
+    {
+      "file": "results/landsat/quality_and_pairwise_changes.png",
+      "sha256": "87460d610d1662a1bb082d763869982964fce8b0e5feb31e339ebd88869f0d2d"
+    },
+    {
+      "file": "results/landsat/year_vs_vegetation_area.png",
+      "sha256": "a887713c06665adc01125c289da2fb2c21faf64c01782822ad1b449a72f729b1"
+    }
+  ],
+  "checks": [
+    "All ten years, readable titles/axes/legends, no text clipping",
+    "Unknown areas are gray in both map series",
+    "Same display stretch and extent across years",
+    "Only 79 all-year pixels explicitly labelled; no district-wide trend inferred",
+    "Pairwise coverage labelled, including very small percentages"
+  ],
+  "notes": "Quality-coverage gaps dominate 2019/2020. The primary quality filter was not relaxed to produce a trend."
+}

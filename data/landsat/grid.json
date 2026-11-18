@@ -1,0 +1,17 @@
+{
+  "crs": "EPSG:32643",
+  "transform": [
+    30,
+    0,
+    479805,
+    0,
+    -30,
+    2148765
+  ],
+  "width": 6769,
+  "height": 3268,
+  "tile_size": 1200,
+  "pixel_area_projected_km2": 0.0009,
+  "boundary_sha256": "bf85247d44911fcb919ea49648de4e2520fb97f98399983b62fa17fa3667c8cd",
+  "note": "Fixed 30 m UTM grid; source native pixel alignment independently checked before processing. Grid-cell area, not geodesic area."
+}

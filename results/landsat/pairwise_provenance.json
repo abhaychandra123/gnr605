@@ -1,0 +1,6 @@
+{
+  "code_sha256": "f6df2e0ee50d631fc99eaee72a450610480a03d5f6bd49500ae51205b4aa132f",
+  "kernel_sha256": "45f6a6f0bf7b7054cb35e940497e29d3fc3159dbcac6538be42c84da9705c490",
+  "area_accounting": "passed",
+  "interpretation": "Each pair uses its own shared footprint; differences cannot be added or interpreted as a fixed-population time series. Threshold crossings are not proven land-use changes or drought impacts."
+}

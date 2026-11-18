@@ -1,0 +1,20 @@
+{
+  "status": "acquisition_analysis_validation_completed",
+  "completed_utc": "2026-11-07T00:00:02.633116+00:00",
+  "source_scenes": 67,
+  "source_tiles": 573,
+  "source_bytes": 6051822279,
+  "years_processed": 10,
+  "spatial_resolution_m": 30,
+  "unit_tests_passed": 5,
+  "independent_pixel_year_checks_passed": 1050,
+  "figures_reviewed": 6,
+  "all_year_common_pixels": 79,
+  "all_year_common_area_km2": 0.0711,
+  "district_wide_landsat_trend_supported": false,
+  "manual_download_required": false,
+  "ml_trained": false,
+  "field_vegetation_ground_truth_available": false,
+  "next_scientific_requirement": "Independent reference labels and spatially held-out classification evaluation on adequately observed imagery.",
+  "baseline": "Original MODIS computation and outputs preserved."
+}

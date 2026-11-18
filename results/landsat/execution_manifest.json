@@ -1,0 +1,518 @@
+{
+  "created_utc": "2026-11-07T00:00:04.229940+00:00",
+  "parent_git_commit": "b489102a5ff91a42363d2d3d9898e41ed91780e2",
+  "python": "3.13.5",
+  "platform": "macOS-26.3.1-arm64-arm-64bit-Mach-O",
+  "dependencies": {
+    "earthengine-api": "1.7.51",
+    "numpy": "2.5.4",
+    "rasterio": "1.5.2",
+    "requests": "2.34.2",
+    "matplotlib": "3.11.2"
+  },
+  "compiler": "clang++ -O3 -std=c++17 -dynamiclib; handwritten scalar algorithms",
+  "raw_sources": "data/landsat/download_manifest.json lists every downloaded tile and checksum; all were verified in validation.py",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 421,
+      "sha256": "bf84518e3bb02b1121f57e98ad2758f693bb5bed35a73916ff219392abeb7401"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5262,
+      "sha256": "b34848ac37e7606abd17c82fa8c7a045241d211296fc2102c95936139b736ef8"
+    },
+    {
+      "path": "data/landsat/acquisition_plan.json",
+      "bytes": 223253,
+      "sha256": "3ce710295d23be8241b7986452afb223cf6a765f1e423ce96032533dce8a88ec"
+    },
+    {
+      "path": "data/landsat/download_manifest.json",
+      "bytes": 439725,
+      "sha256": "40a5c313b285369a780ddff6e8bb6607886d475af4eb9744b2fb06e6584396a2"
+    },
+    {
+      "path": "data/landsat/grid.json",
+      "bytes": 426,
+      "sha256": "ed59754cd48c232084339937552471ec1774995267b84a48632849409f7aabc4"
+    },
+    {
+      "path": "data/landsat/inventory.json",
+      "bytes": 72236,
+      "sha256": "6b5dcd33f92fe0e536f77572981e877f3d979c2edc58666dcb6ad81cb5f5f63a"
+    },
+    {
+      "path": "data/landsat/processed/common_valid_min1.tif",
+      "bytes": 36171,
+      "sha256": "498f457e5d3e878ce2a70367e643900bd164765c546aab2d7b293188769f344f"
+    },
+    {
+      "path": "data/landsat/processed/common_valid_min2.tif",
+      "bytes": 36017,
+      "sha256": "28c7a285ff617fa6a434cd86186a1c22ae34466d175dbcf75bfbeec6705d45d3"
+    },
+    {
+      "path": "data/landsat/processed/district_mask.tif",
+      "bytes": 71265,
+      "sha256": "94bc681bc646fa1d70d1b7d40f7ded38735ed77d0e2897486e2fde2908907087"
+    },
+    {
+      "path": "data/landsat/processed/october_2015_ndvi.tif",
+      "bytes": 23376070,
+      "sha256": "45aa0408b8c56026b91a6e48c31af92320549728ddfb17cc49185997953d6994"
+    },
+    {
+      "path": "data/landsat/processed/october_2015_observations.tif",
+      "bytes": 308460,
+      "sha256": "dcd137a4ad61f8e9c9b56a843a6db793583c4279523f8142f7f39c11ee1b1521"
+    },
+    {
+      "path": "data/landsat/processed/october_2015_reflectance.tif",
+      "bytes": 61454834,
+      "sha256": "9b8b9805a0941aadcd322f237cf36567784c924e38a218a42e721c70c4ff2b74"
+    },
+    {
+      "path": "data/landsat/processed/october_2015_vegetation.tif",
+      "bytes": 352547,
+      "sha256": "a01d62b66d325a6efe38b90dc218c86b3fbae0358c779024b82ed7ac523941eb"
+    },
+    {
+      "path": "data/landsat/processed/october_2016_ndvi.tif",
+      "bytes": 86092220,
+      "sha256": "67479a5ccfcccb4d623423c3fba7fee30c46a0c1a7f1c1e9467dd5e330692c35"
+    },
+    {
+      "path": "data/landsat/processed/october_2016_observations.tif",
+      "bytes": 802566,
+      "sha256": "1dc60241eafe260088123af158292614b518d4145eb6eec8f53ff581c87adc4e"
+    },
+    {
+      "path": "data/landsat/processed/october_2016_reflectance.tif",
+      "bytes": 241743958,
+      "sha256": "18a2862d40faa6fa33b02c02575cd82c31e94d78d4c4df04ea9660521cdd0bb5"
+    },
+    {
+      "path": "data/landsat/processed/october_2016_vegetation.tif",
+      "bytes": 479371,
+      "sha256": "16b107c5df87479be9048b5306a179b07955930195159d153af95763ea419b73"
+    },
+    {
+      "path": "data/landsat/processed/october_2017_ndvi.tif",
+      "bytes": 68025910,
+      "sha256": "bd55f69a0a4e90a63ed06b246f43b5f9dd1b0caf2d97b18b2ad38b2577ffb083"
+    },
+    {
+      "path": "data/landsat/processed/october_2017_observations.tif",
+      "bytes": 670402,
+      "sha256": "45ef6e985b95387afa35edb15fff8f1b5dbd31ee685409d8d27e6b202e8baef1"
+    },
+    {
+      "path": "data/landsat/processed/october_2017_reflectance.tif",
+      "bytes": 176018012,
+      "sha256": "99fa04e3b21f2aeba89f4e3110b53502de18f1b35348cef3ea0f7aad122da964"
+    },
+    {
+      "path": "data/landsat/processed/october_2017_vegetation.tif",
+      "bytes": 668107,
+      "sha256": "eea17bcf347ce8d474160d74c3401804b5d5fd6ccfeb2dc4f26915c1c0e634a1"
+    },
+    {
+      "path": "data/landsat/processed/october_2018_ndvi.tif",
+      "bytes": 28268968,
+      "sha256": "10d3173117b70240250ca195ed554d01f30db4853d8827f5424ac62dcc88ee60"
+    },
+    {
+      "path": "data/landsat/processed/october_2018_observations.tif",
+      "bytes": 863164,
+      "sha256": "d4ca8e0c214eda077634a474601c6ff9ca02ea9a61c4888e33a304747f99c850"
+    },
+    {
+      "path": "data/landsat/processed/october_2018_reflectance.tif",
+      "bytes": 80874544,
+      "sha256": "8d93e775726846d12406b43a08302e673b13f5871be6f9254ceceefd620e9549"
+    },
+    {
+      "path": "data/landsat/processed/october_2018_vegetation.tif",
+      "bytes": 772713,
+      "sha256": "817696a5bf74bfbc1fdf72b7f13dbf859b412d36573dceb876aa81c1d8cb07bb"
+    },
+    {
+      "path": "data/landsat/processed/october_2019_ndvi.tif",
+      "bytes": 1492690,
+      "sha256": "23096357eaf8cd5fd67b69b28b9988a973ee2f2718d160ce6000575f8d47d43a"
+    },
+    {
+      "path": "data/landsat/processed/october_2019_observations.tif",
+      "bytes": 131590,
+      "sha256": "1fd7b96c7ca36a186b51cc0971dab978e6eb8dee7d33cdec35dafc712f73d809"
+    },
+    {
+      "path": "data/landsat/processed/october_2019_reflectance.tif",
+      "bytes": 4209116,
+      "sha256": "0176a5fcb91e33c88904a05f9d64173fd0c36c6b828619323b9cbeb8a4468d22"
+    },
+    {
+      "path": "data/landsat/processed/october_2019_vegetation.tif",
+      "bytes": 141487,
+      "sha256": "db89de9a6686c91e1e0a5b5cbe9a5be4423fa1af320b89419e7e45ec2a0832e5"
+    },
+    {
+      "path": "data/landsat/processed/october_2020_ndvi.tif",
+      "bytes": 677126,
+      "sha256": "2305fd5dcfa1de2e713d9cba4976407e0f82b852b66e738da0c9058db7ee81ed"
+    },
+    {
+      "path": "data/landsat/processed/october_2020_observations.tif",
+      "bytes": 70374,
+      "sha256": "8fe2042b8627f4fb8ca8d20550c404a6702e7896e351cc774b13b35f62e0c25b"
+    },
+    {
+      "path": "data/landsat/processed/october_2020_reflectance.tif",
+      "bytes": 1715674,
+      "sha256": "f57fa4ebeee42fc30d4f3707fcd27aa28932b75b72074113d0d6ec66ceffbd5f"
+    },
+    {
+      "path": "data/landsat/processed/october_2020_vegetation.tif",
+      "bytes": 85149,
+      "sha256": "43e989404932fd0fca9412460c4838b8c2fe20448ecc7525f5fc5098c5ce60f8"
+    },
+    {
+      "path": "data/landsat/processed/october_2021_ndvi.tif",
+      "bytes": 73383282,
+      "sha256": "fa1066f5e4f6cfcda5536a6cea01afc927bc61acc72bb7b72f753e3fb9bcc129"
+    },
+    {
+      "path": "data/landsat/processed/october_2021_observations.tif",
+      "bytes": 411102,
+      "sha256": "efc1dc3258ca7e12b2f30275d36211aafaa2dc6b5e47a9dcf3cbdbe150af6673"
+    },
+    {
+      "path": "data/landsat/processed/october_2021_reflectance.tif",
+      "bytes": 184563410,
+      "sha256": "3c2330e6796e976ab23d29e775af92c90867962d17a4e4f164f403740bb9caaa"
+    },
+    {
+      "path": "data/landsat/processed/october_2021_vegetation.tif",
+      "bytes": 642209,
+      "sha256": "a8b2c601b8eff6fa5a02c8df64a8de7f929b11e3d0fd2dfba0c1a6d271b065f4"
+    },
+    {
+      "path": "data/landsat/processed/october_2022_ndvi.tif",
+      "bytes": 78801430,
+      "sha256": "6a5fd1beb11a8dfc514896a83f73fabc97a72fa49f8de8ad9b852c07e94c88da"
+    },
+    {
+      "path": "data/landsat/processed/october_2022_observations.tif",
+      "bytes": 297076,
+      "sha256": "e52b1bb6e62d1a46e7a7bee5324aa15d21600248575e004104d076713d8e60ec"
+    },
+    {
+      "path": "data/landsat/processed/october_2022_reflectance.tif",
+      "bytes": 197200028,
+      "sha256": "3d1c6725743bdba1f7ada0ca23092586d1aa68982c1ba4e27a27304d6e4d6a1c"
+    },
+    {
+      "path": "data/landsat/processed/october_2022_vegetation.tif",
+      "bytes": 545501,
+      "sha256": "0b07c91f5ce83b6a9123848368f5d9417b2e37aeca4032d8fa27e32c21e11786"
+    },
+    {
+      "path": "data/landsat/processed/october_2023_ndvi.tif",
+      "bytes": 16948670,
+      "sha256": "366003a99537e28523ddd2cb899739b8f1acc2856f77983b35e4a3b56b29b668"
+    },
+    {
+      "path": "data/landsat/processed/october_2023_observations.tif",
+      "bytes": 440526,
+      "sha256": "d4e6855722f3b1702bb8ddd4c7e616acb7258ba72186091a3bdcc82f43725681"
+    },
+    {
+      "path": "data/landsat/processed/october_2023_reflectance.tif",
+      "bytes": 46222964,
+      "sha256": "8c33ce30e74f5ea33ad6a7f73590a1d74751da5a2d5e8c5c2f3bc9cc1b252d96"
+    },
+    {
+      "path": "data/landsat/processed/october_2023_vegetation.tif",
+      "bytes": 319767,
+      "sha256": "d11f5f70709c66af80b56ec2c0283ed86206f3868179b51f6c30a58c80343a68"
+    },
+    {
+      "path": "data/landsat/processed/october_2024_ndvi.tif",
+      "bytes": 24747420,
+      "sha256": "89aa50a48799fbdaea214eb1b6c6e18398fa5b4f395980f3bb19e961ff4cc717"
+    },
+    {
+      "path": "data/landsat/processed/october_2024_observations.tif",
+      "bytes": 727060,
+      "sha256": "3a2512d9fd0b14cbab4a42b06b839099160844abdcb4e0f491ddfef57de9029d"
+    },
+    {
+      "path": "data/landsat/processed/october_2024_reflectance.tif",
+      "bytes": 68341334,
+      "sha256": "6bc5aaf25ecf749051aaadd8c846277ffc450d6a5f10557ad78a36e5be53aae7"
+    },
+    {
+      "path": "data/landsat/processed/october_2024_vegetation.tif",
+      "bytes": 687477,
+      "sha256": "3aecf402e3c51f21ddbdb44b8e4e7bebe92aa0309674d8eed9cf431ebcd5cefc"
+    },
+    {
+      "path": "data/landsat/processed/transition_2015_2024.tif",
+      "bytes": 420205,
+      "sha256": "13803c97ca9e657c206114f3f3b86d6ce93b1912c7d1e8ae824050fa50cbde0f"
+    },
+    {
+      "path": "data/landsat/scene_inventory_initial.json",
+      "bytes": 19387,
+      "sha256": "64bc8c8fde5afe23d867ff2961181d9b75410a14b56638f1b8246349aae1de14"
+    },
+    {
+      "path": "data/landsat/sources/ee_download_reference.html",
+      "bytes": 561949,
+      "sha256": "b8d9ba9e3333b2603be411bc08a01c9895b5bca023c1dd3ae6c5ccf6c1cd40d6"
+    },
+    {
+      "path": "data/landsat/sources/landsat_catalog.html",
+      "bytes": 134556,
+      "sha256": "675b19a907e0a36a143cb6ed9fce9216ca472e701e7b2eb603ac99be7a4f0138"
+    },
+    {
+      "path": "data/landsat/sources/manifest.json",
+      "bytes": 1047,
+      "sha256": "01d3853f5a0756e53381501557fbf188aeeb1a454cf7e7061ea8913145d6de67"
+    },
+    {
+      "path": "data/landsat/sources/usgs_known_issues.html",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/landsat/sources/usgs_surface_reflectance.html",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/study/ancillary/soi2025_beed.geojson",
+      "bytes": 715754,
+      "sha256": "bf85247d44911fcb919ea49648de4e2520fb97f98399983b62fa17fa3667c8cd"
+    },
+    {
+      "path": "docs/AUTONOMOUS_HANDOFF.md",
+      "bytes": 11477,
+      "sha256": "0395b0d4ae6776f44c50ff8446699d704447c1e094cd9b2ea9b9731c099c0840"
+    },
+    {
+      "path": "pipeline/landsat/README.md",
+      "bytes": 3042,
+      "sha256": "e184bc32bbf224f8b5222476d1eb9c2f384b8f9a055987ba4acb7163982da20f"
+    },
+    {
+      "path": "pipeline/landsat/aerosol_audit.cpp",
+      "bytes": 1045,
+      "sha256": "7dc3bc4c96d2e18a37efd2a2f0f3a65b13214b4a791fa0dd307ea9b734475623"
+    },
+    {
+      "path": "pipeline/landsat/aerosol_audit.py",
+      "bytes": 2297,
+      "sha256": "b98fdebba2221fd1b2e9a33cf7043887d2b1701e269d098df61657886d0fc40c"
+    },
+    {
+      "path": "pipeline/landsat/analyze.py",
+      "bytes": 8476,
+      "sha256": "d9f3e49968f1217e65a88701e2797c9f3dcca5a2dae99c851923d13a9dccae02"
+    },
+    {
+      "path": "pipeline/landsat/common.py",
+      "bytes": 1508,
+      "sha256": "3ee64aac6587b1837d9c7a65e92696448b519b02b56fdcddbbc39324837107fe"
+    },
+    {
+      "path": "pipeline/landsat/download.py",
+      "bytes": 6028,
+      "sha256": "95a9447c7403012a0c565550cd6c736c5ce5a36dd03fbe9869f58c9346ac5cce"
+    },
+    {
+      "path": "pipeline/landsat/kernel.cpp",
+      "bytes": 2602,
+      "sha256": "9c9ae791c9a043b51d83bec6a906f7a17901386e67dba6a70f0f046825c6e035"
+    },
+    {
+      "path": "pipeline/landsat/present.py",
+      "bytes": 18750,
+      "sha256": "204e298c6f5d069a8eab2040e2da5418a3c6e1e705ca89f8bc568bd274d30e34"
+    },
+    {
+      "path": "pipeline/landsat/test_algorithms.py",
+      "bytes": 2614,
+      "sha256": "18910f92758cd58944e5862249e77685fca19833a8e8b91eb120c89830dd5035"
+    },
+    {
+      "path": "pipeline/landsat/transitions.cpp",
+      "bytes": 598,
+      "sha256": "45f6a6f0bf7b7054cb35e940497e29d3fc3159dbcac6538be42c84da9705c490"
+    },
+    {
+      "path": "pipeline/landsat/transitions.py",
+      "bytes": 2207,
+      "sha256": "f6df2e0ee50d631fc99eaee72a450610480a03d5f6bd49500ae51205b4aa132f"
+    },
+    {
+      "path": "pipeline/landsat/validate.py",
+      "bytes": 5311,
+      "sha256": "c10f91d11345d92ac855b68c999a11324544248d5a796bb59cf5f3b8bb3f844b"
+    },
+    {
+      "path": "results/landsat/aerosol_audit.json",
+      "bytes": 412,
+      "sha256": "bb6d58266100600b1d7ed8e523827dfb82fadd1b2fb2c952a8d77b8221da7930"
+    },
+    {
+      "path": "results/landsat/aerosol_coverage_diagnostic.csv",
+      "bytes": 811,
+      "sha256": "3312328c11ab9364aa3dd75a0d974a5ad9440a600ee0628db6d2d3620e38cd4e"
+    },
+    {
+      "path": "results/landsat/annual_vegetation.csv",
+      "bytes": 2383,
+      "sha256": "df2769af0dcc4b81e163ae3eb05a8f50d07a95457dced4cb1e392be6c50872ab"
+    },
+    {
+      "path": "results/landsat/area_sensitivities.csv",
+      "bytes": 6595,
+      "sha256": "24ca7cd19bd3702638dbea8080559225fd67982331a885ba2c835ac712143307"
+    },
+    {
+      "path": "results/landsat/computation_provenance.json",
+      "bytes": 663,
+      "sha256": "c1d3e009793381a673f4ce685d892d7b855fddf8b403400398c5b82acac51294"
+    },
+    {
+      "path": "results/landsat/execution_status.json",
+      "bytes": 790,
+      "sha256": "4e49223c506ad41af7588d37f1b9d376397d8111d60259e9e29734f1620b12cb"
+    },
+    {
+      "path": "results/landsat/landsat_report.md",
+      "bytes": 10587,
+      "sha256": "bc700d75480a33617a8fbc1bfbdfe6ef1f29ebbefb01aa2b694d9b1bc7e69425"
+    },
+    {
+      "path": "results/landsat/ndvi_and_coverage.png",
+      "bytes": 176894,
+      "sha256": "affffa8c190eb2228c57b67608b42c5fa8b93e17566cc2bcf644311fbded08d1"
+    },
+    {
+      "path": "results/landsat/ndvi_distribution.png",
+      "bytes": 75428,
+      "sha256": "37b5bb2c6e2c0f22ec57ea8abfe9f7b9a87e61992fd1fbee0a9ce021825aab0c"
+    },
+    {
+      "path": "results/landsat/ndvi_histograms.csv",
+      "bytes": 13887,
+      "sha256": "dea605514be49a256e35315307b39a6e07cf554b0c3ce5026904d8b952dd85d7"
+    },
+    {
+      "path": "results/landsat/october_false_colour.png",
+      "bytes": 740132,
+      "sha256": "9c7494364d0ddbd46fffed57b7de5922906a01e93db072297c888c3980b6d75f"
+    },
+    {
+      "path": "results/landsat/october_vegetation.png",
+      "bytes": 143260,
+      "sha256": "d3136e23de3b581b8fbe69fbb75c04ddd8eb2ca9e98f7eee4cdb03850a7a8357"
+    },
+    {
+      "path": "results/landsat/pairwise_changes.csv",
+      "bytes": 1577,
+      "sha256": "dadfca61325ceca178e5c9ec6ded220a19cdf338a96e014dab5deb00b7097829"
+    },
+    {
+      "path": "results/landsat/pairwise_provenance.json",
+      "bytes": 420,
+      "sha256": "b0008691a8e7519cba5854ae7e9d7e13c97adf19b813b2bfb48ad12e1bb548da"
+    },
+    {
+      "path": "results/landsat/protocol.md",
+      "bytes": 4146,
+      "sha256": "86bfa0cf31d67ccd33114328ecd37a26ab70ec1643ea560bee68ede0326194e7"
+    },
+    {
+      "path": "results/landsat/qa/2015.json",
+      "bytes": 13422,
+      "sha256": "152a3a626c25a2824f830e799ddc7a2cab2a1137b465c882a6f30b1a7fddbbef"
+    },
+    {
+      "path": "results/landsat/qa/2016.json",
+      "bytes": 12626,
+      "sha256": "13d06a01e023d57b1af609aa8ff4c0598c4b26404483f486da2da9129d4565cb"
+    },
+    {
+      "path": "results/landsat/qa/2017.json",
+      "bytes": 11396,
+      "sha256": "340e39466abb4a06cfcb6176a4b426e124b6f658d79172d4595b231fcd3d6a12"
+    },
+    {
+      "path": "results/landsat/qa/2018.json",
+      "bytes": 13457,
+      "sha256": "3a944c93afb5cf5418d68634731eeeca3e1947594ac919050b9c3d403965017a"
+    },
+    {
+      "path": "results/landsat/qa/2019.json",
+      "bytes": 12192,
+      "sha256": "766d3aaff654bb81529253ce2fecdea08ad73c7feb9f9a7cfcc5847619a598ee"
+    },
+    {
+      "path": "results/landsat/qa/2020.json",
+      "bytes": 10118,
+      "sha256": "b512c15f7992125083ab4f33ce320dceb426c7dc20d5b308c53fb28572f1a1c4"
+    },
+    {
+      "path": "results/landsat/qa/2021.json",
+      "bytes": 9008,
+      "sha256": "a1f20aa49a778c0e8cbe135b09af3096eae7d899ea746c67e063b2a9335e437f"
+    },
+    {
+      "path": "results/landsat/qa/2022.json",
+      "bytes": 8619,
+      "sha256": "68df4e6b607383e1378b22e3a6c4b1f92c2d5b9d36dccb4f4259ad28bb2479cf"
+    },
+    {
+      "path": "results/landsat/qa/2023.json",
+      "bytes": 9428,
+      "sha256": "8660dd36b4fd4353b436492fa6121399ac810386e22f018b31da8820f52d5889"
+    },
+    {
+      "path": "results/landsat/qa/2024.json",
+      "bytes": 9011,
+      "sha256": "8032c6ba4450003da29cb93693f128fb6b82d266fcb04cc61a7d8dd80fd9e86d"
+    },
+    {
+      "path": "results/landsat/quality_and_pairwise_changes.png",
+      "bytes": 204354,
+      "sha256": "87460d610d1662a1bb082d763869982964fce8b0e5feb31e339ebd88869f0d2d"
+    },
+    {
+      "path": "results/landsat/trend_summary.json",
+      "bytes": 4616,
+      "sha256": "d5c7c1b0c0698bdb4be3c2babb73674af481b0243bd0a47bb4a03a6dfd32b67e"
+    },
+    {
+      "path": "results/landsat/validation.json",
+      "bytes": 123985,
+      "sha256": "1bbe1007d406c95ef9c23b35536ae31d9d3e44ab4d7618731cc418fcccd48fcb"
+    },
+    {
+      "path": "results/landsat/visual_review.json",
+      "bytes": 1484,
+      "sha256": "238e082f7595a0de029898b6472f24c8fa538e51994e34fe4fb878829cd7c555"
+    },
+    {
+      "path": "results/landsat/year_vs_vegetation_area.png",
+      "bytes": 218954,
+      "sha256": "a887713c06665adc01125c289da2fb2c21faf64c01782822ad1b449a72f729b1"
+    }
+  ],
+  "exclusions": "Raw source files are referenced via their verified download manifest; bytecode, build products, logs and this manifest are excluded."
+}
